@@ -1,6 +1,6 @@
 ---
 title: "Bacteriophage Therapy, Endolysins, Antimicrobial Peptides, and Monoclonal Antibodies as Antimicrobial Agents"
-subtitle: "Lecture notes — companion to the slide deck"
+
 author: "Russell E. Lewis, Pharm.D."
 date: today
 format:
@@ -15,12 +15,20 @@ bibliography: phage-references.bib
 csl: diagnostic-microbiology-and-infectious-disease.csl
 ---
 
-::: {.callout-note}
-## How to use these notes
-These notes follow the slide deck section by section, providing the depth and references behind each slide. They are pitched for advanced trainees (ID fellows) and assume familiarity with resistance mechanisms, PK/PD, and clinical-trial interpretation. The companion deck is `phage-slides.qmd`. Primary source for the phage/endolysin/AMP content is the Mandell chapter by Doub, Suh, and Chan; the monoclonal antibody section is added from the primary trial literature.
-:::
+<br> 
+[Link to HTML slides](phage-slides.html) <br>
+[Link to recorded lecture]()
 
-# Setting the stage
+::: {.callout-note}
+## Learning objectives
+By the end of this material, you should be able to:
+
+- Explain the biology of obligately lytic versus temperate phages and why it dictates therapeutic suitability.
+- Critically interpret phage susceptibility testing (plaque assay, EoP, phagogram) as a pharmacodynamic surrogate.
+- Reason through phage PK/PD, immunogenicity, and phage–antibiotic interactions at the bedside.
+- Appraise the disconnect between compassionate-use case reports and randomized trial data.
+- Place endolysins, antimicrobial peptides, and monoclonal antibodies within the same "targeted biologic" antimicrobial framework.
+:::
 
 ## Why alternative antimicrobials, and why now
 
@@ -39,14 +47,15 @@ This is the context in which bacteriophages, phage-derived enzymes, antimicrobia
 
 : The targeted-biologic landscape {#tbl-platforms}
 
-::: {.callout-tip}
-## Teaching anchor
-Return to @tbl-platforms throughout. The intellectual payoff of the lecture is recognising that each agent's clinical niche follows directly from its pharmacology — self-amplification, replication status, and mechanism of bacterial killing or neutralization.
-:::
+
 
 # A brief history of phage therapy
 
+![Félix d'Hérelle, who in 1917 provided the first unambiguous evidence of bacteriophages and coined the term, and who pioneered their therapeutic use.](phage-images/dherevillepng2.png){#fig-dherelle fig-align="center" width="260"}
+
 The observation of phage activity predates its understanding. In 1896 Ernest Hankin described an antibacterial "substance" in the Ganges and Jumna rivers that passed through filters and killed *Vibrio cholerae* [@Hankin1896], although later reanalysis questions whether phages were responsible given the environmental titres that would have been required [@Abedon2011]. Frederick Twort reported a transmissible lytic agent in 1915 [@Twort1915], and in 1917 Félix d'Hérelle provided unambiguous evidence of a replicating, bacteria-dependent organism, coining the term *bacteriophage* ("to devour bacteria") from filtered stool of patients recovering from shigellosis [@dHerelle1917]. d'Hérelle both discovered phages and rapidly applied them therapeutically, performing many of the earliest human treatments [@dHerelle1931].
+
+![The Eliava Institute in Tbilisi, Georgia, where phage therapy has been continuously developed and administered since the Soviet era.](phage-images/Eliava.png){#fig-eliava fig-align="center" width="450"}
 
 The rise of penicillin eclipsed phage therapy in the West. The narrow host range, limited pharmaceutical interest, and geopolitical factors shifted research toward chemotherapeutics [@Summers2012]. Crucially, phage therapy persisted in Eastern Europe and the former Soviet Union — most famously at the Eliava Institute in Tbilisi — where it is still administered [@Chanishvili2012]. The West instead adopted an "as-needed" assumption that new drug classes could always be discovered to outrun resistance, an assumption that has not held.
 
@@ -60,11 +69,13 @@ Phages are the most abundant biological entity on Earth. As of 2022 the Internat
 
 Architecturally, every phage contains at minimum a nucleic-acid genome encapsulated in a protein capsid [@Nobrega2018]. More than 96% of EM-examined phages are tailed, and tailed phages are the group under clinical investigation because they associate with clinically relevant bacteria and are the most readily isolated [@Ackermann2012]. The tail comprises a sheath — contractile or non-contractile — and tail fibres responsible for host recognition [@Nobrega2018]. Sheath morphology underlies the classical groupings: contractile (myovirus-like), long non-contractile (siphovirus-like), and short non-contractile (podovirus-like).
 
-<!-- IMAGE NEEDED: labelled tailed-phage diagram (capsid head, contractile sheath, baseplate, tail fibres) -->
+![Anatomy of a tailed phage. The tail fibres are the receptor-binding proteins — relevant later to both resistance (receptor loss) and engineering (tail-fibre swapping to expand host range).](phage-images/phage.png){#fig-anatomy fig-align="center" width="700"}
 
 ## Life cycles and the therapeutic imperative of lysis
 
 All phage replication begins with attachment to a surface receptor, followed by reversible then irreversible binding and genome injection [@Nobrega2018]. Adsorption is largely stochastic — phages are non-motile and rely on Brownian encounters — although phages have been observed to "walk" or "roll" across the bacterial surface to find an injection site [@Hu2013], and Ig-like capsid domains binding mucin produce subdiffusive motion that increases encounter frequency at mucosal surfaces [@Barr2013].
+
+![The lytic and lysogenic life cycles. Temperate phages can mediate lysogenic conversion — Shiga, cholera, and diphtheria toxins are all prophage-encoded — which is why a lytic lifestyle must be confirmed before clinical use.](phage-images/lifecycle.png){#fig-lifecycle fig-align="center" width="600"}
 
 After injection, the cycle diverges. In the **lytic cycle**, progeny phages are synthesised, assembled, and released by lysis; a phage that performs only this cycle is "obligately lytic" [@Hobbs2016]. In the **lysogenic cycle**, the genome integrates as a prophage (or persists as an independent replicon) and is inherited by daughter cells until induction triggers a lytic burst; such phages are "temperate" [@HowardVarona2017].
 
@@ -77,7 +88,9 @@ Therapeutic phages should be obligately lytic. Temperate phages risk lysogenic c
 
 Because host range is narrow, susceptibility cannot be assumed; phage activity must be tested against each clinical isolate, and where multiple strains of a species are present, against each strain [@Suh2022]. Phage therapy is consequently a personalised intervention best suited to monomicrobial infection; polymicrobial sites such as diabetic foot and intra-abdominal infection are more challenging [@Suh2022].
 
-The traditional assay is the **plaque assay**: a lawn of the clinical isolate is exposed to serial phage titres, producing zones of clearance (plaques). The **efficiency of plaquing (EoP)** — the titre producing plaques on the clinical isolate relative to the titre on the propagation host — provides a quantitative susceptibility measure analogous to an MIC, allowing candidate phages to be ranked; an EoP of at least 0.1 appears associated with better outcomes, although thresholds remain provisional [@Suh2022]. Two complementary methods are the **dilutional spot test**, which compares candidate phages across dilutions on a single plate, and the **phagogram** (phage-induced bacterial growth-inhibition assay), which co-incubates fixed phage and bacteria and tracks optical density or respiration against a growth control over roughly 24 hours [@Suh2022; @Henry2012]. The phagogram is the most pharmacodynamically informative because it captures suppression over time, including regrowth from resistant subpopulations.
+![The plaque assay: a lawn of the clinical isolate is challenged with serial phage titres, producing zones of clearance (plaques) that can be counted and compared.](phage-images/plaque.png){#fig-plaque fig-align="center" width="450"}
+
+The traditional assay is the **plaque assay**: a lawn of the clinical isolate is exposed to serial phage titres, producing zones of clearance (plaques). The **efficiency of plaquing (EoP)** — the titre producing plaques on the clinical isolate relative to the titre on the propagation host — provides a quantitative susceptibility measure analogous to an MIC, allowing candidate phages to be ranked; an EoP of at least 0.1 appears associated with better outcomes, although thresholds remain provisional [@Suh2022]. Two complementary methods are the **dilutional spot test**, which compares candidate phages across dilutions on a single plate, and the **phagogram** (phage-induced bacterial growth-inhibition assay), which co-incubates fixed phage and bacteria and tracks optical density or respiration against a growth control over roughly 24 hours [@Suh2022; @Henry2012]. The phagogram is the most pharmacodynamically informative because it captures suppression over time, including regrowth from resistant subpopulations; higher-throughput readouts such as OmniLog respirometry enable rapid screening of many phage–isolate combinations [@Suh2022; @Henry2012].
 
 Because phage therapy is usually combined with antibiotics, in vitro testing should also confirm absence of antagonism — ideally synergy — between the selected phage and antibiotic, and for biofilm indications should demonstrate anti-biofilm activity against the clinical isolate before administration [@Suh2022; @Doub2020biofilm]. Cocktails should be deliberately designed rather than assembled ad hoc [@Merabishvili2018].
 
@@ -99,16 +112,20 @@ Resistance is mitigated by combining phages that use different receptors in prec
 
 # Manufacturing, logistics, and regulation
 
+![Phages are sourced wherever bacteria are abundant — wastewater and environmental water being the classic hunting grounds.](phage-images/sewage.png){#fig-sewage fig-align="center" width="450"}
+
 Phage discovery draws on wastewater, environmental water, and other bacteria-rich sources. For ESKAPE pathogens a matching phage is often found quickly, but for rarer isolates the search may take months or fail [@Suh2022]. Candidate phages are sequenced and characterised to confirm an obligately lytic lifestyle and to exclude toxin, resistance, and integrase genes, then amplified on bacterial hosts to therapeutic titres [@Doub2021b; @Doub2021].
 
 Because phages are grown on bacteria, manufacturing is fundamentally a contaminant-removal problem. Bacterial lysis releases endotoxin, which must be reduced below the FDA limit of 5 EU/kg/dose using ultrafiltration and affinity or ion-exchange chromatography [@Hietala2019]. Other risks — prophages, pathogenicity islands, toxins, and mobile genetic elements from the propagation host — are mitigated by amplifying on a genetically "clean" surrogate host (for *S. aureus*, *Staphylococcus carnosus* or strain RN4220) rather than the clinical isolate [@Doub2021b]. Sterility testing for residual live organisms is also required.
+
+![The end-to-end timeline to produce a bacteriophage therapeutic, from isolate to characterised, amplified, and purified product.](phage-images/timeline.png){#fig-timeline fig-align="center"}
 
 ::: {.callout-warning}
 ## Formulation is phage-specific
 Phages can be stored frozen at −80 °C with glycerol, refrigerated, or lyophilised for ambient storage, with shelf lives of years under proper conditions [@Duyvejonck2021; @Puapermpoonsiri2010]. For use they are diluted in Plasma-Lyte, saline, or other fluids, but compatibility is phage-specific — a phage stable in one diluent may be inactivated in another, so retained activity must be confirmed in the chosen vehicle before administration [@Duyvejonck2021].
 :::
 
-In the United States phage therapy is not FDA-approved; outside trials, use is limited to compassionate cases after conventional failure, requiring a per-case emergency IND or expanded-access IND [@McCallin2019; @Suh2022]. Emergency INDs can be granted rapidly once a phage is identified, whereas non-emergent approval may take around four weeks [@Suh2022]. In Europe, magistral preparation frameworks (notably Belgium) offer an alternative regulatory route for personalised products [@Fauconnier2019].
+In the United States phage therapy is not FDA-approved; outside trials, use is limited to compassionate cases after conventional failure, requiring a per-case emergency IND or expanded-access IND [@McCallin2019; @Suh2022]. There is likewise no EU-wide authorised human phage medicinal product under EU law. Emergency INDs can be granted rapidly once a phage is identified, whereas non-emergent approval may take around four weeks [@Suh2022]. In Europe, magistral preparation frameworks (notably Belgium) offer an alternative regulatory route for personalised products [@Fauconnier2019].
 
 # Pharmacokinetics and pharmacodynamics
 

@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.35">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Russell E. Lewis, Pharm.D.">
+<meta name="dcterms.date" content="2026-06-23">
+
+<title>Bacteriophage Therapy, Endolysins, Antimicrobial Peptides, and Monoclonal Antibodies as Antimicrobial Agents</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="phage-webpage_files/libs/clipboard/clipboard.min.js"></script>
+<script src="phage-webpage_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="phage-webpage_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="phage-webpage_files/libs/quarto-html/popper.min.js"></script>
+<script src="phage-webpage_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="phage-webpage_files/libs/quarto-html/anchor.min.js"></script>
+<link href="phage-webpage_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="phage-webpage_files/libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="phage-webpage_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="phage-webpage_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="phage-webpage_files/libs/bootstrap/bootstrap-8ffd5f67044e5306d9846f29df41dda5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-alternative-antimicrobials-and-why-now" id="toc-why-alternative-antimicrobials-and-why-now" class="nav-link active" data-scroll-target="#why-alternative-antimicrobials-and-why-now"><span class="header-section-number">0.1</span> Why alternative antimicrobials, and why now</a></li>
+  <li><a href="#four-platforms-one-logic" id="toc-four-platforms-one-logic" class="nav-link" data-scroll-target="#four-platforms-one-logic"><span class="header-section-number">0.2</span> Four platforms, one logic</a></li>
+  <li><a href="#a-brief-history-of-phage-therapy" id="toc-a-brief-history-of-phage-therapy" class="nav-link" data-scroll-target="#a-brief-history-of-phage-therapy"><span class="header-section-number">1</span> A brief history of phage therapy</a></li>
+  <li><a href="#phage-biology" id="toc-phage-biology" class="nav-link" data-scroll-target="#phage-biology"><span class="header-section-number">2</span> Phage biology</a>
+  <ul class="collapse">
+  <li><a href="#diversity-taxonomy-and-structure" id="toc-diversity-taxonomy-and-structure" class="nav-link" data-scroll-target="#diversity-taxonomy-and-structure"><span class="header-section-number">2.1</span> Diversity, taxonomy, and structure</a></li>
+  <li><a href="#life-cycles-and-the-therapeutic-imperative-of-lysis" id="toc-life-cycles-and-the-therapeutic-imperative-of-lysis" class="nav-link" data-scroll-target="#life-cycles-and-the-therapeutic-imperative-of-lysis"><span class="header-section-number">2.2</span> Life cycles and the therapeutic imperative of lysis</a></li>
+  </ul></li>
+  <li><a href="#spectrum-of-activity-and-in-vitro-susceptibility-testing" id="toc-spectrum-of-activity-and-in-vitro-susceptibility-testing" class="nav-link" data-scroll-target="#spectrum-of-activity-and-in-vitro-susceptibility-testing"><span class="header-section-number">3</span> Spectrum of activity and in vitro susceptibility testing</a></li>
+  <li><a href="#bacterial-resistance-to-phages" id="toc-bacterial-resistance-to-phages" class="nav-link" data-scroll-target="#bacterial-resistance-to-phages"><span class="header-section-number">4</span> Bacterial resistance to phages</a>
+  <ul class="collapse">
+  <li><a href="#receptor-modification-and-its-therapeutic-silver-lining" id="toc-receptor-modification-and-its-therapeutic-silver-lining" class="nav-link" data-scroll-target="#receptor-modification-and-its-therapeutic-silver-lining"><span class="header-section-number">4.1</span> Receptor modification and its therapeutic silver lining</a></li>
+  <li><a href="#abortive-infection-crispr-cas-and-the-pan-immune-system" id="toc-abortive-infection-crispr-cas-and-the-pan-immune-system" class="nav-link" data-scroll-target="#abortive-infection-crispr-cas-and-the-pan-immune-system"><span class="header-section-number">4.2</span> Abortive infection, CRISPR-Cas, and the pan-immune system</a></li>
+  <li><a href="#mitigation-strategies" id="toc-mitigation-strategies" class="nav-link" data-scroll-target="#mitigation-strategies"><span class="header-section-number">4.3</span> Mitigation strategies</a></li>
+  </ul></li>
+  <li><a href="#manufacturing-logistics-and-regulation" id="toc-manufacturing-logistics-and-regulation" class="nav-link" data-scroll-target="#manufacturing-logistics-and-regulation"><span class="header-section-number">5</span> Manufacturing, logistics, and regulation</a></li>
+  <li><a href="#pharmacokinetics-and-pharmacodynamics" id="toc-pharmacokinetics-and-pharmacodynamics" class="nav-link" data-scroll-target="#pharmacokinetics-and-pharmacodynamics"><span class="header-section-number">6</span> Pharmacokinetics and pharmacodynamics</a></li>
+  <li><a href="#immunogenicity-the-neutralizing-antibody-response" id="toc-immunogenicity-the-neutralizing-antibody-response" class="nav-link" data-scroll-target="#immunogenicity-the-neutralizing-antibody-response"><span class="header-section-number">7</span> Immunogenicity: the neutralizing antibody response</a></li>
+  <li><a href="#therapeutic-phage-interactions" id="toc-therapeutic-phage-interactions" class="nav-link" data-scroll-target="#therapeutic-phage-interactions"><span class="header-section-number">8</span> Therapeutic phage interactions</a></li>
+  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety"><span class="header-section-number">9</span> Safety</a></li>
+  <li><a href="#phages-against-multidrug-resistant-infections" id="toc-phages-against-multidrug-resistant-infections" class="nav-link" data-scroll-target="#phages-against-multidrug-resistant-infections"><span class="header-section-number">10</span> Phages against multidrug-resistant infections</a></li>
+  <li><a href="#biofilm-infections" id="toc-biofilm-infections" class="nav-link" data-scroll-target="#biofilm-infections"><span class="header-section-number">11</span> Biofilm infections</a></li>
+  <li><a href="#clinical-trials-the-reality-check" id="toc-clinical-trials-the-reality-check" class="nav-link" data-scroll-target="#clinical-trials-the-reality-check"><span class="header-section-number">12</span> Clinical trials: the reality check</a></li>
+  <li><a href="#endolysins" id="toc-endolysins" class="nav-link" data-scroll-target="#endolysins"><span class="header-section-number">13</span> Endolysins</a></li>
+  <li><a href="#antimicrobial-peptides" id="toc-antimicrobial-peptides" class="nav-link" data-scroll-target="#antimicrobial-peptides"><span class="header-section-number">14</span> Antimicrobial peptides</a></li>
+  <li><a href="#monoclonal-antibodies-as-antimicrobial-agents" id="toc-monoclonal-antibodies-as-antimicrobial-agents" class="nav-link" data-scroll-target="#monoclonal-antibodies-as-antimicrobial-agents"><span class="header-section-number">15</span> Monoclonal antibodies as antimicrobial agents</a>
+  <ul class="collapse">
+  <li><a href="#rationale-history-and-mechanisms" id="toc-rationale-history-and-mechanisms" class="nav-link" data-scroll-target="#rationale-history-and-mechanisms"><span class="header-section-number">15.1</span> Rationale, history, and mechanisms</a></li>
+  <li><a href="#approved-and-instructive-agents" id="toc-approved-and-instructive-agents" class="nav-link" data-scroll-target="#approved-and-instructive-agents"><span class="header-section-number">15.2</span> Approved and instructive agents</a></li>
+  <li><a href="#the-antibacterial-mab-graveyard-and-why-it-persists" id="toc-the-antibacterial-mab-graveyard-and-why-it-persists" class="nav-link" data-scroll-target="#the-antibacterial-mab-graveyard-and-why-it-persists"><span class="header-section-number">15.3</span> The antibacterial mAb graveyard and why it persists</a></li>
+  </ul></li>
+  <li><a href="#synthesis-and-future-directions" id="toc-synthesis-and-future-directions" class="nav-link" data-scroll-target="#synthesis-and-future-directions"><span class="header-section-number">16</span> Synthesis and future directions</a>
+  <ul class="collapse">
+  <li><a href="#phages-and-monoclonal-antibodies-as-complementary-biologics" id="toc-phages-and-monoclonal-antibodies-as-complementary-biologics" class="nav-link" data-scroll-target="#phages-and-monoclonal-antibodies-as-complementary-biologics"><span class="header-section-number">16.1</span> Phages and monoclonal antibodies as complementary biologics</a></li>
+  <li><a href="#where-the-field-is-heading" id="toc-where-the-field-is-heading" class="nav-link" data-scroll-target="#where-the-field-is-heading"><span class="header-section-number">16.2</span> Where the field is heading</a></li>
+  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages"><span class="header-section-number">16.3</span> Take-home messages</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bacteriophage Therapy, Endolysins, Antimicrobial Peptides, and Monoclonal Antibodies as Antimicrobial Agents</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Russell E. Lewis, Pharm.D. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 23, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><br> <a href="phage-slides.html">Link to HTML slides</a> <br> <a href="">Link to recorded lecture</a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Learning objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>By the end of this material, you should be able to:</p>
+<ul>
+<li>Explain the biology of obligately lytic versus temperate phages and why it dictates therapeutic suitability.</li>
+<li>Critically interpret phage susceptibility testing (plaque assay, EoP, phagogram) as a pharmacodynamic surrogate.</li>
+<li>Reason through phage PK/PD, immunogenicity, and phage–antibiotic interactions at the bedside.</li>
+<li>Appraise the disconnect between compassionate-use case reports and randomized trial data.</li>
+<li>Place endolysins, antimicrobial peptides, and monoclonal antibodies within the same “targeted biologic” antimicrobial framework.</li>
+</ul>
+</div>
+</div>
+<section id="why-alternative-antimicrobials-and-why-now" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="why-alternative-antimicrobials-and-why-now"><span class="header-section-number">0.1</span> Why alternative antimicrobials, and why now</h2>
+<p>The therapeutic problem is structural, not incidental. Before chemical antibiotics, infectious diseases caused roughly a third of deaths in the United States, with pneumonia, tuberculosis, and diarrhoeal disease leading the list; the “golden era” of antibiotic discovery (1950–1970) reversed this epidemiology <span class="citation" data-cites="Silver2011">(<a href="#ref-Silver2011" role="doc-biblioref">Silver, 2011</a>)</span>. That era ended without a durable replacement pipeline: economic and scientific barriers have throttled new antibacterial class discovery while resistance has continued to rise <span class="citation" data-cites="Fair2014 Silver2011">(<a href="#ref-Fair2014" role="doc-biblioref">Fair and Tor, 2014</a>; <a href="#ref-Silver2011" role="doc-biblioref">Silver, 2011</a>)</span>. The Global Burden of Disease analysis estimated that bacterial antimicrobial resistance was associated with approximately 4.95 million deaths in 2019, with 1.27 million directly attributable, and widely cited projections approach 10 million deaths annually by 2050 <span class="citation" data-cites="GBDAMR2022">(<a href="#ref-GBDAMR2022" role="doc-biblioref">Antimicrobial Resistance Collaborators, 2022</a>)</span>. The clinical stakes are concrete: <em>Staphylococcus aureus</em> sepsis mortality fell from around 85% in the pre-antibiotic era to roughly 23% after antibiotics, but methicillin-resistant <em>S. aureus</em> bacteraemia mortality remains high <span class="citation" data-cites="Cosgrove2003">(<a href="#ref-Cosgrove2003" role="doc-biblioref">Cosgrove et al., 2003</a>)</span>.</p>
+<p>This is the context in which bacteriophages, phage-derived enzymes, antimicrobial peptides, and monoclonal antibodies are being revived. Each is a <em>targeted biologic</em> — narrow-spectrum, manufactured, and mechanistically distinct from small molecules.</p>
+</section>
+<section id="four-platforms-one-logic" class="level2" data-number="0.2">
+<h2 data-number="0.2" class="anchored" data-anchor-id="four-platforms-one-logic"><span class="header-section-number">0.2</span> Four platforms, one logic</h2>
+<div id="tbl-platforms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-platforms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: The targeted-biologic landscape
+</figcaption>
+<div aria-describedby="tbl-platforms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Platform</th>
+<th>Nature</th>
+<th>Self-replicating?</th>
+<th>Spectrum</th>
+<th>Principal niche today</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bacteriophages</td>
+<td>Lytic virus</td>
+<td>Yes</td>
+<td>Strain-level</td>
+<td>MDR / biofilm (adjuvant)</td>
+</tr>
+<tr class="even">
+<td>Endolysins</td>
+<td>Phage-derived enzyme</td>
+<td>No</td>
+<td>Narrow–moderate</td>
+<td>Gram-positive (emerging)</td>
+</tr>
+<tr class="odd">
+<td>Antimicrobial peptides</td>
+<td>Cationic peptide</td>
+<td>No</td>
+<td>Often broad</td>
+<td>Local / engineered use</td>
+</tr>
+<tr class="even">
+<td>Monoclonal antibodies</td>
+<td>Host-type IgG</td>
+<td>No</td>
+<td>Epitope-level</td>
+<td>Prophylaxis / toxin neutralization</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="a-brief-history-of-phage-therapy" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> A brief history of phage therapy</h1>
+<div id="fig-dherelle" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dherelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/dherevillepng2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="260">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dherelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Félix d’Hérelle, who in 1917 provided the first unambiguous evidence of bacteriophages and coined the term, and who pioneered their therapeutic use.
+</figcaption>
+</figure>
+</div>
+<p>The observation of phage activity predates its understanding. In 1896 Ernest Hankin described an antibacterial “substance” in the Ganges and Jumna rivers that passed through filters and killed <em>Vibrio cholerae</em> <span class="citation" data-cites="Hankin1896">(<a href="#ref-Hankin1896" role="doc-biblioref">Hankin, 1896</a>)</span>, although later reanalysis questions whether phages were responsible given the environmental titres that would have been required <span class="citation" data-cites="Abedon2011">(<a href="#ref-Abedon2011" role="doc-biblioref">Abedon et al., 2011</a>)</span>. Frederick Twort reported a transmissible lytic agent in 1915 <span class="citation" data-cites="Twort1915">(<a href="#ref-Twort1915" role="doc-biblioref">Twort, 1915</a>)</span>, and in 1917 Félix d’Hérelle provided unambiguous evidence of a replicating, bacteria-dependent organism, coining the term <em>bacteriophage</em> (“to devour bacteria”) from filtered stool of patients recovering from shigellosis <span class="citation" data-cites="dHerelle1917">(<a href="#ref-dHerelle1917" role="doc-biblioref"><span class="nocase">d’Herelle</span>, 1917</a>)</span>. d’Hérelle both discovered phages and rapidly applied them therapeutically, performing many of the earliest human treatments <span class="citation" data-cites="dHerelle1931">(<a href="#ref-dHerelle1931" role="doc-biblioref"><span class="nocase">d’Herelle</span>, 1931</a>)</span>.</p>
+<div id="fig-eliava" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eliava-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/Eliava.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eliava-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The Eliava Institute in Tbilisi, Georgia, where phage therapy has been continuously developed and administered since the Soviet era.
+</figcaption>
+</figure>
+</div>
+<p>The rise of penicillin eclipsed phage therapy in the West. The narrow host range, limited pharmaceutical interest, and geopolitical factors shifted research toward chemotherapeutics <span class="citation" data-cites="Summers2012">(<a href="#ref-Summers2012" role="doc-biblioref">Summers, 2012</a>)</span>. Crucially, phage therapy persisted in Eastern Europe and the former Soviet Union — most famously at the Eliava Institute in Tbilisi — where it is still administered <span class="citation" data-cites="Chanishvili2012">(<a href="#ref-Chanishvili2012" role="doc-biblioref">Chanishvili, 2012</a>)</span>. The West instead adopted an “as-needed” assumption that new drug classes could always be discovered to outrun resistance, an assumption that has not held.</p>
+<p>The modern resurgence is driven by AMR and by the recognition that phages offer a self-amplifying, self-limiting therapeutic drawn from an essentially inexhaustible, biodiverse resource of an estimated 10³¹ particles on Earth <span class="citation" data-cites="Mushegian2020 Kortright2019">(<a href="#ref-Kortright2019" role="doc-biblioref">Kortright et al., 2019</a>; <a href="#ref-Mushegian2020" role="doc-biblioref">Mushegian, 2020</a>)</span>. High-profile compassionate-use successes — notably the 2017 intravenous phage cocktail treatment of a disseminated <em>Acinetobacter baumannii</em> infection — catalysed Western academic programmes <span class="citation" data-cites="Schooley2017">(<a href="#ref-Schooley2017" role="doc-biblioref"><span class="nocase">Schooley et al.</span>, 2017</a>)</span>. Whether the resurgence consolidates depends on translational PK/PD research and well-designed clinical trials.</p>
+</section>
+<section id="phage-biology" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Phage biology</h1>
+<section id="diversity-taxonomy-and-structure" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="diversity-taxonomy-and-structure"><span class="header-section-number">2.1</span> Diversity, taxonomy, and structure</h2>
+<p>Phages are the most abundant biological entity on Earth. As of 2022 the International Committee on Taxonomy of Viruses recognised 1653 phage genera <span class="citation" data-cites="Walker2022">(<a href="#ref-Walker2022" role="doc-biblioref"><span class="nocase">Walker et al.</span>, 2022</a>)</span>, yet relatively few phages have been characterised: roughly 6300 examined by electron microscopy and around 14,200 sequenced, the majority carrying double-stranded DNA genomes <span class="citation" data-cites="Ackermann2012">(<a href="#ref-Ackermann2012" role="doc-biblioref">Ackermann and Prangishvili, 2012</a>)</span>. The historical morphology-based families <em>Siphoviridae</em>, <em>Myoviridae</em>, and <em>Podoviridae</em> have been reorganised by the ICTV, but the morphological vocabulary persists descriptively <span class="citation" data-cites="Walker2022 Ackermann2012">(<a href="#ref-Ackermann2012" role="doc-biblioref">Ackermann and Prangishvili, 2012</a>; <a href="#ref-Walker2022" role="doc-biblioref"><span class="nocase">Walker et al.</span>, 2022</a>)</span>.</p>
+<p>Architecturally, every phage contains at minimum a nucleic-acid genome encapsulated in a protein capsid <span class="citation" data-cites="Nobrega2018">(<a href="#ref-Nobrega2018" role="doc-biblioref">Nobrega et al., 2018</a>)</span>. More than 96% of EM-examined phages are tailed, and tailed phages are the group under clinical investigation because they associate with clinically relevant bacteria and are the most readily isolated <span class="citation" data-cites="Ackermann2012">(<a href="#ref-Ackermann2012" role="doc-biblioref">Ackermann and Prangishvili, 2012</a>)</span>. The tail comprises a sheath — contractile or non-contractile — and tail fibres responsible for host recognition <span class="citation" data-cites="Nobrega2018">(<a href="#ref-Nobrega2018" role="doc-biblioref">Nobrega et al., 2018</a>)</span>. Sheath morphology underlies the classical groupings: contractile (myovirus-like), long non-contractile (siphovirus-like), and short non-contractile (podovirus-like).</p>
+<div id="fig-anatomy" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-anatomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/phage.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-anatomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Anatomy of a tailed phage. The tail fibres are the receptor-binding proteins — relevant later to both resistance (receptor loss) and engineering (tail-fibre swapping to expand host range).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="life-cycles-and-the-therapeutic-imperative-of-lysis" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="life-cycles-and-the-therapeutic-imperative-of-lysis"><span class="header-section-number">2.2</span> Life cycles and the therapeutic imperative of lysis</h2>
+<p>All phage replication begins with attachment to a surface receptor, followed by reversible then irreversible binding and genome injection <span class="citation" data-cites="Nobrega2018">(<a href="#ref-Nobrega2018" role="doc-biblioref">Nobrega et al., 2018</a>)</span>. Adsorption is largely stochastic — phages are non-motile and rely on Brownian encounters — although phages have been observed to “walk” or “roll” across the bacterial surface to find an injection site <span class="citation" data-cites="Hu2013">(<a href="#ref-Hu2013" role="doc-biblioref">Hu et al., 2013</a>)</span>, and Ig-like capsid domains binding mucin produce subdiffusive motion that increases encounter frequency at mucosal surfaces <span class="citation" data-cites="Barr2013">(<a href="#ref-Barr2013" role="doc-biblioref"><span class="nocase">Barr et al.</span>, 2015</a>)</span>.</p>
+<div id="fig-lifecycle" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lifecycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/lifecycle.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lifecycle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: The lytic and lysogenic life cycles. Temperate phages can mediate lysogenic conversion — Shiga, cholera, and diphtheria toxins are all prophage-encoded — which is why a lytic lifestyle must be confirmed before clinical use.
+</figcaption>
+</figure>
+</div>
+<p>After injection, the cycle diverges. In the <strong>lytic cycle</strong>, progeny phages are synthesised, assembled, and released by lysis; a phage that performs only this cycle is “obligately lytic” <span class="citation" data-cites="Hobbs2016">(<a href="#ref-Hobbs2016" role="doc-biblioref">Hobbs and Abedon, 2016</a>)</span>. In the <strong>lysogenic cycle</strong>, the genome integrates as a prophage (or persists as an independent replicon) and is inherited by daughter cells until induction triggers a lytic burst; such phages are “temperate” <span class="citation" data-cites="HowardVarona2017">(<a href="#ref-HowardVarona2017" role="doc-biblioref">Howard-Varona et al., 2017</a>)</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Use obligately lytic phages
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Therapeutic phages should be obligately lytic. Temperate phages risk lysogenic conversion — transfer of virulence or resistance genes to the host — which could make an infection more dangerous. Several major toxins (Shiga, cholera, diphtheria) are prophage-encoded <span class="citation" data-cites="Monteiro2019">(<a href="#ref-Monteiro2019" role="doc-biblioref">Monteiro et al., 2019</a>)</span>. Sequencing to confirm a lytic lifestyle and the absence of toxin/integrase genes is mandatory before clinical use.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="spectrum-of-activity-and-in-vitro-susceptibility-testing" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Spectrum of activity and in vitro susceptibility testing</h1>
+<p>Because host range is narrow, susceptibility cannot be assumed; phage activity must be tested against each clinical isolate, and where multiple strains of a species are present, against each strain <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. Phage therapy is consequently a personalised intervention best suited to monomicrobial infection; polymicrobial sites such as diabetic foot and intra-abdominal infection are more challenging <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>.</p>
+<div id="fig-plaque" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-plaque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/plaque.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plaque-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The plaque assay: a lawn of the clinical isolate is challenged with serial phage titres, producing zones of clearance (plaques) that can be counted and compared.
+</figcaption>
+</figure>
+</div>
+<p>The traditional assay is the <strong>plaque assay</strong>: a lawn of the clinical isolate is exposed to serial phage titres, producing zones of clearance (plaques). The <strong>efficiency of plaquing (EoP)</strong> — the titre producing plaques on the clinical isolate relative to the titre on the propagation host — provides a quantitative susceptibility measure analogous to an MIC, allowing candidate phages to be ranked; an EoP of at least 0.1 appears associated with better outcomes, although thresholds remain provisional <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. Two complementary methods are the <strong>dilutional spot test</strong>, which compares candidate phages across dilutions on a single plate, and the <strong>phagogram</strong> (phage-induced bacterial growth-inhibition assay), which co-incubates fixed phage and bacteria and tracks optical density or respiration against a growth control over roughly 24 hours <span class="citation" data-cites="Suh2022 Henry2012">(<a href="#ref-Henry2012" role="doc-biblioref">Henry et al., 2012</a>; <a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. The phagogram is the most pharmacodynamically informative because it captures suppression over time, including regrowth from resistant subpopulations; higher-throughput readouts such as OmniLog respirometry enable rapid screening of many phage–isolate combinations <span class="citation" data-cites="Suh2022 Henry2012">(<a href="#ref-Henry2012" role="doc-biblioref">Henry et al., 2012</a>; <a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>.</p>
+<p>Because phage therapy is usually combined with antibiotics, in vitro testing should also confirm absence of antagonism — ideally synergy — between the selected phage and antibiotic, and for biofilm indications should demonstrate anti-biofilm activity against the clinical isolate before administration <span class="citation" data-cites="Suh2022 Doub2020biofilm">(<a href="#ref-Doub2020biofilm" role="doc-biblioref">Doub, 2020</a>; <a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. Cocktails should be deliberately designed rather than assembled ad hoc <span class="citation" data-cites="Merabishvili2018">(<a href="#ref-Merabishvili2018" role="doc-biblioref">Merabishvili et al., 2018</a>)</span>.</p>
+</section>
+<section id="bacterial-resistance-to-phages" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Bacterial resistance to phages</h1>
+<p>Resistance is the ecological norm. On a global scale, roughly 10²⁵ phage infections occur every second in the ocean, killing 20–40% of marine bacteria daily, which imposes enormous selective pressure and has produced layered anti-phage defences <span class="citation" data-cites="Suttle2007 Brussaard2008 Labrie2010">(<a href="#ref-Brussaard2008" role="doc-biblioref"><span class="nocase">Brussaard et al.</span>, 2008</a>; <a href="#ref-Labrie2010" role="doc-biblioref">Labrie et al., 2010</a>; <a href="#ref-Suttle2007" role="doc-biblioref">Suttle, 2007</a>)</span>. Spontaneous phage-resistant mutants arise at frequencies around 10⁻⁵ (range 10⁻⁹–10⁻²) <span class="citation" data-cites="Filippov2011">(<a href="#ref-Filippov2011" role="doc-biblioref">Filippov et al., 2011</a>)</span>.</p>
+<section id="receptor-modification-and-its-therapeutic-silver-lining" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="receptor-modification-and-its-therapeutic-silver-lining"><span class="header-section-number">4.1</span> Receptor modification and its therapeutic silver lining</h2>
+<p>The most common mechanism is alteration or loss of the phage-binding receptor <span class="citation" data-cites="Labrie2010">(<a href="#ref-Labrie2010" role="doc-biblioref">Labrie et al., 2010</a>)</span>. Because these receptors are frequently virulence factors or components of porins and efflux systems, receptor changes can simultaneously shift antibiotic susceptibility <span class="citation" data-cites="Filippov2011">(<a href="#ref-Filippov2011" role="doc-biblioref">Filippov et al., 2011</a>)</span>, and phage-resistant mutants are frequently less virulent <span class="citation" data-cites="Chan2016 GordilloAltamirano2021">(<a href="#ref-Chan2016" role="doc-biblioref">Chan et al., 2016</a>; <a href="#ref-GordilloAltamirano2021" role="doc-biblioref"><span class="nocase">Gordillo Altamirano et al.</span>, 2021</a>)</span>. The most common route to resistance may therefore yield bacteria that are easier to treat — the conceptual basis of phage steering (below).</p>
+</section>
+<section id="abortive-infection-crispr-cas-and-the-pan-immune-system" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="abortive-infection-crispr-cas-and-the-pan-immune-system"><span class="header-section-number">4.2</span> Abortive infection, CRISPR-Cas, and the pan-immune system</h2>
+<p>Beyond receptor changes, bacteria deploy abortive infection (altruistic suicide of the infected cell before progeny mature, consistent with kin selection) and CRISPR-Cas adaptive immunity, present in roughly 40% of sequenced bacteria, in which spacers guide Cas nucleases to phage DNA <span class="citation" data-cites="Labrie2010 vanHoute2016 Makarova2020">(<a href="#ref-vanHoute2016" role="doc-biblioref">Houte et al., 2016</a>; <a href="#ref-Labrie2010" role="doc-biblioref">Labrie et al., 2010</a>; <a href="#ref-Makarova2020" role="doc-biblioref"><span class="nocase">Makarova et al.</span>, 2020</a>)</span>. Restriction-modification, cyclic-nucleotide signalling systems, and superinfection exclusion add further layers. At the patient level, however, pre-clinical screening of the actual isolate largely sidesteps these defences, because only phages already active against that isolate are deployed.</p>
+</section>
+<section id="mitigation-strategies" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="mitigation-strategies"><span class="header-section-number">4.3</span> Mitigation strategies</h2>
+<p>Resistance is mitigated by combining phages that use different receptors in precision-designed cocktails, by sequential therapy that rotates antigenically distinct phages, and by experimental “phage training” (coevolution) that pre-adapts phages and delays resistance <span class="citation" data-cites="Merabishvili2018 Lusiak2014 Borin2022">(<a href="#ref-Borin2022" role="doc-biblioref">Borin et al., 2021</a>; <a href="#ref-Lusiak2014" role="doc-biblioref"><span class="nocase">Łusiak-Szelachowska et al.</span>, 2014</a>; <a href="#ref-Merabishvili2018" role="doc-biblioref">Merabishvili et al., 2018</a>)</span>. Cocktails must be designed to avoid inter-phage antagonism arising from receptor competition or CRISPR upregulation <span class="citation" data-cites="Merabishvili2018">(<a href="#ref-Merabishvili2018" role="doc-biblioref">Merabishvili et al., 2018</a>)</span>.</p>
+</section>
+</section>
+<section id="manufacturing-logistics-and-regulation" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Manufacturing, logistics, and regulation</h1>
+<div id="fig-sewage" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sewage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/sewage.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sewage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Phages are sourced wherever bacteria are abundant — wastewater and environmental water being the classic hunting grounds.
+</figcaption>
+</figure>
+</div>
+<p>Phage discovery draws on wastewater, environmental water, and other bacteria-rich sources. For ESKAPE pathogens a matching phage is often found quickly, but for rarer isolates the search may take months or fail <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. Candidate phages are sequenced and characterised to confirm an obligately lytic lifestyle and to exclude toxin, resistance, and integrase genes, then amplified on bacterial hosts to therapeutic titres <span class="citation" data-cites="Doub2021b Doub2021">(<a href="#ref-Doub2021b" role="doc-biblioref">Doub, 2021</a>; <a href="#ref-Doub2021" role="doc-biblioref">Doub et al., 2021</a>)</span>.</p>
+<p>Because phages are grown on bacteria, manufacturing is fundamentally a contaminant-removal problem. Bacterial lysis releases endotoxin, which must be reduced below the FDA limit of 5 EU/kg/dose using ultrafiltration and affinity or ion-exchange chromatography <span class="citation" data-cites="Hietala2019">(<a href="#ref-Hietala2019" role="doc-biblioref">Hietala et al., 2019</a>)</span>. Other risks — prophages, pathogenicity islands, toxins, and mobile genetic elements from the propagation host — are mitigated by amplifying on a genetically “clean” surrogate host (for <em>S. aureus</em>, <em>Staphylococcus carnosus</em> or strain RN4220) rather than the clinical isolate <span class="citation" data-cites="Doub2021b">(<a href="#ref-Doub2021b" role="doc-biblioref">Doub, 2021</a>)</span>. Sterility testing for residual live organisms is also required.</p>
+<div id="fig-timeline" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="phage-images/timeline.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: The end-to-end timeline to produce a bacteriophage therapeutic, from isolate to characterised, amplified, and purified product.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Formulation is phage-specific
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Phages can be stored frozen at −80 °C with glycerol, refrigerated, or lyophilised for ambient storage, with shelf lives of years under proper conditions <span class="citation" data-cites="Duyvejonck2021 Puapermpoonsiri2010">(<a href="#ref-Duyvejonck2021" role="doc-biblioref"><span class="nocase">Duyvejonck et al.</span>, 2021</a>; <a href="#ref-Puapermpoonsiri2010" role="doc-biblioref">Puapermpoonsiri et al., 2010</a>)</span>. For use they are diluted in Plasma-Lyte, saline, or other fluids, but compatibility is phage-specific — a phage stable in one diluent may be inactivated in another, so retained activity must be confirmed in the chosen vehicle before administration <span class="citation" data-cites="Duyvejonck2021">(<a href="#ref-Duyvejonck2021" role="doc-biblioref"><span class="nocase">Duyvejonck et al.</span>, 2021</a>)</span>.</p>
+</div>
+</div>
+<p>In the United States phage therapy is not FDA-approved; outside trials, use is limited to compassionate cases after conventional failure, requiring a per-case emergency IND or expanded-access IND <span class="citation" data-cites="McCallin2019 Suh2022">(<a href="#ref-McCallin2019" role="doc-biblioref">McCallin et al., 2019</a>; <a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. There is likewise no EU-wide authorised human phage medicinal product under EU law. Emergency INDs can be granted rapidly once a phage is identified, whereas non-emergent approval may take around four weeks <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. In Europe, magistral preparation frameworks (notably Belgium) offer an alternative regulatory route for personalised products <span class="citation" data-cites="Fauconnier2019">(<a href="#ref-Fauconnier2019" role="doc-biblioref">Fauconnier, 2019</a>)</span>.</p>
+</section>
+<section id="pharmacokinetics-and-pharmacodynamics" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Pharmacokinetics and pharmacodynamics</h1>
+<p>Phage PK departs from small-molecule principles because phages are large, proteinaceous, self-replicating, and immunologically active <span class="citation" data-cites="DabrowskaAbedon2019">(<a href="#ref-DabrowskaAbedon2019" role="doc-biblioref">Dabrowska and Abedon, 2019</a>)</span>. Concentration at the target can rise where bacteria are present (auto-dosing) and fall as bacteria clear, so “dose” is entangled with bacterial density, burst size, and adsorption rate.</p>
+<ul>
+<li><strong>Oral.</strong> Proposed absorption occurs via transcytosis across epithelial tight junctions, limited by phage size <span class="citation" data-cites="Nguyen2017">(<a href="#ref-Nguyen2017" role="doc-biblioref">Nguyen et al., 2017</a>)</span>. Phages are vulnerable to gastric pH below 6, mucins, and immune clearance; co-administration with an alkaline buffer mitigates gastric acidity <span class="citation" data-cites="Dabrowska2019">(<a href="#ref-Dabrowska2019" role="doc-biblioref">Dabrowska, 2019</a>)</span>. Systemic absorption is inconsistent, although phages are recoverable in blood, urine, and tissue in a dose-dependent manner <span class="citation" data-cites="Dabrowska2019">(<a href="#ref-Dabrowska2019" role="doc-biblioref">Dabrowska, 2019</a>)</span>.</li>
+<li><strong>Intravenous.</strong> Phages appear in the circulation soon after dosing and are cleared within 8–12 hours by the mononuclear phagocyte system, distributing to synovium, heart, muscle, marrow, kidney, and bladder; site concentrations are typically several-fold below the input titre, and IV dosing most strongly stimulates neutralizing antibody and complement <span class="citation" data-cites="Dabrowska2019">(<a href="#ref-Dabrowska2019" role="doc-biblioref">Dabrowska, 2019</a>)</span>.</li>
+<li><strong>Direct</strong> (intra-articular, intravesical, intra-operative, topical). Bypasses the MPS to deliver higher local and lower systemic titres, and has been used for prosthetic joint infection, cardiac device infection, osteomyelitis, and UTI; controlled-release systems (hydrogels, microencapsulation) are under study <span class="citation" data-cites="Totten2021 Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>; <a href="#ref-Totten2021" role="doc-biblioref">Totten et al., 2021</a>)</span>.</li>
+<li><strong>Inhaled.</strong> Aerosolised phages for respiratory infection can achieve high local doses, but lung-specific clearance and barriers remain to be defined <span class="citation" data-cites="Dabrowska2019">(<a href="#ref-Dabrowska2019" role="doc-biblioref">Dabrowska, 2019</a>)</span>.</li>
+</ul>
+<p>Dosing is largely empirical, ranging from single doses to continuous infusion; a rare rational example is twice-daily IV dosing chosen because phage DNA was detectable in blood up to 12 hours after a dose <span class="citation" data-cites="Fabijan2020">(<a href="#ref-Fabijan2020" role="doc-biblioref">Petrovic Fabijan et al., 2020</a>)</span>. The Antibacterial Resistance Leadership Group (ARLG) Task Force recommends the highest safe, tolerated dose with endotoxin below limits, repeat dosing to maximise site concentrations, and frequently multi-route administration <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>. The Task Force’s ideal PK/PD profile combines high microbial susceptibility, high site concentration, high adsorption rate, large burst size, and short latent period, while acknowledging that standardised methods to measure these in vivo do not yet exist <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>.</p>
+</section>
+<section id="immunogenicity-the-neutralizing-antibody-response" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Immunogenicity: the neutralizing antibody response</h1>
+<p>Phages are live viruses and elicit IgM within weeks followed by IgG <span class="citation" data-cites="Lusiak2014">(<a href="#ref-Lusiak2014" role="doc-biblioref"><span class="nocase">Łusiak-Szelachowska et al.</span>, 2014</a>)</span>. Neutralizing antibodies can sharply reduce phage titres and have correlated with clinical failure <span class="citation" data-cites="Dedrick2021">(<a href="#ref-Dedrick2021" role="doc-biblioref"><span class="nocase">Dedrick et al.</span>, 2021</a>)</span>. Cocktails do not solve this problem, because antibodies form against all component phages and can cross-react <span class="citation" data-cites="Lusiak2014">(<a href="#ref-Lusiak2014" role="doc-biblioref"><span class="nocase">Łusiak-Szelachowska et al.</span>, 2014</a>)</span>; sequential therapy with antigenically distinct phages can outpace the response, though narrow inventories limit cycling. The response is route-dependent: IV elicits the most robust humoral response, while oral and direct administration elicit less, with neutralizing titres rising as systemic absorption increases <span class="citation" data-cites="Lusiak2014">(<a href="#ref-Lusiak2014" role="doc-biblioref"><span class="nocase">Łusiak-Szelachowska et al.</span>, 2014</a>)</span>. Autoimmune phenomena are theoretical and have not been described with phage therapy <span class="citation" data-cites="Smatti2019">(<a href="#ref-Smatti2019" role="doc-biblioref">Smatti et al., 2019</a>)</span>. Notably, not all prolonged courses generate neutralizing titres, and the host–phage interactions that determine this are an active research area <span class="citation" data-cites="Cano2021">(<a href="#ref-Cano2021" role="doc-biblioref">Cano et al., 2021</a>)</span>.</p>
+</section>
+<section id="therapeutic-phage-interactions" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Therapeutic phage interactions</h1>
+<p>Phage–antibiotic combinations can be synergistic, antagonistic, or neutral <span class="citation" data-cites="Gu2022">(<a href="#ref-Gu2022" role="doc-biblioref">Gu Liu et al., 2020</a>)</span>. As a general rule, cell-wall-active antibiotics tend toward synergy while protein-synthesis inhibitors are more prone to antagonism <span class="citation" data-cites="Gu2022 Comeau2007PAS">(<a href="#ref-Comeau2007PAS" role="doc-biblioref">Comeau et al., 2007</a>; <a href="#ref-Gu2022" role="doc-biblioref">Gu Liu et al., 2020</a>)</span>. The phenomenon of phage–antibiotic synergy (PAS) describes sub-MIC β-lactams and quinolones stimulating virulent phage production, plausibly via cell-wall-stress filamentation that increases burst size <span class="citation" data-cites="Comeau2007PAS">(<a href="#ref-Comeau2007PAS" role="doc-biblioref">Comeau et al., 2007</a>)</span>; synergy depends on both mechanism and stoichiometry <span class="citation" data-cites="Gu2022">(<a href="#ref-Gu2022" role="doc-biblioref">Gu Liu et al., 2020</a>)</span>. Antagonism is exemplified by colistin combined with LPS-binding phages: colistin destabilises LPS, the receptor the phage requires, reducing infection <span class="citation" data-cites="DanisWlodarczyk2021">(<a href="#ref-DanisWlodarczyk2021" role="doc-biblioref"><span class="nocase">Danis-Wlodarczyk et al.</span>, 2021</a>)</span>. Burst size, pH, viscosity, and fluid dynamics further modulate interactions, so the specific phage–antibiotic pair must be tested in vitro rather than predicted <span class="citation" data-cites="DanisWlodarczyk2021 Gu2022">(<a href="#ref-DanisWlodarczyk2021" role="doc-biblioref"><span class="nocase">Danis-Wlodarczyk et al.</span>, 2021</a>; <a href="#ref-Gu2022" role="doc-biblioref">Gu Liu et al., 2020</a>)</span>. Phages can also interfere with one another through receptor competition and CRISPR upregulation, reinforcing the case for precision-designed cocktails <span class="citation" data-cites="Merabishvili2018">(<a href="#ref-Merabishvili2018" role="doc-biblioref">Merabishvili et al., 2018</a>)</span>.</p>
+</section>
+<section id="safety" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Safety</h1>
+<p>The overall safety profile is reassuring across preclinical, case-report, and phase I/II data, and the FDA has granted GRAS status to certain phage applications <span class="citation" data-cites="Liu2021 FDAGRAS">(<a href="#ref-Liu2021" role="doc-biblioref">Liu et al., 2021</a>; <a href="#ref-FDAGRAS" role="doc-biblioref">U.S. Food and Drug Administration, 2023</a>)</span>. The ecological argument is strong — phages are part of the human gut virome and are ingested in large numbers daily <span class="citation" data-cites="Townsend2021">(<a href="#ref-Townsend2021" role="doc-biblioref">Townsend et al., 2021</a>)</span> — but the ARLG nonetheless recommends interval monitoring of renal function, liver function, and complete blood count during therapy <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>.</p>
+<p>Mechanistically, adverse events arise from endotoxin and bacterial-debris release during rapid lysis, triggering proinflammatory cytokine responses; from contaminants such as bacterial DNA, enterotoxins, exotoxins, and lipoteichoic acid causing hypersensitivity or cytokine release; and from manufacturing residues such as caesium chloride and polyethylene glycol <span class="citation" data-cites="Liu2021">(<a href="#ref-Liu2021" role="doc-biblioref">Liu et al., 2021</a>)</span>. In practice, preclinical studies show phages to be generally well tolerated, with only occasional transient cytokine or antibody rises <span class="citation" data-cites="Liu2021">(<a href="#ref-Liu2021" role="doc-biblioref">Liu et al., 2021</a>)</span>. Case reports describe mostly absent or transient events — transient hypotension, fevers and chills, wheeze, flushing, and nausea — including a self-limited IL-6/IL-8 cytokine storm resolving within a day <span class="citation" data-cites="Aslam2019">(<a href="#ref-Aslam2019" role="doc-biblioref">Aslam et al., 2020</a>)</span>. Transient transaminitis has been observed with intravenous and intra-articular dosing, reversible and generally not outcome-limiting, but warranting LFT monitoring particularly in pre-existing liver disease <span class="citation" data-cites="DoubWilson2021">(<a href="#ref-DoubWilson2021" role="doc-biblioref">Doub and Wilson, 2022</a>)</span>.</p>
+</section>
+<section id="phages-against-multidrug-resistant-infections" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Phages against multidrug-resistant infections</h1>
+<p>Antibiotic resistance does not confer phage resistance, because phages target surface receptors rather than antibiotic targets <span class="citation" data-cites="Kortright2019">(<a href="#ref-Kortright2019" role="doc-biblioref">Kortright et al., 2019</a>)</span>. Most case reports use phages in combination with antibiotics rather than as monotherapy, and phages exert less collateral pressure on the microbiome than broad-spectrum antibiotics <span class="citation" data-cites="Schooley2017 Aslam2019">(<a href="#ref-Aslam2019" role="doc-biblioref">Aslam et al., 2020</a>; <a href="#ref-Schooley2017" role="doc-biblioref"><span class="nocase">Schooley et al.</span>, 2017</a>)</span>. Efficacy in MDR infection, however, will be established only by prospective trials <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>.</p>
+<p>A particularly elegant strategy is <strong>phage steering</strong>, in which phage predation selects for a more antibiotic-susceptible phenotype <span class="citation" data-cites="Gurney2020">(<a href="#ref-Gurney2020" role="doc-biblioref">Gurney et al., 2020</a>)</span>. In <em>Pseudomonas aeruginosa</em>, selection for phage resistance via efflux/porin changes restores susceptibility to antibiotics including agents not normally used against the organism <span class="citation" data-cites="Chan2016 Gurney2020">(<a href="#ref-Chan2016" role="doc-biblioref">Chan et al., 2016</a>; <a href="#ref-Gurney2020" role="doc-biblioref">Gurney et al., 2020</a>)</span>; analogous trade-offs are described in <em>Klebsiella pneumoniae</em> and <em>Acinetobacter baumannii</em>, where phage resistance entails loss of capsule or multidrug resistance and re-sensitisation <span class="citation" data-cites="Majkowska2021 GordilloAltamirano2021">(<a href="#ref-GordilloAltamirano2021" role="doc-biblioref"><span class="nocase">Gordillo Altamirano et al.</span>, 2021</a>; <a href="#ref-Majkowska2021" role="doc-biblioref">Majkowska-Skrobek et al., 2021</a>)</span>. Steering reframes the therapeutic goal: bending the bacterial population back into the reach of an inexpensive antibiotic, rather than requiring the phage to clear the infection outright.</p>
+</section>
+<section id="biofilm-infections" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Biofilm infections</h1>
+<p>Most bacteria live in sessile biofilm states rather than planktonically, and phages have evolved to infect biofilm-embedded bacteria <span class="citation" data-cites="Doub2020biofilm">(<a href="#ref-Doub2020biofilm" role="doc-biblioref">Doub, 2020</a>)</span>. Certain phages encode depolymerases and endolysins that enzymatically degrade the extracellular polymeric matrix, and the confined biofilm environment can increase chance phage–bacteria encounters, allowing piecemeal degradation <span class="citation" data-cites="ChanAbedon2015 Doub2020biofilm">(<a href="#ref-ChanAbedon2015" role="doc-biblioref">Chan and Abedon, 2015</a>; <a href="#ref-Doub2020biofilm" role="doc-biblioref">Doub, 2020</a>)</span>. Depolymerase-mediated matrix degradation is a distinctive advantage over antibiotics, which often simply fail to penetrate.</p>
+<p>Delivery is decisive. Direct administration reduces biofilm, whereas systemic administration frequently fails to reach device-associated biofilm: in a murine prosthetic-joint model, intraperitoneal phage synergised with vancomycin against planktonic bacteria in tissue but did not reduce biofilm on the implant <span class="citation" data-cites="Morris2019">(<a href="#ref-Morris2019" role="doc-biblioref">Morris et al., 2019</a>)</span>. Because phages are non-motile, chance encounters with sessile bacteria must be maximised by direct delivery, which also circumvents MPS clearance <span class="citation" data-cites="Doub2020biofilm">(<a href="#ref-Doub2020biofilm" role="doc-biblioref">Doub, 2020</a>)</span>. Clinical case series support phages as a powerful adjuvant in recalcitrant biofilm infection <span class="citation" data-cites="Ferry2018">(<a href="#ref-Ferry2018" role="doc-biblioref">Ferry et al., 2020</a>)</span>.</p>
+</section>
+<section id="clinical-trials-the-reality-check" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Clinical trials: the reality check</h1>
+<p>Numerous case reports show promise across syndromes and pathogens — for example, favourable responses in 11 of 20 compassionate-use patients with drug-resistant mycobacterial disease, predominantly <em>Mycobacterium abscessus</em> <span class="citation" data-cites="Dedrick2022 Schooley2017">(<a href="#ref-Dedrick2022" role="doc-biblioref"><span class="nocase">Dedrick et al.</span>, 2023</a>; <a href="#ref-Schooley2017" role="doc-biblioref"><span class="nocase">Schooley et al.</span>, 2017</a>)</span>. Controlled trials, however, have not reproduced these outcomes. Since 2000, 13 English-language phage-therapy trials have been published, of which six assessed efficacy <span class="citation" data-cites="Stacey2022">(<a href="#ref-Stacey2022" role="doc-biblioref">Stacey et al., 2022</a>)</span>.</p>
+<div id="tbl-trials" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-trials-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Efficacy-focused phage clinical trials
+</figcaption>
+<div aria-describedby="tbl-trials-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Study (year)</th>
+<th>Indication</th>
+<th>Design</th>
+<th>Efficacy result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wright (2009)</td>
+<td>Chronic <em>P. aeruginosa</em> otitis</td>
+<td>Randomised, double-blind, placebo-controlled</td>
+<td>Positive <span class="citation" data-cites="Wright2009">(<a href="#ref-Wright2009" role="doc-biblioref">Wright et al., 2009</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Rose (2014)</td>
+<td>Colonised burn wounds</td>
+<td>Self-controlled case series</td>
+<td>Null <span class="citation" data-cites="Rose2014">(<a href="#ref-Rose2014" role="doc-biblioref">Rose et al., 2014</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Sarker (2016)</td>
+<td>Paediatric <em>E. coli</em> diarrhoea</td>
+<td>Randomised, placebo-controlled</td>
+<td>Null <span class="citation" data-cites="Sarker2016">(<a href="#ref-Sarker2016" role="doc-biblioref"><span class="nocase">Sarker et al.</span>, 2016</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Jault / PhagoBurn (2019)</td>
+<td>Burn wound <em>P. aeruginosa</em></td>
+<td>Randomised controlled</td>
+<td>Inferior (under-dosed) <span class="citation" data-cites="Jault2019">(<a href="#ref-Jault2019" role="doc-biblioref"><span class="nocase">Jault et al.</span>, 2019</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Leitner (2021)</td>
+<td>UTI before TURP</td>
+<td>Randomised, double-blind, three-arm</td>
+<td>Null <span class="citation" data-cites="Leitner2021">(<a href="#ref-Leitner2021" role="doc-biblioref"><span class="nocase">Leitner et al.</span>, 2021</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The single rigorous positive trial, <strong>Wright 2009</strong>, used a six-phage cocktail with confirmed susceptibility testing in chronic <em>P. aeruginosa</em> otitis and showed improved clinical scores and lower bacterial counts versus placebo <span class="citation" data-cites="Wright2009">(<a href="#ref-Wright2009" role="doc-biblioref">Wright et al., 2009</a>)</span>. The instructive failures share design flaws: <strong>Rose 2014</strong> used a fixed, non-personalised cocktail without prospective susceptibility testing and reported run-off of the topical spray <span class="citation" data-cites="Rose2014">(<a href="#ref-Rose2014" role="doc-biblioref">Rose et al., 2014</a>)</span>; <strong>Sarker 2016</strong> used oral coliphages without susceptibility testing and found no efficacy or intestinal amplification <span class="citation" data-cites="Sarker2016">(<a href="#ref-Sarker2016" role="doc-biblioref"><span class="nocase">Sarker et al.</span>, 2016</a>)</span>. <strong>PhagoBurn (Jault 2019)</strong> is the cautionary chemistry-manufacturing-and-controls tale: storage reduced the delivered titre far below intent, so an under-dosed product was slower than standard-of-care antiseptic <span class="citation" data-cites="Jault2019">(<a href="#ref-Jault2019" role="doc-biblioref"><span class="nocase">Jault et al.</span>, 2019</a>)</span>. <strong>Leitner 2021</strong>, methodologically the strongest neutral trial, found intravesical phages neither superior to placebo nor non-inferior to antibiotics for UTI <span class="citation" data-cites="Leitner2021">(<a href="#ref-Leitner2021" role="doc-biblioref"><span class="nocase">Leitner et al.</span>, 2021</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The pattern is diagnostic
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The negative trials largely violated the principles the case reports followed — personalisation, susceptibility testing, adequate dosing, and effective local delivery. The failures are therefore as much about trial design and manufacturing as about phage biology, which is why the defensible current use is adjunctive, personalised, well-delivered phage therapy for recalcitrant MDR or biofilm infection, pending better trials <span class="citation" data-cites="Stacey2022 Suh2022">(<a href="#ref-Stacey2022" role="doc-biblioref">Stacey et al., 2022</a>; <a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="endolysins" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Endolysins</h1>
+<p>Endolysins are phage-derived enzymes that hydrolyse peptidoglycan, causing osmotic lysis, and fall into three classes — glycosidases, amidases, and endopeptidases <span class="citation" data-cites="Rahman2021">(<a href="#ref-Rahman2021" role="doc-biblioref">Rahman et al., 2021</a>)</span>. Gram-positive endolysins combine an N-terminal catalytic domain with a C-terminal cell-wall-binding domain, whereas Gram-negative endolysins are globular without a discrete binding domain <span class="citation" data-cites="Rahman2021">(<a href="#ref-Rahman2021" role="doc-biblioref">Rahman et al., 2021</a>)</span>. Exogenously applied endolysins reach peptidoglycan readily in Gram-positives, whose thick peptidoglycan is exposed, but the Gram-negative outer membrane blocks access; this is overcome with permeabilisers such as EDTA or by engineering — “Artilysins” and receptor-binding-protein fusions that translocate the enzyme across the outer membrane <span class="citation" data-cites="Loessner2005 Rahman2021 Zampara2020">(<a href="#ref-Loessner2005" role="doc-biblioref">Loessner, 2005</a>; <a href="#ref-Rahman2021" role="doc-biblioref">Rahman et al., 2021</a>; <a href="#ref-Zampara2020" role="doc-biblioref">Zampara et al., 2020</a>)</span>.</p>
+<p>Endolysins offer two pharmacological advantages over phages: resistance is less likely because peptidoglycan bonds are highly conserved and difficult to alter, and their PK is more conventional because they are defined proteins rather than replicating particles <span class="citation" data-cites="Rahman2021">(<a href="#ref-Rahman2021" role="doc-biblioref">Rahman et al., 2021</a>)</span>. The trade-off is the loss of self-amplification. They can still elicit anti-protein antibodies, although routine human exposure tempers immunogenicity <span class="citation" data-cites="Mirski2019">(<a href="#ref-Mirski2019" role="doc-biblioref">Mirski et al., 2019</a>)</span>.</p>
+<p>Clinically, the staphylococcal endolysin <strong>SAL200</strong> was well tolerated up to 10 mg/kg IV in phase I (mild fatigue/myalgia only) <span class="citation" data-cites="Jun2017">(<a href="#ref-Jun2017" role="doc-biblioref">Jun et al., 2014</a>)</span>; topical <strong>Staphefekt</strong> improved symptoms in atopic dermatitis in a placebo-controlled trial <span class="citation" data-cites="Moreau2018">(<a href="#ref-Moreau2018" role="doc-biblioref"><span class="nocase">Wit et al.</span>, 2019</a>)</span>; and <strong>exebacase (CF-301)</strong> shows in vitro synergy with anti-staphylococcal antibiotics <span class="citation" data-cites="Watson2020">(<a href="#ref-Watson2020" role="doc-biblioref">Watson et al., 2020</a>)</span>. However, the exebacase phase III programme for <em>S. aureus</em> bacteraemia and right-sided endocarditis was stopped for futility at interim analysis <span class="citation" data-cites="Fowler2020">(<a href="#ref-Fowler2020" role="doc-biblioref">Fowler et al., 2020</a>)</span> — a reality check mirroring the phage-trial experience. Gram-positive endolysins for bone-and-joint infection and bacteraemia remain the most plausible near-term applications, while Gram-negative endolysins require further engineering.</p>
+</section>
+<section id="antimicrobial-peptides" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Antimicrobial peptides</h1>
+<p>Antimicrobial peptides (AMPs) are small (usually fewer than 100 amino acids), typically cationic, amphipathic molecules that act primarily by disrupting the cytoplasmic membrane, with additional inhibition of nucleic-acid, protein, and cell-wall synthesis, and frequently possess immunomodulatory properties <span class="citation" data-cites="Brogden2005 Hancock2006">(<a href="#ref-Brogden2005" role="doc-biblioref">Brogden, 2005</a>; <a href="#ref-Hancock2006" role="doc-biblioref">Hancock and Sahl, 2006</a>)</span>. Phage-encoded AMPs are grouped into non-enzymatic lytic factors and tail-complex proteins; protein E of bacteriophage φX174, which inhibits the MraY translocase in peptidoglycan synthesis, is a classic example <span class="citation" data-cites="Mendel2006">(<a href="#ref-Mendel2006" role="doc-biblioref">Mendel et al., 2006</a>)</span>. Some phage-derived AMPs can penetrate the Gram-negative outer membrane, an attractive property under active pharmaceutical development <span class="citation" data-cites="Mirski2019">(<a href="#ref-Mirski2019" role="doc-biblioref">Mirski et al., 2019</a>)</span>.</p>
+<p>Despite their breadth and biofilm activity, AMP development has historically been limited by toxicity, suboptimal PK, and weak in vivo activity <span class="citation" data-cites="Deslouches2020">(<a href="#ref-Deslouches2020" role="doc-biblioref">Deslouches et al., 2020</a>)</span>. Engineered peptides that mimic endogenous AMPs (engineered cationic antimicrobial peptides, eCAPs) are reviving the field: the engineered AMP <strong>PLG0206</strong> showed linear PK and good tolerability after a single intravenous dose in phase I and has advanced to a phase II study in acute prosthetic joint infection <span class="citation" data-cites="Huang2022PLG Deslouches2020">(<a href="#ref-Deslouches2020" role="doc-biblioref">Deslouches et al., 2020</a>; <a href="#ref-Huang2022PLG" role="doc-biblioref"><span class="nocase">Huang et al.</span>, 2022</a>)</span>.</p>
+<div id="tbl-derived" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-derived-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Phage-derived antibacterial platforms compared
+</figcaption>
+<div aria-describedby="tbl-derived-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Phages</th>
+<th>Endolysins</th>
+<th>AMPs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Self-replicating</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Spectrum</td>
+<td>Strain-narrow</td>
+<td>Narrow–moderate</td>
+<td>Often broad</td>
+</tr>
+<tr class="odd">
+<td>Gram-negative use</td>
+<td>Yes</td>
+<td>Difficult (needs engineering)</td>
+<td>Some natively</td>
+</tr>
+<tr class="even">
+<td>Resistance barrier</td>
+<td>Low–moderate</td>
+<td>High</td>
+<td>Variable</td>
+</tr>
+<tr class="odd">
+<td>PK predictability</td>
+<td>Low</td>
+<td>Higher</td>
+<td>Variable</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="monoclonal-antibodies-as-antimicrobial-agents" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Monoclonal antibodies as antimicrobial agents</h1>
+<section id="rationale-history-and-mechanisms" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="rationale-history-and-mechanisms"><span class="header-section-number">15.1</span> Rationale, history, and mechanisms</h2>
+<p>Antibody-based anti-infectives predate antibiotics: serum therapy for diphtheria and pneumococcus was standard in the 1890s–1930s before being displaced by small molecules <span class="citation" data-cites="Zurawski2020">(<a href="#ref-Zurawski2020" role="doc-biblioref">Zurawski and McLendon, 2020</a>)</span>. Monoclonal antibodies (mAbs) revive the approach for the same reason as phages — antimicrobial resistance and unmet niches <span class="citation" data-cites="Motley2018">(<a href="#ref-Motley2018" role="doc-biblioref">Motley and Fries, 2017</a>)</span>. A mAb is a defined, host-type IgG targeting a single epitope; like a phage it is a narrow-spectrum, manufactured biologic, but it acts by recruiting host immunity or neutralizing a target rather than by direct lysis.</p>
+<p>Anti-infective mAbs work through four broad mechanisms: toxin neutralization (binding and inactivating a toxin without bactericidal effect); neutralization of attachment or entry (blocking a receptor interaction); Fc-mediated opsonophagocytosis and antibody-dependent cellular cytotoxicity; and complement-dependent cytotoxicity <span class="citation" data-cites="Zurawski2020">(<a href="#ref-Zurawski2020" role="doc-biblioref">Zurawski and McLendon, 2020</a>)</span>. A conceptually important observation for trainees is that the clinically successful anti-infective mAbs are predominantly <em>neutralizers</em> — of toxins or viruses — rather than direct bacterial killers.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Engineering the molecule
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Formats evolved from murine through chimeric to humanised and fully human antibodies to reduce immunogenicity. Fc engineering tunes effector function, and half-life-extension mutations — notably the YTE (M252Y/S254T/T256E) substitutions that increase FcRn binding — extend half-life enough to enable single-dose, season-long prophylaxis, as with nirsevimab <span class="citation" data-cites="Hammitt2022">(<a href="#ref-Hammitt2022" role="doc-biblioref">Hammitt et al., 2022</a>)</span>. Exquisite specificity is the platform’s strength and its weakness: it confers precise targeting but no breadth and vulnerability to antigenic change.</p>
+</div>
+</div>
+</section>
+<section id="approved-and-instructive-agents" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="approved-and-instructive-agents"><span class="header-section-number">15.2</span> Approved and instructive agents</h2>
+<p><strong>Bezlotoxumab</strong> is a human mAb against <em>Clostridioides difficile</em> toxin B; it does not kill the organism but neutralizes the toxin. In the MODIFY I/II trials, added to standard-of-care antibiotics, it reduced recurrent CDI to roughly 17% versus about 28% with placebo, leading to FDA approval in 2016 for prevention of recurrence in high-risk adults; a heart-failure exacerbation signal was observed in patients with congestive heart failure <span class="citation" data-cites="Wilcox2017">(<a href="#ref-Wilcox2017" role="doc-biblioref">Wilcox et al., 2017</a>)</span>.</p>
+<p><strong>Ibalizumab</strong> is a humanised mAb binding CD4 domain 2 that blocks HIV-1 entry after attachment (a post-attachment inhibitor). Approved in 2018 for multidrug-resistant HIV-1 and dosed intravenously every two weeks, the phase III TMB-301 study showed a ≥1 log₁₀ viral-load reduction in 83% of patients at day 7, with roughly 43% achieving fewer than 50 copies/mL by week 25; its resistance mechanism does not overlap with small-molecule antiretrovirals <span class="citation" data-cites="Emu2018">(<a href="#ref-Emu2018" role="doc-biblioref">Emu et al., 2018</a>)</span>.</p>
+<p><strong>Raxibacumab</strong> and <strong>obiltoxaximab</strong> both target anthrax protective antigen to block toxin assembly and entry, and are approved for inhalational anthrax (raxibacumab in 2012, obiltoxaximab in 2016) <span class="citation" data-cites="Migone2009 Greig2016">(<a href="#ref-Greig2016" role="doc-biblioref">Greig, 2016</a>; <a href="#ref-Migone2009" role="doc-biblioref">Migone et al., 2009</a>)</span>. Both were approved under the FDA Animal Rule — efficacy demonstrated in animal models because human efficacy trials are neither ethical nor feasible — and serve as stockpiled medical countermeasures.</p>
+<p>RSV prophylaxis is the platform’s clearest success. <strong>Palivizumab</strong>, an anti-RSV F-protein mAb dosed monthly, reduced RSV hospitalisation by about 55% in high-risk infants in the IMpact-RSV trial <span class="citation" data-cites="IMpactRSV1998">(<a href="#ref-IMpactRSV1998" role="doc-biblioref">The IMpact-RSV Study Group, 1998</a>)</span>. <strong>Nirsevimab</strong>, a YTE half-life-extended anti-F mAb given as a single dose per season, reduced medically attended RSV lower-respiratory-tract infection by roughly 75% in the MELODY trial and RSV hospitalisation by about 83% in the pragmatic HARMONIE trial, extending prophylaxis from high-risk infants to all infants <span class="citation" data-cites="Hammitt2022 Drysdale2023">(<a href="#ref-Drysdale2023" role="doc-biblioref"><span class="nocase">Drysdale et al.</span>, 2023</a>; <a href="#ref-Hammitt2022" role="doc-biblioref">Hammitt et al., 2022</a>)</span>.</p>
+<p><strong>Anti-SARS-CoV-2 mAbs</strong> provide the defining cautionary tale. <strong>Sotrovimab</strong> reduced hospitalisation or death by about 79% in early high-risk COVID-19 in COMET-ICE <span class="citation" data-cites="Gupta2021">(<a href="#ref-Gupta2021" role="doc-biblioref">Gupta et al., 2021</a>)</span>, and casirivimab/imdevimab, bamlanivimab, and tixagevimab/cilgavimab were widely deployed, but their authorisations were withdrawn as Omicron sublineages escaped neutralization. A single-epitope agent can be rendered obsolete by one mutation — directly analogous to phage resistance via receptor change, and the reason both fields turn to combinations and breadth.</p>
+</section>
+<section id="the-antibacterial-mab-graveyard-and-why-it-persists" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="the-antibacterial-mab-graveyard-and-why-it-persists"><span class="header-section-number">15.3</span> The antibacterial mAb graveyard and why it persists</h2>
+<p>Against whole bacteria, mAbs have repeatedly failed despite strong preclinical data. <strong>Suvratoxumab</strong>, an anti-<em>S. aureus</em> α-toxin mAb, lowered ventilator-associated pneumonia incidence numerically but did not meet its primary endpoint in the SAATELLITE trial <span class="citation" data-cites="Francois2021">(<a href="#ref-Francois2021" role="doc-biblioref"><span class="nocase">François et al.</span>, 2021</a>)</span>. <strong>Gremubamab (MEDI3902)</strong>, a bispecific anti-<em>P. aeruginosa</em> PcrV/Psl antibody, did not reduce <em>P. aeruginosa</em> pneumonia in the EVADE trial <span class="citation" data-cites="Chastre2022">(<a href="#ref-Chastre2022" role="doc-biblioref"><span class="nocase">Chastre et al.</span>, 2022</a>)</span>. No antibacterial mAb is FDA-approved for treating bacterial infection; the successes remain toxin neutralization (bezlotoxumab) and prophylaxis.</p>
+<p>The reasons are instructive: bacterial virulence is redundant, so neutralizing a single factor rarely suffices; single-epitope targeting is fragile against antigenic variation; mAbs work best as prophylaxis and poorly as rescue in established sepsis or biofilm; and, unlike phages, a fixed dose cannot self-amplify to follow the bacterial burden <span class="citation" data-cites="Zurawski2020 Chastre2022">(<a href="#ref-Chastre2022" role="doc-biblioref"><span class="nocase">Chastre et al.</span>, 2022</a>; <a href="#ref-Zurawski2020" role="doc-biblioref">Zurawski and McLendon, 2020</a>)</span>. This is precisely the property phages possess and fixed-dose mAbs lack — while mAbs enjoy the mature manufacturing and regulatory path that phages still lack.</p>
+</section>
+</section>
+<section id="synthesis-and-future-directions" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Synthesis and future directions</h1>
+<section id="phages-and-monoclonal-antibodies-as-complementary-biologics" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="phages-and-monoclonal-antibodies-as-complementary-biologics"><span class="header-section-number">16.1</span> Phages and monoclonal antibodies as complementary biologics</h2>
+<div id="tbl-vs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-vs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Two targeted biologic antimicrobials
+</figcaption>
+<div aria-describedby="tbl-vs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Bacteriophages</th>
+<th>Monoclonal antibodies</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mechanism</td>
+<td>Direct lysis plus amplification</td>
+<td>Neutralization / Fc effector functions</td>
+</tr>
+<tr class="even">
+<td>Self-amplifying</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Spectrum</td>
+<td>Strain-level</td>
+<td>Epitope-level</td>
+</tr>
+<tr class="even">
+<td>Principal use today</td>
+<td>Established MDR/biofilm (adjuvant)</td>
+<td>Prophylaxis / toxin neutralization</td>
+</tr>
+<tr class="odd">
+<td>Resistance / escape</td>
+<td>Receptor change</td>
+<td>Antigenic variation</td>
+</tr>
+<tr class="even">
+<td>Manufacturing / regulatory</td>
+<td>Immature, personalised</td>
+<td>Mature, standardised</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Both phages and mAbs are narrow, biologic, manufactured anti-infectives revived by AMR, and their weaknesses are mirror images: phages are biologically powerful but operationally immature, while mAbs are operationally mature but biologically limited against whole bacteria <span class="citation" data-cites="Suh2022 Zurawski2020">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>; <a href="#ref-Zurawski2020" role="doc-biblioref">Zurawski and McLendon, 2020</a>)</span>.</p>
+</section>
+<section id="where-the-field-is-heading" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="where-the-field-is-heading"><span class="header-section-number">16.2</span> Where the field is heading</h2>
+<p>Engineering is expanding phage host range through tail-fibre mutagenesis and synthetic or CRISPR-armed phages <span class="citation" data-cites="Yehl2019">(<a href="#ref-Yehl2019" role="doc-biblioref">Yehl et al., 2019</a>)</span>. Phage steering and phage–antibiotic synergy are being integrated into rational, antibiotic-sparing regimens <span class="citation" data-cites="Gurney2020 Gu2022">(<a href="#ref-Gu2022" role="doc-biblioref">Gu Liu et al., 2020</a>; <a href="#ref-Gurney2020" role="doc-biblioref">Gurney et al., 2020</a>)</span>. The field needs standardised PK/PD and susceptibility methods and adaptive, personalised trial designs <span class="citation" data-cites="Suh2022">(<a href="#ref-Suh2022" role="doc-biblioref"><span class="nocase">Suh et al.</span>, 2022</a>)</span>, and the future is likely combinatorial — phages with endolysins and antibiotics, and mAb cocktails to counter antigenic escape <span class="citation" data-cites="Pirnay2020">(<a href="#ref-Pirnay2020" role="doc-biblioref">Pirnay, 2020</a>)</span>. Regulatory innovation, such as Belgium’s magistral model and adaptive FDA frameworks, may prove as decisive as the biology for whether phages reach routine practice.</p>
+</section>
+<section id="take-home-messages" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="take-home-messages"><span class="header-section-number">16.3</span> Take-home messages</h2>
+<ol type="1">
+<li>Use obligately lytic, susceptibility-confirmed phages, and screen every clinical isolate.</li>
+<li>Phage PK/PD is non-classical — self-amplification, MPS clearance, neutralizing antibody, and route-dependent delivery all matter.</li>
+<li>Case reports outrun controlled evidence; design failures (no susceptibility testing, fixed cocktails, under-dosing, poor delivery) explain most negative trials.</li>
+<li>Endolysins, AMPs, and monoclonal antibodies complete a spectrum of targeted biologics — mAbs excel at prophylaxis and toxin neutralization, phages at established MDR and biofilm infection.</li>
+</ol>
+</section>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Abedon2011" class="csl-entry" role="listitem">
+Abedon ST, Thomas-Abedon C, Thomas A, Mazure H. Bacteriophage prehistory: Is or is not <span>Hankin</span>, 1896, a phage reference? Bacteriophage 2011;1:174–8. <a href="https://doi.org/10.4161/bact.1.3.16591">https://doi.org/10.4161/bact.1.3.16591</a>.
+</div>
+<div id="ref-Ackermann2012" class="csl-entry" role="listitem">
+Ackermann H-W, Prangishvili D. Prokaryote viruses studied by electron microscopy. Archives of Virology 2012;157:1843–9. <a href="https://doi.org/10.1007/s00705-012-1383-y">https://doi.org/10.1007/s00705-012-1383-y</a>.
+</div>
+<div id="ref-GBDAMR2022" class="csl-entry" role="listitem">
+Antimicrobial Resistance Collaborators. Global burden of bacterial antimicrobial resistance in 2019: A systematic analysis. The Lancet 2022;399:629–55. <a href="https://doi.org/10.1016/S0140-6736(21)02724-0">https://doi.org/10.1016/S0140-6736(21)02724-0</a>.
+</div>
+<div id="ref-Aslam2019" class="csl-entry" role="listitem">
+Aslam S, Lampley E, Wooten D, Karris M, Benson C, Strathdee S, et al. Lessons learned from the first 10 consecutive cases of intravenous bacteriophage therapy to treat multidrug-resistant bacterial infections at a single center in the <span>United States</span>. Open Forum Infectious Diseases 2020;7:ofaa389. <a href="https://doi.org/10.1093/ofid/ofaa389">https://doi.org/10.1093/ofid/ofaa389</a>.
+</div>
+<div id="ref-Barr2013" class="csl-entry" role="listitem">
+<span class="nocase">Barr JJ, Auro R, Sam-Soon N, et al.</span> Subdiffusive motion of bacteriophage in mucosal surfaces increases the frequency of bacterial encounters. Proceedings of the National Academy of Sciences 2015;112:13675–80. <a href="https://doi.org/10.1073/pnas.1508355112">https://doi.org/10.1073/pnas.1508355112</a>.
+</div>
+<div id="ref-Borin2022" class="csl-entry" role="listitem">
+Borin JM, Avrani S, Barrick JE, Petrie KL, Meyer JR. Coevolutionary phage training leads to greater bacterial suppression and delays the evolution of phage resistance. Proceedings of the National Academy of Sciences 2021;118:e2104592118. <a href="https://doi.org/10.1073/pnas.2104592118">https://doi.org/10.1073/pnas.2104592118</a>.
+</div>
+<div id="ref-Brogden2005" class="csl-entry" role="listitem">
+Brogden KA. Antimicrobial peptides: Pore formers or metabolic inhibitors in bacteria? Nature Reviews Microbiology 2005;3:238–50. <a href="https://doi.org/10.1038/nrmicro1098">https://doi.org/10.1038/nrmicro1098</a>.
+</div>
+<div id="ref-Brussaard2008" class="csl-entry" role="listitem">
+<span class="nocase">Brussaard CPD, Wilhelm SW, Thingstad F, et al.</span> Global-scale processes with a nanoscale drive: The role of marine viruses. The ISME Journal 2008;2:575–8. <a href="https://doi.org/10.1038/ismej.2008.31">https://doi.org/10.1038/ismej.2008.31</a>.
+</div>
+<div id="ref-Cano2021" class="csl-entry" role="listitem">
+Cano EJ, Caflisch KM, Bollyky PL, Van Belleghem JD, Patel R, Fackler J, et al. Phage therapy for limb-threatening prosthetic knee <span class="nocase">Klebsiella pneumoniae</span> infection: Case report and in vitro characterization of anti-biofilm activity. Clinical Infectious Diseases 2021;73:e144–51. <a href="https://doi.org/10.1093/cid/ciaa705">https://doi.org/10.1093/cid/ciaa705</a>.
+</div>
+<div id="ref-ChanAbedon2015" class="csl-entry" role="listitem">
+Chan BK, Abedon ST. Bacteriophages and their enzymes in biofilm control. Current Pharmaceutical Design 2015;21:85–99. <a href="https://doi.org/10.2174/1381612820666140905112311">https://doi.org/10.2174/1381612820666140905112311</a>.
+</div>
+<div id="ref-Chan2016" class="csl-entry" role="listitem">
+Chan BK, Sistrom M, Wertz JE, Kortright KE, Narayan D, Turner PE. Phage selection restores antibiotic sensitivity in <span class="nocase">MDR Pseudomonas aeruginosa</span>. Scientific Reports 2016;6:26717. <a href="https://doi.org/10.1038/srep26717">https://doi.org/10.1038/srep26717</a>.
+</div>
+<div id="ref-Chanishvili2012" class="csl-entry" role="listitem">
+Chanishvili N. Phage therapy—history from <span>Twort</span> and <span class="nocase">d’Herelle</span> through <span>Soviet</span> experience to current approaches. Advances in Virus Research 2012;83:3–40. <a href="https://doi.org/10.1016/B978-0-12-394438-2.00001-3">https://doi.org/10.1016/B978-0-12-394438-2.00001-3</a>.
+</div>
+<div id="ref-Chastre2022" class="csl-entry" role="listitem">
+<span class="nocase">Chastre J, François B, Bourgeois M, Komnos A, Ferrer R, Rahav G, et al.</span> Safety, efficacy, and pharmacokinetics of gremubamab (<span>MEDI3902</span>), an anti-<span class="nocase">Pseudomonas aeruginosa</span> bispecific human monoclonal antibody, in <span class="nocase">P. aeruginosa</span>-colonised, mechanically ventilated intensive care unit patients (<span>EVADE</span>). Critical Care 2022;26:355. <a href="https://doi.org/10.1186/s13054-022-04204-9">https://doi.org/10.1186/s13054-022-04204-9</a>.
+</div>
+<div id="ref-Comeau2007PAS" class="csl-entry" role="listitem">
+Comeau AM, Tétart F, Trojet SN, Prère M-F, Krisch HM. Phage-antibiotic synergy (<span>PAS</span>): Beta-lactam and quinolone antibiotics stimulate virulent phage growth. PLoS ONE 2007;2:e799. <a href="https://doi.org/10.1371/journal.pone.0000799">https://doi.org/10.1371/journal.pone.0000799</a>.
+</div>
+<div id="ref-Cosgrove2003" class="csl-entry" role="listitem">
+Cosgrove SE, Sakoulas G, Perencevich EN, Schwaber MJ, Karchmer AW, Carmeli Y. Comparison of mortality associated with methicillin-resistant and methicillin-susceptible <span class="nocase">Staphylococcus aureus</span> bacteremia: A meta-analysis. Clinical Infectious Diseases 2003;36:53–9. <a href="https://doi.org/10.1086/345476">https://doi.org/10.1086/345476</a>.
+</div>
+<div id="ref-dHerelle1931" class="csl-entry" role="listitem">
+<span class="nocase">d’Herelle F</span>. Bacteriophage as a treatment in acute medical and surgical infections. Bulletin of the New York Academy of Medicine 1931;7:329–48.
+</div>
+<div id="ref-dHerelle1917" class="csl-entry" role="listitem">
+<span class="nocase">d’Herelle F</span>. Sur un microbe invisible antagoniste des bacilles dysentériques. Comptes Rendus de l’Académie Des Sciences 1917;165:373–5.
+</div>
+<div id="ref-Dabrowska2019" class="csl-entry" role="listitem">
+Dabrowska K. Phage therapy: What factors shape phage pharmacokinetics and bioavailability? Systematic and critical review. Medicinal Research Reviews 2019;39:2000–25. <a href="https://doi.org/10.1002/med.21572">https://doi.org/10.1002/med.21572</a>.
+</div>
+<div id="ref-DabrowskaAbedon2019" class="csl-entry" role="listitem">
+Dabrowska K, Abedon ST. Pharmacologically aware phage therapy: Pharmacodynamic and pharmacokinetic obstacles to phage antibacterial action in animal and human bodies. Microbiology and Molecular Biology Reviews 2019;83:e00012–19. <a href="https://doi.org/10.1128/MMBR.00012-19">https://doi.org/10.1128/MMBR.00012-19</a>.
+</div>
+<div id="ref-DanisWlodarczyk2021" class="csl-entry" role="listitem">
+<span class="nocase">Danis-Wlodarczyk KM, Cai A, Chen A, et al.</span> Friends or foes? Rapid determination of dissimilar colistin and ciprofloxacin antagonism of <span class="nocase">Pseudomonas aeruginosa</span> phages. Pharmaceuticals 2021;14:1162. <a href="https://doi.org/10.3390/ph14111162">https://doi.org/10.3390/ph14111162</a>.
+</div>
+<div id="ref-Dedrick2021" class="csl-entry" role="listitem">
+<span class="nocase">Dedrick RM, Freeman KG, Nguyen JA, et al.</span> Potent antibody-mediated neutralization limits bacteriophage treatment of a pulmonary <span class="nocase">Mycobacterium abscessus</span> infection. Nature Medicine 2021;27:1357–61. <a href="https://doi.org/10.1038/s41591-021-01403-9">https://doi.org/10.1038/s41591-021-01403-9</a>.
+</div>
+<div id="ref-Dedrick2022" class="csl-entry" role="listitem">
+<span class="nocase">Dedrick RM, Smith BE, Cristinziano M, Freeman KG, Jacobs-Sera D, Belessis Y, et al.</span> Phage therapy of <span>Mycobacterium</span> infections: Compassionate use of phages in 20 patients with drug-resistant mycobacterial disease. Clinical Infectious Diseases 2023;76:103–12. <a href="https://doi.org/10.1093/cid/ciac453">https://doi.org/10.1093/cid/ciac453</a>.
+</div>
+<div id="ref-Deslouches2020" class="csl-entry" role="listitem">
+Deslouches B, Montelaro RC, Urish KL, Di YP. Engineered cationic antimicrobial peptides (<span class="nocase">eCAPs</span>) to combat multidrug-resistant bacteria. Pharmaceutics 2020;12:501. <a href="https://doi.org/10.3390/pharmaceutics12060501">https://doi.org/10.3390/pharmaceutics12060501</a>.
+</div>
+<div id="ref-Doub2021b" class="csl-entry" role="listitem">
+Doub JB. Risk of bacteriophage therapeutics to transfer genetic material and contain contaminants beyond endotoxins with clinically relevant mitigation strategies. Infection and Drug Resistance 2021;14:5629–37. <a href="https://doi.org/10.2147/IDR.S341265">https://doi.org/10.2147/IDR.S341265</a>.
+</div>
+<div id="ref-Doub2020biofilm" class="csl-entry" role="listitem">
+Doub JB. Bacteriophage therapy for clinical biofilm infections: Parameters that influence treatment protocols and current treatment approaches. Antibiotics 2020;9:799. <a href="https://doi.org/10.3390/antibiotics9110799">https://doi.org/10.3390/antibiotics9110799</a>.
+</div>
+<div id="ref-Doub2021" class="csl-entry" role="listitem">
+Doub JB, Urish K, Chan B. Bacteriophage therapy for periprosthetic joint infections: Current limitations and research that needs to be done to advance this therapeutic. Expert Review of Anti-Infective Therapy 2021;19:359–61. <a href="https://doi.org/10.1080/14787210.2021.1819789">https://doi.org/10.1080/14787210.2021.1819789</a>.
+</div>
+<div id="ref-DoubWilson2021" class="csl-entry" role="listitem">
+Doub JB, Wilson E. Observed transaminitis with a unique bacteriophage therapy protocol to treat recalcitrant staphylococcal biofilm infections. Infection 2022;50:281–3. <a href="https://doi.org/10.1007/s15010-021-01675-w">https://doi.org/10.1007/s15010-021-01675-w</a>.
+</div>
+<div id="ref-Drysdale2023" class="csl-entry" role="listitem">
+<span class="nocase">Drysdale SB, Cathie K, Flamein F, Knuf M, Collins AM, Hill HC, et al.</span> Nirsevimab for prevention of hospitalizations due to <span>RSV</span> in infants. New England Journal of Medicine 2023;389:2425–35. <a href="https://doi.org/10.1056/NEJMoa2309189">https://doi.org/10.1056/NEJMoa2309189</a>.
+</div>
+<div id="ref-Duyvejonck2021" class="csl-entry" role="listitem">
+<span class="nocase">Duyvejonck H, Merabishvili M, Vaneechoutte M, et al.</span> Evaluation of the stability of bacteriophages in different solutions suitable for the production of magistral preparations. Viruses 2021;13:865. <a href="https://doi.org/10.3390/v13050865">https://doi.org/10.3390/v13050865</a>.
+</div>
+<div id="ref-Emu2018" class="csl-entry" role="listitem">
+Emu B, Fessel J, Schrader S, Kumar P, Richmond G, Win S, et al. Phase 3 study of ibalizumab for multidrug-resistant <span>HIV-1</span>. New England Journal of Medicine 2018;379:645–54. <a href="https://doi.org/10.1056/NEJMoa1711460">https://doi.org/10.1056/NEJMoa1711460</a>.
+</div>
+<div id="ref-Fair2014" class="csl-entry" role="listitem">
+Fair RJ, Tor Y. Antibiotics and bacterial resistance in the 21st century. Perspectives in Medicinal Chemistry 2014;6:25–64. <a href="https://doi.org/10.4137/PMC.S14459">https://doi.org/10.4137/PMC.S14459</a>.
+</div>
+<div id="ref-Fauconnier2019" class="csl-entry" role="listitem">
+Fauconnier A. Phage therapy regulation: From night to dawn. Viruses 2019;11:352. <a href="https://doi.org/10.3390/v11040352">https://doi.org/10.3390/v11040352</a>.
+</div>
+<div id="ref-Ferry2018" class="csl-entry" role="listitem">
+Ferry T, Kolenda C, Batailler C, Gustave C-A, Lustig S, Malatray M, et al. Phage therapy as adjuvant to conservative surgery and antibiotics to salvage patients with relapsing <span class="nocase">S. aureus</span> prosthetic knee infection. Frontiers in Medicine 2020;7:570572. <a href="https://doi.org/10.3389/fmed.2020.570572">https://doi.org/10.3389/fmed.2020.570572</a>.
+</div>
+<div id="ref-Filippov2011" class="csl-entry" role="listitem">
+Filippov AA, Sergueev KV, He Y, Huang X-Z, Gnade BT, Mueller AJ, et al. Bacteriophage-resistant mutants in <span class="nocase">Yersinia pestis</span>: Identification of phage receptors and attenuation for mice. PLoS ONE 2011;6:e25486. <a href="https://doi.org/10.1371/journal.pone.0025486">https://doi.org/10.1371/journal.pone.0025486</a>.
+</div>
+<div id="ref-Fowler2020" class="csl-entry" role="listitem">
+Fowler VG, Das AF, Lipka-Diamond J, Schuch R, Pomerantz R, Jauregui-Peredo L, et al. Exebacase for patients with <span class="nocase">Staphylococcus aureus</span> bloodstream infection and endocarditis. Journal of Clinical Investigation 2020;130:3750–60. <a href="https://doi.org/10.1172/JCI136577">https://doi.org/10.1172/JCI136577</a>.
+</div>
+<div id="ref-Francois2021" class="csl-entry" role="listitem">
+<span class="nocase">François B, Jafri HS, Chastre J, Sanchez-Garcia M, Eggimann P, Dequin P-F, et al.</span> Efficacy and safety of suvratoxumab for prevention of <span class="nocase">Staphylococcus aureus</span> ventilator-associated pneumonia (<span>SAATELLITE</span>): A multicentre, randomised, double-blind, placebo-controlled, parallel-group, phase 2 pilot trial. The Lancet Infectious Diseases 2021;21:1313–23. <a href="https://doi.org/10.1016/S1473-3099(20)30995-6">https://doi.org/10.1016/S1473-3099(20)30995-6</a>.
+</div>
+<div id="ref-GordilloAltamirano2021" class="csl-entry" role="listitem">
+<span class="nocase">Gordillo Altamirano F, Forsyth JH, Patwa R, Kostoulias X, Trim M, Subedi D, et al.</span> Bacteriophage-resistant <span class="nocase">Acinetobacter baumannii</span> are resensitized to antimicrobials. Nature Microbiology 2021;6:157–61. <a href="https://doi.org/10.1038/s41564-020-00830-7">https://doi.org/10.1038/s41564-020-00830-7</a>.
+</div>
+<div id="ref-Greig2016" class="csl-entry" role="listitem">
+Greig SL. Obiltoxaximab: First global approval. Drugs 2016;76:823–30. <a href="https://doi.org/10.1007/s40265-016-0577-0">https://doi.org/10.1007/s40265-016-0577-0</a>.
+</div>
+<div id="ref-Gu2022" class="csl-entry" role="listitem">
+Gu Liu C, Green SI, Min L, Clark JR, Salazar KC, Terwilliger AL, et al. Phage-antibiotic synergy is driven by a unique combination of antibacterial mechanism of action and stoichiometry. mBio 2020;11:e01462–20. <a href="https://doi.org/10.1128/mBio.01462-20">https://doi.org/10.1128/mBio.01462-20</a>.
+</div>
+<div id="ref-Gupta2021" class="csl-entry" role="listitem">
+Gupta A, Gonzalez-Rojas Y, Juarez E, Crespo Casal M, Moya J, Falci DR, et al. Early treatment for <span>Covid-19</span> with <span>SARS-CoV-2</span> neutralizing antibody sotrovimab. New England Journal of Medicine 2021;385:1941–50. <a href="https://doi.org/10.1056/NEJMoa2107934">https://doi.org/10.1056/NEJMoa2107934</a>.
+</div>
+<div id="ref-Gurney2020" class="csl-entry" role="listitem">
+Gurney J, Pradier L, Griffin JS, Gougat-Barbéra C, Chan BK, Turner PE, et al. Phage steering of antibiotic-resistance evolution in the bacterial pathogen <span class="nocase">Pseudomonas aeruginosa</span>. Evolution, Medicine, and Public Health 2020;2020:148–57. <a href="https://doi.org/10.1093/emph/eoaa026">https://doi.org/10.1093/emph/eoaa026</a>.
+</div>
+<div id="ref-Hammitt2022" class="csl-entry" role="listitem">
+Hammitt LL, Dagan R, Yuan Y, Baca Cots M, Bosheva M, Madhi SA, et al. Nirsevimab for prevention of <span>RSV</span> in healthy late-preterm and term infants. New England Journal of Medicine 2022;386:837–46. <a href="https://doi.org/10.1056/NEJMoa2110275">https://doi.org/10.1056/NEJMoa2110275</a>.
+</div>
+<div id="ref-Hancock2006" class="csl-entry" role="listitem">
+Hancock REW, Sahl H-G. Antimicrobial and host-defense peptides as new anti-infective therapeutic strategies. Nature Biotechnology 2006;24:1551–7. <a href="https://doi.org/10.1038/nbt1267">https://doi.org/10.1038/nbt1267</a>.
+</div>
+<div id="ref-Hankin1896" class="csl-entry" role="listitem">
+Hankin EH. L’action bactericide des eaux de la jumna et du gange sur le vibrion du cholera. Annales de l’Institut Pasteur 1896;10:511–23.
+</div>
+<div id="ref-Henry2012" class="csl-entry" role="listitem">
+Henry M, Biswas B, Vincent L, Mokashi V, Schuch R, Bishop-Lilly KA, et al. Development of a high throughput assay for indirectly measuring phage growth using the <span>OmniLog</span> system. Bacteriophage 2012;2:159–67. <a href="https://doi.org/10.4161/bact.21440">https://doi.org/10.4161/bact.21440</a>.
+</div>
+<div id="ref-Hietala2019" class="csl-entry" role="listitem">
+Hietala V, Horsma-Heikkinen J, Carron A, Skurnik M, Kiljunen S. The removal of endo- and enterotoxins from bacteriophage preparations. Frontiers in Microbiology 2019;10:1674. <a href="https://doi.org/10.3389/fmicb.2019.01674">https://doi.org/10.3389/fmicb.2019.01674</a>.
+</div>
+<div id="ref-Hobbs2016" class="csl-entry" role="listitem">
+Hobbs Z, Abedon ST. Diversity of phage infection types and associated terminology: The problem with ’lytic or lysogenic’. FEMS Microbiology Letters 2016;363:fnw047. <a href="https://doi.org/10.1093/femsle/fnw047">https://doi.org/10.1093/femsle/fnw047</a>.
+</div>
+<div id="ref-vanHoute2016" class="csl-entry" role="listitem">
+Houte S van, Buckling A, Westra ER. Evolutionary ecology of prokaryotic immune mechanisms. Microbiology and Molecular Biology Reviews 2016;80:745–63. <a href="https://doi.org/10.1128/MMBR.00011-16">https://doi.org/10.1128/MMBR.00011-16</a>.
+</div>
+<div id="ref-HowardVarona2017" class="csl-entry" role="listitem">
+Howard-Varona C, Hargreaves KR, Abedon ST, Sullivan MB. Lysogeny in nature: Mechanisms, impact and ecology of temperate phages. The ISME Journal 2017;11:1511–20. <a href="https://doi.org/10.1038/ismej.2017.16">https://doi.org/10.1038/ismej.2017.16</a>.
+</div>
+<div id="ref-Hu2013" class="csl-entry" role="listitem">
+Hu B, Margolin W, Molineux IJ, Liu J. The bacteriophage <span>T7</span> virion undergoes extensive structural remodeling during infection. Science 2013;339:576–9. <a href="https://doi.org/10.1126/science.1231887">https://doi.org/10.1126/science.1231887</a>.
+</div>
+<div id="ref-Huang2022PLG" class="csl-entry" role="listitem">
+<span class="nocase">Huang DB, Brothers KM, Mandell JB, Taguchi M, Alexander PG, Parker DM, et al.</span> Engineered antimicrobial peptide <span>PLG0206</span> for the treatment of prosthetic joint infection: Phase 1 single ascending dose study. Antimicrobial Agents and Chemotherapy 2022;66:e01394–21. <a href="https://doi.org/10.1128/AAC.01394-21">https://doi.org/10.1128/AAC.01394-21</a>.
+</div>
+<div id="ref-Jault2019" class="csl-entry" role="listitem">
+<span class="nocase">Jault P, Leclerc T, Jennes S, Pirnay JP, Que Y-A, Resch G, et al.</span> Efficacy and tolerability of a cocktail of bacteriophages to treat burn wounds infected by <span class="nocase">Pseudomonas aeruginosa</span> (<span>PhagoBurn</span>): A randomised, controlled, double-blind phase 1/2 trial. The Lancet Infectious Diseases 2019;19:35–45. <a href="https://doi.org/10.1016/S1473-3099(18)30482-1">https://doi.org/10.1016/S1473-3099(18)30482-1</a>.
+</div>
+<div id="ref-Jun2017" class="csl-entry" role="listitem">
+Jun SY, Jung GM, Yoon SJ, Choi Y-J, Koh WS, Moon KS, et al. Preclinical safety evaluation of intravenously administered <span>SAL200</span> containing the recombinant phage endolysin <span>SAL-1</span> as a pharmaceutical ingredient. Antimicrobial Agents and Chemotherapy 2014;58:2084–8. <a href="https://doi.org/10.1128/AAC.02232-13">https://doi.org/10.1128/AAC.02232-13</a>.
+</div>
+<div id="ref-Kortright2019" class="csl-entry" role="listitem">
+Kortright KE, Chan BK, Koff JL, Turner PE. Phage therapy: A renewed approach to combat antibiotic-resistant bacteria. Cell Host &amp; Microbe 2019;25:219–32. <a href="https://doi.org/10.1016/j.chom.2019.01.014">https://doi.org/10.1016/j.chom.2019.01.014</a>.
+</div>
+<div id="ref-Labrie2010" class="csl-entry" role="listitem">
+Labrie SJ, Samson JE, Moineau S. Bacteriophage resistance mechanisms. Nature Reviews Microbiology 2010;8:317–27. <a href="https://doi.org/10.1038/nrmicro2315">https://doi.org/10.1038/nrmicro2315</a>.
+</div>
+<div id="ref-Leitner2021" class="csl-entry" role="listitem">
+<span class="nocase">Leitner L, Ujmajuridze A, Chanishvili N, Goderdzishvili M, Chkonia I, Rigvava S, et al.</span> Intravesical bacteriophages for treating urinary tract infections in patients undergoing transurethral resection of the prostate: A randomised, placebo-controlled, double-blind clinical trial. The Lancet Infectious Diseases 2021;21:427–36. <a href="https://doi.org/10.1016/S1473-3099(20)30330-3">https://doi.org/10.1016/S1473-3099(20)30330-3</a>.
+</div>
+<div id="ref-Liu2021" class="csl-entry" role="listitem">
+Liu D, Van Belleghem JD, Vries CR de, Burgener E, Chen Q, Manasherob R, et al. The safety and toxicity of phage therapy: A review of animal and clinical studies. Viruses 2021;13:1268. <a href="https://doi.org/10.3390/v13071268">https://doi.org/10.3390/v13071268</a>.
+</div>
+<div id="ref-Loessner2005" class="csl-entry" role="listitem">
+Loessner MJ. Bacteriophage endolysins—current state of research and applications. Current Opinion in Microbiology 2005;8:480–7. <a href="https://doi.org/10.1016/j.mib.2005.06.002">https://doi.org/10.1016/j.mib.2005.06.002</a>.
+</div>
+<div id="ref-Lusiak2014" class="csl-entry" role="listitem">
+<span class="nocase">Łusiak-Szelachowska M, Zaczek M, Weber-Dabrowska B, et al.</span> Phage neutralization by sera of patients receiving phage therapy. Viral Immunology 2014;27:295–304. <a href="https://doi.org/10.1089/vim.2013.0128">https://doi.org/10.1089/vim.2013.0128</a>.
+</div>
+<div id="ref-Majkowska2021" class="csl-entry" role="listitem">
+Majkowska-Skrobek G, Markwitz P, Sosnowska E, Lood C, Lavigne R, Drulis-Kawa Z. The evolutionary trade-offs in phage-resistant <span class="nocase">Klebsiella pneumoniae</span> entail cross-phage sensitization and loss of multidrug resistance. Environmental Microbiology 2021;23:7723–40. <a href="https://doi.org/10.1111/1462-2920.15476">https://doi.org/10.1111/1462-2920.15476</a>.
+</div>
+<div id="ref-Makarova2020" class="csl-entry" role="listitem">
+<span class="nocase">Makarova KS, Wolf YI, Iranzo J, et al.</span> Evolutionary classification of <span>CRISPR-Cas</span> systems: A burst of class 2 and derived variants. Nature Reviews Microbiology 2020;18:67–83. <a href="https://doi.org/10.1038/s41579-019-0299-x">https://doi.org/10.1038/s41579-019-0299-x</a>.
+</div>
+<div id="ref-McCallin2019" class="csl-entry" role="listitem">
+McCallin S, Sacher JC, Zheng J, Chan BK. Current state of compassionate phage therapy. Viruses 2019;11:343. <a href="https://doi.org/10.3390/v11040343">https://doi.org/10.3390/v11040343</a>.
+</div>
+<div id="ref-Mendel2006" class="csl-entry" role="listitem">
+Mendel S, Holbourn JM, Schouten JA, Bugg TDH. Interaction of the transmembrane domain of lysis protein <span>E</span> from bacteriophage <span><span class="math inline">\(\phi\)</span>X174</span> with bacterial translocase <span>MraY</span> and peptidyl-prolyl isomerase <span>SlyD</span>. Microbiology 2006;152:2959–67. <a href="https://doi.org/10.1099/mic.0.28776-0">https://doi.org/10.1099/mic.0.28776-0</a>.
+</div>
+<div id="ref-Merabishvili2018" class="csl-entry" role="listitem">
+Merabishvili M, Pirnay J-P, De Vos D. Guidelines to compose an ideal bacteriophage cocktail. Methods in Molecular Biology 2018;1693:99–110. <a href="https://doi.org/10.1007/978-1-4939-7395-8_9">https://doi.org/10.1007/978-1-4939-7395-8_9</a>.
+</div>
+<div id="ref-Migone2009" class="csl-entry" role="listitem">
+Migone T-S, Subramanian GM, Zhong J, Healey LM, Corey A, Devalaraja M, et al. Raxibacumab for the treatment of inhalational anthrax. New England Journal of Medicine 2009;361:135–44. <a href="https://doi.org/10.1056/NEJMoa0810603">https://doi.org/10.1056/NEJMoa0810603</a>.
+</div>
+<div id="ref-Mirski2019" class="csl-entry" role="listitem">
+Mirski T, Lidia M, Nakonieczna A, Gryko R. Bacteriophages, phage endolysins and antimicrobial peptides—the possibilities for their common use to combat infections and in the design of new drugs. Annals of Agricultural and Environmental Medicine 2019;26:203–9. <a href="https://doi.org/10.26444/aaem/105390">https://doi.org/10.26444/aaem/105390</a>.
+</div>
+<div id="ref-Monteiro2019" class="csl-entry" role="listitem">
+Monteiro R, Pires DP, Costa AR, Azeredo J. Phage therapy: Going temperate? Trends in Microbiology 2019;27:368–78. <a href="https://doi.org/10.1016/j.tim.2018.10.008">https://doi.org/10.1016/j.tim.2018.10.008</a>.
+</div>
+<div id="ref-Morris2019" class="csl-entry" role="listitem">
+Morris JL, Letson HL, Elliott L, Grant AL, Wilkinson M, Hazratwala K, et al. Evaluation of bacteriophage as an adjunct therapy for treatment of peri-prosthetic joint infection caused by <span class="nocase">Staphylococcus aureus</span>. PLoS ONE 2019;14:e0226574. <a href="https://doi.org/10.1371/journal.pone.0226574">https://doi.org/10.1371/journal.pone.0226574</a>.
+</div>
+<div id="ref-Motley2018" class="csl-entry" role="listitem">
+Motley MP, Fries BC. A new take on an old remedy: Generating antibodies against multidrug-resistant <span>Gram</span>-negative bacteria in a postantibiotic world. mSphere 2017;2:e00397–17. <a href="https://doi.org/10.1128/mSphere.00397-17">https://doi.org/10.1128/mSphere.00397-17</a>.
+</div>
+<div id="ref-Mushegian2020" class="csl-entry" role="listitem">
+Mushegian AR. Are there 1031 virus particles on earth, or more, or fewer? Journal of Bacteriology 2020;202:e00052–20. <a href="https://doi.org/10.1128/JB.00052-20">https://doi.org/10.1128/JB.00052-20</a>.
+</div>
+<div id="ref-Nguyen2017" class="csl-entry" role="listitem">
+Nguyen S, Baker K, Padman BS, Patwa R, Dunstan RA, Weston TA, et al. Bacteriophage transcytosis provides a mechanism to cross epithelial cell layers. mBio 2017;8:e01874–17. <a href="https://doi.org/10.1128/mBio.01874-17">https://doi.org/10.1128/mBio.01874-17</a>.
+</div>
+<div id="ref-Nobrega2018" class="csl-entry" role="listitem">
+Nobrega FL, Vlot M, Jonge PA de, Dreesens LL, Beaumont HJE, Lavigne R, et al. Targeting mechanisms of tailed bacteriophages. Nature Reviews Microbiology 2018;16:760–73. <a href="https://doi.org/10.1038/s41579-018-0070-8">https://doi.org/10.1038/s41579-018-0070-8</a>.
+</div>
+<div id="ref-Fabijan2020" class="csl-entry" role="listitem">
+Petrovic Fabijan A, Lin RCY, Ho J, Maddocks S, Ben Zakour NL, Iredell JR. Safety of bacteriophage therapy in severe <span class="nocase">Staphylococcus aureus</span> infection. Nature Microbiology 2020;5:465–72. <a href="https://doi.org/10.1038/s41564-019-0634-z">https://doi.org/10.1038/s41564-019-0634-z</a>.
+</div>
+<div id="ref-Pirnay2020" class="csl-entry" role="listitem">
+Pirnay J-P. Phage therapy in the year 2035. Frontiers in Microbiology 2020;11:1171. <a href="https://doi.org/10.3389/fmicb.2020.01171">https://doi.org/10.3389/fmicb.2020.01171</a>.
+</div>
+<div id="ref-Puapermpoonsiri2010" class="csl-entry" role="listitem">
+Puapermpoonsiri U, Ford SJ, Walle CF van der. Stabilization of bacteriophage during freeze drying. International Journal of Pharmaceutics 2010;389:168–75. <a href="https://doi.org/10.1016/j.ijpharm.2010.01.034">https://doi.org/10.1016/j.ijpharm.2010.01.034</a>.
+</div>
+<div id="ref-Rahman2021" class="csl-entry" role="listitem">
+Rahman MdU, Wang W, Sun Q, Shah JA, Li C, Sun Y, et al. Endolysin, a promising solution against antimicrobial resistance. Antibiotics 2021;10:1277. <a href="https://doi.org/10.3390/antibiotics10111277">https://doi.org/10.3390/antibiotics10111277</a>.
+</div>
+<div id="ref-Rose2014" class="csl-entry" role="listitem">
+Rose T, Verbeken G, De Vos D, Merabishvili M, Vaneechoutte M, Lavigne R, et al. Experimental phage therapy of burn wound infection: Difficult first steps. International Journal of Burns and Trauma 2014;4:66–73.
+</div>
+<div id="ref-Sarker2016" class="csl-entry" role="listitem">
+<span class="nocase">Sarker SA, Sultana S, Reuteler G, Moine D, Descombes P, Charton F, et al.</span> Oral phage therapy of acute bacterial diarrhea with two coliphage preparations: A randomized trial in children from <span>Bangladesh</span>. EBioMedicine 2016;4:124–37. <a href="https://doi.org/10.1016/j.ebiom.2015.12.023">https://doi.org/10.1016/j.ebiom.2015.12.023</a>.
+</div>
+<div id="ref-Schooley2017" class="csl-entry" role="listitem">
+<span class="nocase">Schooley RT, Biswas B, Gill JJ, Hernandez-Morales A, Lancaster J, Lessor L, et al.</span> Development and use of personalized bacteriophage-based therapeutic cocktails to treat a patient with a disseminated resistant <span class="nocase">Acinetobacter baumannii</span> infection. Antimicrobial Agents and Chemotherapy 2017;61:e00954–17. <a href="https://doi.org/10.1128/AAC.00954-17">https://doi.org/10.1128/AAC.00954-17</a>.
+</div>
+<div id="ref-Silver2011" class="csl-entry" role="listitem">
+Silver LL. Challenges of antibacterial discovery. Clinical Microbiology Reviews 2011;24:71–109. <a href="https://doi.org/10.1128/CMR.00030-10">https://doi.org/10.1128/CMR.00030-10</a>.
+</div>
+<div id="ref-Smatti2019" class="csl-entry" role="listitem">
+Smatti MK, Cyprian FS, Nasrallah GK, Al Thani AA, Almishal RO, Yassine HM. Viruses and autoimmunity: A review on the potential interaction and molecular mechanisms. Viruses 2019;11:762. <a href="https://doi.org/10.3390/v11080762">https://doi.org/10.3390/v11080762</a>.
+</div>
+<div id="ref-Stacey2022" class="csl-entry" role="listitem">
+Stacey HJ, De Soir S, Jones JD. The safety and efficacy of phage therapy: A systematic review of clinical and safety trials. Antibiotics 2022;11:1340. <a href="https://doi.org/10.3390/antibiotics11101340">https://doi.org/10.3390/antibiotics11101340</a>.
+</div>
+<div id="ref-Suh2022" class="csl-entry" role="listitem">
+<span class="nocase">Suh GA, Lodise TP, Tamma PD, Knisely JM, Alexander J, Aslam S, et al.</span> Considerations for the use of phage therapy in clinical practice. Antimicrobial Agents and Chemotherapy 2022;66:e02071–21. <a href="https://doi.org/10.1128/aac.02071-21">https://doi.org/10.1128/aac.02071-21</a>.
+</div>
+<div id="ref-Summers2012" class="csl-entry" role="listitem">
+Summers WC. The strange history of phage therapy. Bacteriophage 2012;2:130–3. <a href="https://doi.org/10.4161/bact.20757">https://doi.org/10.4161/bact.20757</a>.
+</div>
+<div id="ref-Suttle2007" class="csl-entry" role="listitem">
+Suttle CA. Marine viruses—major players in the global ecosystem. Nature Reviews Microbiology 2007;5:801–12. <a href="https://doi.org/10.1038/nrmicro1750">https://doi.org/10.1038/nrmicro1750</a>.
+</div>
+<div id="ref-IMpactRSV1998" class="csl-entry" role="listitem">
+The IMpact-RSV Study Group. Palivizumab, a humanized respiratory syncytial virus monoclonal antibody, reduces hospitalization from respiratory syncytial virus infection in high-risk infants. Pediatrics 1998;102:531–7. <a href="https://doi.org/10.1542/peds.102.3.531">https://doi.org/10.1542/peds.102.3.531</a>.
+</div>
+<div id="ref-Totten2021" class="csl-entry" role="listitem">
+Totten KMC, Cunningham SA, Gades NM, Etzioni A, Patel R. Pharmacokinetic assessment of staphylococcal phage <span>K</span> following parenteral and intra-articular administration in rabbits. Frontiers in Pharmacology 2021;12:599526. <a href="https://doi.org/10.3389/fphar.2021.599526">https://doi.org/10.3389/fphar.2021.599526</a>.
+</div>
+<div id="ref-Townsend2021" class="csl-entry" role="listitem">
+Townsend EM, Kelly L, Muscatt G, Box JD, Hargreaves N, Lilley D, et al. The human gut phageome: Origins and roles in the human gut microbiome. Frontiers in Cellular and Infection Microbiology 2021;11:643214. <a href="https://doi.org/10.3389/fcimb.2021.643214">https://doi.org/10.3389/fcimb.2021.643214</a>.
+</div>
+<div id="ref-Twort1915" class="csl-entry" role="listitem">
+Twort FW. An investigation on the nature of ultra-microscopic viruses. The Lancet 1915;186:1241–3. <a href="https://doi.org/10.1016/S0140-6736(01)20383-3">https://doi.org/10.1016/S0140-6736(01)20383-3</a>.
+</div>
+<div id="ref-FDAGRAS" class="csl-entry" role="listitem">
+U.S. Food and Drug Administration. <span>GRAS</span> notices inventory 2023.
+</div>
+<div id="ref-Walker2022" class="csl-entry" role="listitem">
+<span class="nocase">Walker PJ, Siddell SG, Lefkowitz EJ, et al.</span> Recent changes to virus taxonomy ratified by the <span class="nocase">International Committee on Taxonomy of Viruses</span> (2022). Archives of Virology 2022;167:2429–40. <a href="https://doi.org/10.1007/s00705-022-05516-5">https://doi.org/10.1007/s00705-022-05516-5</a>.
+</div>
+<div id="ref-Watson2020" class="csl-entry" role="listitem">
+Watson A, Sauve K, Cassino C, Schuch R. Exebacase demonstrates in vitro synergy with a broad range of antibiotics against both methicillin-resistant and methicillin-susceptible <span class="nocase">Staphylococcus aureus</span>. Antimicrobial Agents and Chemotherapy 2020;64:e01885–19. <a href="https://doi.org/10.1128/AAC.01885-19">https://doi.org/10.1128/AAC.01885-19</a>.
+</div>
+<div id="ref-Wilcox2017" class="csl-entry" role="listitem">
+Wilcox MH, Gerding DN, Poxton IR, Kelly C, Nathan R, Birch T, et al. Bezlotoxumab for prevention of recurrent <span class="nocase">Clostridium difficile</span> infection. New England Journal of Medicine 2017;376:305–17. <a href="https://doi.org/10.1056/NEJMoa1602615">https://doi.org/10.1056/NEJMoa1602615</a>.
+</div>
+<div id="ref-Moreau2018" class="csl-entry" role="listitem">
+<span class="nocase">Wit J de, Totté JEE, Mierlo MMF van, Houdt J van, Hodemaekers HM, et al.</span> Endolysin treatment against <span class="nocase">Staphylococcus aureus</span> in adults with atopic dermatitis: A randomized controlled trial. Journal of Allergy and Clinical Immunology 2019;144:860–3. <a href="https://doi.org/10.1016/j.jaci.2019.05.020">https://doi.org/10.1016/j.jaci.2019.05.020</a>.
+</div>
+<div id="ref-Wright2009" class="csl-entry" role="listitem">
+Wright A, Hawkins CH, Anggard EE, Harper DR. A controlled clinical trial of a therapeutic bacteriophage preparation in chronic otitis due to antibiotic-resistant <span class="nocase">Pseudomonas aeruginosa</span>: A preliminary report of efficacy. Clinical Otolaryngology 2009;34:349–57. <a href="https://doi.org/10.1111/j.1749-4486.2009.01973.x">https://doi.org/10.1111/j.1749-4486.2009.01973.x</a>.
+</div>
+<div id="ref-Yehl2019" class="csl-entry" role="listitem">
+Yehl K, Lemire S, Yang AC, Ando H, Mimee M, Torres MDT, et al. Engineering phage host-range and suppressing bacterial resistance through phage tail fiber mutagenesis. Cell 2019;179:459–69. <a href="https://doi.org/10.1016/j.cell.2019.09.015">https://doi.org/10.1016/j.cell.2019.09.015</a>.
+</div>
+<div id="ref-Zampara2020" class="csl-entry" role="listitem">
+Zampara A, Sørensen MCH, Grimon D, Antenucci F, Vitt AR, Bortolaia V, et al. Exploiting phage receptor binding proteins to enable endolysins to kill <span>Gram</span>-negative bacteria. Scientific Reports 2020;10:12087. <a href="https://doi.org/10.1038/s41598-020-68983-3">https://doi.org/10.1038/s41598-020-68983-3</a>.
+</div>
+<div id="ref-Zurawski2020" class="csl-entry" role="listitem">
+Zurawski DV, McLendon MK. Monoclonal antibodies as an antibacterial approach against bacterial pathogens. Antibiotics 2020;9:155. <a href="https://doi.org/10.3390/antibiotics9040155">https://doi.org/10.3390/antibiotics9040155</a>.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
