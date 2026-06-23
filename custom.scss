@@ -180,6 +180,15 @@ $selectionColor: $selection-color !default;
   width: 100%;
 }
 
+// H1 section divider slides get a dark red background
+.reveal .slides section:has(> h1) {
+  background-color: 
+
+  h1 {
+    color: #fff;
+  }
+}
+
 .reveal h2 {
   text-align: center;
   line-height: 1.2;

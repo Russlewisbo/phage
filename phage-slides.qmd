@@ -158,7 +158,7 @@ International Coimmittee on Taxonamy of Viruses (ICTV) abolished the Siphovirida
 <br> <br>
 
 ::: aside
-Tail fibers are the receptor-binding proteins — remember this when we get to resistance (receptor loss) and engineering (tail-fiber swapping to expand host range) [@Nobrega2018;@Ackermann2012]
+Tail fibers are the receptor-binding proteins — remember this when we get to resistance (receptor loss) and engineering (tail-fiber swapping to expand host range) [@Nobrega2018; @Ackermann2012]
 :::
 
 ## Lytic vs. lysogenic life cycles
@@ -189,7 +189,7 @@ Temperate phages can mediate lysogenic conversion (e.g., Shiga toxin, cholera to
 The Barr "bacteriophage adherence to mucus" (BAM) model reframes phages as a mucosal innate-immune layer and has implications for inhaled/oral delivery[@Nobrega2018; @Hu2013; @Barr2013].
 :::
 
-# Spectrum & Susceptibility Testing {background-color="#2d0a0a"}
+# Spectrum & Susceptibility Testing {background-color="#b20e10"}
 
 ## Why we must test every isolate
 
@@ -234,8 +234,6 @@ EoP is the closest thing to a "susceptibility breakpoint" but it is not standard
 - Time course mirrors broth microdilution kinetics used for antibiotic MICs
 - Higher-throughput readouts (e.g., OmniLog respirometry) enable rapid screening
 
-
-
 ::: aside
 Phagograms are the most "PD-like" assay because they capture suppression over time, including regrowth from resistant subpopulations — which a single plaque count misses [@Suh2022; @Henry2012].
 :::
@@ -244,49 +242,44 @@ Phagograms are the most "PD-like" assay because they capture suppression over ti
 
 <br>
 
-- Phage therapy is usually given **with antibiotics** — confirm no antagonism, ideally synergy 
+- Phage therapy is usually given **with antibiotics** — confirm no antagonism, ideally synergy
 - For biofilm indications, test anti-biofilm activity against the clinical isolate in vitro first
-- Combination/cocktail design should be deliberate, not ad hoc 
+- Combination/cocktail design should be deliberate, not ad hoc
 - In vitro testing for synergy/antagonism between selected antibiotics and phages is a recommended step
-
 
 ::: aside
 This sets up the later "therapeutic phage interactions" section. The key practice point: you screen not just phage-vs-bug but phage-vs-antibiotic-vs-bug [@Suh2022; @Doub2020biofilm; @Merabishvili2018].
 :::
 
-# Bacterial Resistance to Phages {background-color="#2d0a0a"}
+# Bacterial Resistance to Phages {background-color="#b20e10"}
 
 ## Resistance is the default, not the exception
 
 <br>
 
-- \~10²⁵ phage infections per second in the ocean; 20–40% of marine bacteria killed daily [@Suttle2007; @Brussaard2008]
-- Enormous selective pressure has produced layered anti-phage defenses [@Labrie2010]
-- Spontaneous phage-resistant mutants arise at \~10⁻⁵ (range 10⁻⁹–10⁻²) [@Filippov2011]
+- \~10^25^ phage infections per second in the ocean; 20–40% of marine bacteria killed daily
+- Enormous selective pressure has produced layered anti-phage defenses
+- Spontaneous phage-resistant mutants arise at \~10⁻⁵ (range 10⁻⁹–10⁻²)
 - Clinically, the question is not *whether* resistance emerges but whether it carries a **fitness cost** we can exploit
 
-::: aside
-[@Suttle2007; @Brussaard2008; @Labrie2010; @Filippov2011]
-:::
-
 ::: notes
-Reframe resistance as a feature, not only a bug: because phage receptors are often virulence factors, resistance frequently comes at a cost. This is the conceptual bridge to phage steering later.
+Reframe resistance as a feature, not only a bug: because phage receptors are often virulence factors, resistance frequently comes at a cost. This is the conceptual bridge to phage steering later [@Suttle2007; @Brussaard2008; @Labrie2010; @Filippov2011].
 :::
 
 ## Receptor modification — and its trade-off
 
 <br>
 
-- Most common mechanism: **alteration or loss of the phage-binding receptor** [@Labrie2010]
-- Receptors are often virulence factors or efflux/porin components, so resistance can shift **antibiotic susceptibility** too [@Filippov2011]
-- Phage-resistant mutants are frequently **less virulent** [@Chan2016; @GordilloAltamirano2021]
+- Most common mechanism: **alteration or loss of the phage-binding receptor**
+- Receptors are often virulence factors or efflux/porin components, so resistance can shift **antibiotic susceptibility** too
+- Phage-resistant mutants are frequently **less virulent**
 - The most common resistance route may yield bacteria that are easier to treat — a therapeutic silver lining
 
 ::: aside
 [@Labrie2010; @Filippov2011; @Chan2016; @GordilloAltamirano2021]
 :::
 
-::: notes
+::: aside
 The Chan 2016 OMKO1 / Pseudomonas example: resistance via the OprM efflux porin restores sensitivity to ceftazidime/ciprofloxacin. This is the canonical "evolutionary trade-off" story and underpins phage steering.
 :::
 
@@ -294,191 +287,171 @@ The Chan 2016 OMKO1 / Pseudomonas example: resistance via the OprM efflux porin 
 
 <br>
 
-- **Abortive infection (Abi):** infected cell commits altruistic suicide (DNA/membrane degradation) before progeny mature — kin selection [@Labrie2010]
-- **CRISPR-Cas:** adaptive immunity in \~40% of sequenced bacteria; spacers guide Cas nucleases to phage DNA [@vanHoute2016; @Makarova2020]
+- **Abortive infection (Abi):** infected cell commits altruistic suicide (DNA/membrane degradation) before progeny mature — kin selection
+- **CRISPR-Cas:** adaptive immunity in \~40% of sequenced bacteria; spacers guide Cas nucleases to phage DNA
 - Other layers: restriction-modification, CBASS/cyclic-nucleotide signaling, superinfection exclusion
 - Pre-clinical **screening** of each clinical isolate sidesteps most defenses at the patient level
 
-::: aside
-[@Labrie2010; @vanHoute2016; @Makarova2020]
-:::
-
 ::: notes
-Fellows will know CRISPR as a tool; here it's a bacterial immune system that is a theoretical barrier. The practical reassurance is that you screen the actual isolate, so you only deploy phages that already work against it. The anti-phage "pan-immune system" is an explosively active research area.
+The practical reassurance is that you screen the actual isolate, so you only deploy phages that already work against it. The anti-phage "pan-immune system" is an explosively active research area [@Labrie2010; @vanHoute2016; @Makarova2020].
 :::
 
 ## Mitigating resistance: cocktails and cycling
 
 <br>
 
-- **Cocktails:** combine phages using **different receptors** to raise the barrier to resistance [@Merabishvili2018]
-- **Sequential therapy:** rotate phages of differing antigenicity (also mitigates neutralizing antibody) [@Lusiak2014]
-- Cocktails must be designed for **no inter-phage antagonism** (receptor competition, CRISPR upregulation) [@Merabishvili2018]
-- "**Phage training**" — experimental coevolution to pre-adapt phages — delays resistance [@Borin2022]
-
-::: aside
-[@Merabishvili2018; @Lusiak2014; @Borin2022]
-:::
+- **Cocktails:** combine phages using **different receptors** to raise the barrier to resistance
+- **Sequential therapy:** rotate phages of differing antigenicity (also mitigates neutralizing antibody)
+- Cocktails must be designed for **no inter-phage antagonism** (receptor competition, CRISPR upregulation)
+- "**Phage training**" — experimental coevolution to pre-adapt phages — delays resistance
 
 ::: notes
-Note the tension: cocktails raise the resistance barrier but complicate manufacturing, regulatory filing, and interaction testing. Precision-designed cocktails beat "throw everything in" cocktails.
+Note the tension: cocktails raise the resistance barrier but complicate manufacturing, regulatory filing, and interaction testing. Precision-designed cocktails beat "throw everything in" cocktails [@Merabishvili2018; @Lusiak2014; @Borin2022].
 :::
 
-# Manufacturing, Logistics & Regulation {background-color="#2d0a0a"}
+# Manufacturing, Logistics & Regulation {background-color="#b20e10"}
 
 ## From sewage to sterile vial
 
-<br>
+::::: columns
+::: {.column width="50%"}
+![](phage-images/sewage.png){fig-align="center" width="450"}
+:::
 
+::: {.column width="50%"}
 - Discovery sources: wastewater, environmental water, anywhere bacteria are abundant
-- For ESKAPE pathogens a matching phage is often found quickly; for rare isolates it may take **months or never** [@Suh2022]
-- Candidate phages are **sequenced and characterized**: confirm obligately lytic; exclude toxin/resistance/integrase genes [@Doub2021b]
-- Amplified on bacterial hosts to reach therapeutic titers [@Doub2021]
+- For ESKAPE pathogens a matching phage is often found quickly; for rare isolates it may take **months or never**
+- Candidate phages are **sequenced and characterized**: confirm obligately lytic; exclude toxin/resistance/integrase genes
+- Amplified on bacterial hosts to reach therapeutic titers <br>
+:::
+:::::
+
+<br> <br>
 
 ::: aside
-[@Suh2022; @Doub2021b; @Doub2021]
+<br>
+
+Because phages are grown on bacteria, the manufacturing problem is fundamentally a *contaminant* problem — you are purifying a virus away from a lysed bacterial culture [@Suh2022; @Doub2021b; @Doub2021].
 :::
 
-::: notes
-Because phages are grown on bacteria, the manufacturing problem is fundamentally a *contaminant* problem — you are purifying a virus away from a lysed bacterial culture.
-:::
+## Timeline to produce bacteriophage therapy
+
+![](phage-images/timeline.png){fig-align="center"}
 
 ## Endotoxin and the contaminant problem
 
 <br>
 
-- Bacterial lysis releases **endotoxin** — FDA limit **5 EU/kg/dose** [@Hietala2019]
-- Removal: ultrafiltration, affinity and ion-exchange chromatography [@Hietala2019]
-- Other risks: prophages, pathogenicity islands, toxins, mobile genetic elements from the propagation host [@Doub2021b]
-- Mitigation: amplify on a **clean surrogate host** (e.g., *S. carnosus* or *S. aureus* RN4220) rather than the clinical isolate [@Doub2021b]
+- Bacterial lysis releases **endotoxin** — FDA limit **5 EU/kg/dose**
+- Removal: ultrafiltration, affinity and ion-exchange chromatography
+- Other risks: prophages, pathogenicity islands, toxins, mobile genetic elements from the propagation host
+- Mitigation: amplify on a **clean surrogate host** (e.g., *S. carnosus* or *S. aureus* RN4220) rather than the clinical isolate
 
 ::: aside
-[@Hietala2019; @Doub2021b]
-:::
-
-::: notes
-The RN4220/S. carnosus trick is elegant: propagate on a genetically "clean" relative so you don't co-purify the clinical isolate's toxins and MGEs. Sterility testing for residual live bacteria/fungi is also mandatory.
+The RN4220/S. carnosus trick is elegant: propagate on a genetically "clean" relative so you don't co-purify the clinical isolate's toxins and MGEs. Sterility testing for residual live bacteria/fungi is also mandatory [@Hietala2019; @Doub2021b].
 :::
 
 ## Stability, storage, and formulation
 
 <br>
 
-- Frozen at −80 °C with **glycerol** cryoprotectant; or 4–6 °C; or lyophilized for ambient storage [@Duyvejonck2021; @Puapermpoonsiri2010]
-- Shelf life can be **years** with proper storage [@Duyvejonck2021]
-- Diluted for use in Plasma-Lyte, normal saline, or other fluids — **compatibility is phage-specific** [@Duyvejonck2021]
+- Frozen at −80 °C with **glycerol** cryoprotectant; or 4–6 °C; or lyophilized for ambient storage
+
+- Shelf life can be **years** with proper storage
+
+- Diluted for use in Plasma-Lyte, normal saline, or other fluids — **compatibility is phage-specific**
+
 - Always confirm retained activity in the chosen diluent before administration
 
 ::: aside
-[@Duyvejonck2021; @Puapermpoonsiri2010]
+Practical pearl: a phage stable in saline may be inactivated in another buffer. There is no universal formulation — each preparation needs its own compatibility check [@Duyvejonck2021; @Puapermpoonsiri2010].
 :::
 
-::: notes
-Practical pearl: a phage stable in saline may be inactivated in another buffer. There is no universal formulation — each preparation needs its own compatibility check.
-:::
-
-## Regulatory pathway (US)
+## Regulatory pathway (EU vs. US)
 
 <br>
 
-- Phage therapy is **not FDA-approved**; use is via clinical trial or **compassionate use** after conventional failure [@McCallin2019]
-- Per-case **emergency IND (eIND)** or expanded-access IND required [@Suh2022]
-- Emergent eIND can be granted rapidly once a phage is identified; non-emergent \~4 weeks [@Suh2022]
-- Europe: magistral preparations (Belgium) and named-patient frameworks offer alternative routes [@Fauconnier2019]
+- Phage therapy is **not FDA-approved**; use is via clinical trial or **compassionate use** after conventional failure
+- **No EU-wide authorised human phage medicinal product** under EU law.
+- Per-case **emergency IND (eIND)** or expanded-access IND required
+- Emergent eIND can be granted rapidly once a phage is identified; non-emergent \~4 weeks
+- Europe: magistral preparations (Belgium) and named-patient frameworks offer alternative routes
 
 ::: aside
-[@McCallin2019; @Suh2022; @Fauconnier2019]
+The regulatory mismatch is central: a personalized, evolving, biologic product does not fit a framework built for fixed small molecules. Belgium's magistral pathway is the most-cited pragmatic workaround [@McCallin2019; @Suh2022; @Fauconnier2019].
 :::
 
-::: notes
-The regulatory mismatch is central: a personalized, evolving, biologic product does not fit a framework built for fixed small molecules. Belgium's magistral pathway is the most-cited pragmatic workaround.
-:::
-
-# Pharmacokinetics & Pharmacodynamics {background-color="#2d0a0a"}
+# Pharmacokinetics & Pharmacodynamics {background-color="#b20e10"}
 
 ## Phages break small-molecule PK rules
 
 <br>
 
-- Large, proteinaceous, **self-replicating**, and interactive with host immunity [@DabrowskaAbedon2019]
+- Large, proteinaceous, **self-replicating**, and interactive with host immunity
 - Concentration at the target can *increase* where bacteria are present (auto-dosing) then fall as bacteria clear
 - "Dose" is entangled with bacterial density, burst size, and adsorption rate
-- Routes: oral, intravenous, inhaled, and **direct** application [@Suh2022]
+- Routes: oral, intravenous, inhaled, and **direct** application
 
 ::: aside
-[@DabrowskaAbedon2019; @Suh2022]
-:::
-
-::: notes
-This is the conceptual heart of phage PK: the drug amplifies itself at the site of infection and is cleared when its substrate (bacteria) disappears. Classic Cmax/AUC thinking only partly applies.
+This is the conceptual heart of phage PK: the drug amplifies itself at the site of infection and is cleared when its substrate (bacteria) disappears. Classic Cmax/AUC thinking only partly applies [@DabrowskaAbedon2019; @Suh2022].
 :::
 
 ## Oral and the GI gauntlet
 
 <br>
 
-- Proposed absorption via transcytosis across epithelial tight junctions — limited by phage size [@Nguyen2017]
-- Vulnerable to gastric **pH \<6**, mucins, and immune clearance [@Dabrowska2019]
-- Mitigation: co-administer with an alkaline/antacid buffer [@Dabrowska2019]
-- Systemic absorption after oral dosing is **inconsistent**, though phages are recoverable in blood/urine/tissue [@Dabrowska2019]
+- Proposed absorption via transcytosis across epithelial tight junctions — limited by phage size
+- Vulnerable to gastric **pH \<6**, mucins, and immune clearance
+- Mitigation: co-administer with an alkaline/antacid buffer
+- Systemic absorption after oral dosing is **inconsistent**, though phages are recoverable in blood/urine/tissue
 
 ::: aside
-[@Nguyen2017; @Dabrowska2019]
-:::
-
-::: notes
-Oral works best for enteric targets; expect poor and erratic systemic levels. The Nguyen transcytosis paper provides a mechanism but the magnitude is small.
+Oral works best for enteric targets; expect poor and erratic systemic levels. The Nguyen transcytosis paper provides a mechanism but the magnitude is small [@Nguyen2017; @Dabrowska2019].
 :::
 
 ## Intravenous: fast in, fast out
 
 <br>
 
-- Phages detectable in circulation soon after IV dosing, then **cleared within 8–12 h** by the mononuclear phagocyte system [@Dabrowska2019]
-- Distributes to synovium, heart, muscle, marrow, kidney, bladder — dose-dependent [@Dabrowska2019]
-- Site concentrations are typically **several-fold lower** than the input titer [@Dabrowska2019]
-- IV most strongly stimulates **neutralizing antibody** and complement [@Dabrowska2019]
+- Phages detectable in circulation soon after IV dosing, then **cleared within 8–12 h** by the mononuclear phagocyte system
+
+- Distributes to synovium, heart, muscle, marrow, kidney, bladder — dose-dependent
+
+- Site concentrations are typically **several-fold lower** than the input titer
+
+- IV most strongly stimulates **neutralizing antibody** and complement
 
 ::: aside
-[@Dabrowska2019]
-:::
-
-::: notes
-The reticuloendothelial/MPS clearance is the dominant elimination route and the reason repeat or continuous dosing is often used. It also primes the humoral response that can neutralize later doses.
+The reticuloendothelial/MPS clearance is the dominant elimination route and the reason repeat or continuous dosing is often used. It also primes the humoral response that can neutralize later doses [@Dabrowska2019].
 :::
 
 ## Direct and inhaled administration
 
 <br>
 
-- **Direct** (intra-articular, intravesical, intra-operative, topical) bypasses the MPS → higher local, lower systemic titers [@Totten2021]
-- Used for PJI, CIED, osteomyelitis, UTI in case reports [@Suh2022]
+- **Direct** (intra-articular, intravesical, intra-operative, topical) bypasses the MPS → higher local, lower systemic titers
+
+- Used for PJI, CIED, osteomyelitis, UTI in case reports
+
 - Controlled-release (hydrogels, microencapsulation) under study
-- **Inhaled** phages for respiratory infection; lung-specific clearance/barriers still being defined [@Dabrowska2019]
+
+- **Inhaled** phages for respiratory infection; lung-specific clearance/barriers still being defined
 
 ::: aside
-[@Totten2021; @Suh2022; @Dabrowska2019]
-:::
-
-::: notes
-Direct administration is favored for biofilm/device infections precisely because it bypasses MPS clearance and maximizes local titer at a site where chance encounters with sessile bacteria are limiting.
+Direct administration is favored for biofilm/device infections precisely because it bypasses MPS clearance and maximizes local titer at a site where chance encounters with sessile bacteria are limiting [@Totten2021; @Suh2022; @Dabrowska2019].
 :::
 
 ## Dosing: empirical, with rare rationale
 
 <br>
 
-- Regimens range from single doses to multiple daily dosing to continuous infusion — mostly **empirical** [@Suh2022]
-- One rational example: **twice-daily IV** based on detectable phage DNA up to 12 h post-dose [@Fabijan2020]
+- Regimens range from single doses to multiple daily dosing to continuous infusion — mostly **empirical**
+- One rational example: **twice-daily IV** based on detectable phage DNA up to 12 h post-dose
 - Multi-route administration is often combined to overcome single-route barriers
-- ARLG Task Force: use the **highest safe, tolerated dose** with endotoxin below limits; repeat dosing to maximize site levels [@Suh2022]
+- ARLG Task Force: use the **highest safe, tolerated dose** with endotoxin below limits; repeat dosing to maximize site levels
 
 ::: aside
-[@Suh2022; @Fabijan2020]
-:::
-
-::: notes
-The honest message: dosing is not yet evidence-based. The Fabijan twice-daily regimen is the rare example where PK data actually informed the interval.
+The honest message: dosing is not yet evidence-based. The Fabijan twice-daily regimen is the rare example where PK data actually informed the interval [@Suh2022; @Fabijan2020].
 :::
 
 ## ARLG ideal PK/PD properties
@@ -488,178 +461,148 @@ The honest message: dosing is not yet evidence-based. The Fabijan twice-daily re
 A favorable phage product should combine:
 
 - High microbial susceptibility (low EoP threshold met)
+
 - High local **concentration at the site of infection**
+
 - High **adsorption rate** (infectivity)
+
 - Large **burst size** (progeny per infected cell)
+
 - Short **latent period** (replication time within the cell)
 
 ::: aside
-[@Suh2022]
+These five parameters are the ARLG's attempt to define a phage "PD profile." Standardized methods to measure them in vivo do not yet exist — a key research gap the task force itself flags [@Suh2022].
 :::
 
-::: notes
-These five parameters are the ARLG's attempt to define a phage "PD profile." Standardized methods to measure them in vivo do not yet exist — a key research gap the task force itself flags.
-:::
-
-# Immunogenicity {background-color="#2d0a0a"}
+# Immunogenicity {background-color="#b20e10"}
 
 ## The neutralizing antibody response
 
 <br>
 
-- Phages are live viruses → IgM within weeks, followed by IgG [@Lusiak2014]
-- Neutralizing antibodies can sharply reduce phage titers and **correlate with clinical failure** [@Dedrick2021]
-- **Cocktails do not solve this** — antibodies form against all component phages, with cross-reactivity [@Lusiak2014]
-- Not universal: some prolonged courses do **not** generate neutralizing titers [@Cano2021]
-
-::: aside
-[@Lusiak2014; @Dedrick2021; @Cano2021]
-:::
+- Phages are live viruses → IgM within weeks, followed by IgG
+- Neutralizing antibodies can sharply reduce phage titers and **correlate with clinical failure** [@Dedrick2022]
+- **Cocktails do not solve this** — antibodies form against all component phages, with cross-reactivity
+- Not universal: some prolonged courses do **not** generate neutralizing titers
 
 ::: notes
-The Dedrick 2021 Nature Medicine case is the cautionary tale: a pulmonary M. abscessus infection where rising neutralizing antibody limited efficacy. This is arguably the most underappreciated PD problem in the field.
+The Dedrick 2021 Nature Medicine case is the cautionary tale: a pulmonary M. abscessus infection where rising neutralizing antibody limited efficacy. This is arguably the most underappreciated PD problem in the field [@Lusiak2014; @Dedrick2021; @Cano2021].
 :::
 
 ## Route matters for immunogenicity
 
 <br>
 
-- **IV** elicits the most robust humoral response; oral and direct elicit less [@Lusiak2014]
+- **IV** elicits the most robust humoral response; oral and direct elicit less
 - Direct administration → lower neutralizing titers, rising with systemic absorption
-- Autoimmune phenomena are theoretical and not described with phage therapy to date [@Smatti2019]
-- **Sequential** therapy with antigenically distinct phages can outpace antibody — but narrow inventories limit cycling [@Lusiak2014]
+- Autoimmune phenomena are theoretical and not described with phage therapy to date
+- **Sequential** therapy with antigenically distinct phages can outpace antibody — but narrow inventories limit cycling
 
-::: aside
-[@Lusiak2014; @Smatti2019]
-:::
+<br>
 
 ::: notes
-Practical implication: for a device or joint infection, direct intra-articular delivery is doubly attractive — it bypasses MPS clearance and minimizes the neutralizing antibody response.
+Practical implication: for a device or joint infection, direct intra-articular delivery is doubly attractive — it bypasses MPS clearance and minimizes the neutralizing antibody response [@Lusiak2014; @Smatti2019].
 :::
 
-# Phage–Antibiotic & Phage–Phage Interactions {background-color="#2d0a0a"}
+# Phage–Antibiotic <br> & Phage–Phage Interactions {background-color="#b20e10"}
 
 ## Synergy, antagonism, or neutrality
 
 <br>
 
-- Phages + antibiotics can be **synergistic, antagonistic, or neutral** [@Gu2022]
-- General rule: **cell-wall agents → synergy**; **protein-synthesis inhibitors → potential antagonism** [@Gu2022; @Comeau2007PAS]
-- "**PAS**" (phage–antibiotic synergy): sub-MIC β-lactams/quinolones can stimulate virulent phage production [@Comeau2007PAS]
-- But responses are phage- and antibiotic-specific — general rules are only a starting point [@Gu2022]
+- Phages + antibiotics can be **synergistic, antagonistic, or neutral**
+- General rule: **cell-wall agents → synergy**; **protein-synthesis inhibitors → potential antagonism**
+- "**PAS**" (phage–antibiotic synergy): sub-MIC β-lactams/quinolones can stimulate virulent phage production
+- But responses are phage- and antibiotic-specific — general rules are only a starting point
+
+<br>
 
 ::: aside
-[@Gu2022; @Comeau2007PAS]
-:::
-
-::: notes
-PAS mechanism: filamentation from cell-wall stress increases phage burst size. The Gu Liu 2020 mBio paper shows synergy depends on mechanism *and* stoichiometry — so empirical testing beats dogma.
+PAS mechanism: filamentation from cell-wall stress increases phage burst size. The Gu Liu 2020 mBio paper shows synergy depends on mechanism *and* stoichiometry — so empirical testing beats dogma [@Gu2022; @Comeau2007PAS].
 :::
 
 ## When combinations backfire
 
 <br>
 
-- **Colistin + LPS-binding phages:** colistin destabilizes LPS, the very receptor the phage needs → antagonism [@DanisWlodarczyk2021]
-- Burst size, pH, viscosity, and fluid dynamics all modulate interactions [@Gu2022]
-- Scoring systems have been proposed but **in vitro testing of the actual pair is essential** [@DanisWlodarczyk2021]
+- **Colistin + LPS-binding phages:** colistin destabilizes LPS, the very receptor the phage needs → antagonism
+- Burst size, pH, viscosity, and fluid dynamics all modulate interactions
+- Scoring systems have been proposed but **in vitro testing of the actual pair is essential**
 - Bottom line: confirm the specific phage–antibiotic combination empirically before use
 
 ::: aside
-[@DanisWlodarczyk2021; @Gu2022]
-:::
-
-::: notes
-The colistin example is the cleanest teaching case of mechanistic antagonism: the antibiotic and phage compete for / destroy the same molecular target.
+The colistin example is the cleanest teaching case of mechanistic antagonism: the antibiotic and phage compete for / destroy the same molecular target [@DanisWlodarczyk2021; @Gu2022].
 :::
 
 ## Phage–phage interactions in cocktails
 
 <br>
 
-- Phages can interfere with one another — reduced activity of each [@Merabishvili2018]
-- Drivers: competition for **shared receptors** and **CRISPR-Cas upregulation** [@Merabishvili2018]
+- Phages can interfere with one another — reduced activity of each
+- Drivers: competition for **shared receptors** and **CRISPR-Cas upregulation**
 - Interactions are unpredictable → evaluate combinations individually
-- Argues for **precision-designed** cocktails over ad hoc mixtures [@Merabishvili2018]
-
-::: aside
-[@Merabishvili2018]
-:::
+- Argues for **precision-designed** cocktails over ad hoc mixtures
 
 ::: notes
-Same theme as resistance mitigation: a well-designed cocktail uses non-competing receptors and confirmed non-antagonism. "More phages" is not automatically "more killing."
+Same theme as resistance mitigation: a well-designed cocktail uses non-competing receptors and confirmed non-antagonism. "More phages" is not automatically "more killing" [@Merabishvili2018].
 :::
 
-# Safety {background-color="#2d0a0a"}
+# Safety {background-color="#b20e10"}
 
 ## A reassuring overall profile
 
 <br>
 
-- Generally favorable safety across preclinical, case-report, and phase I/II data [@Liu2021]
-- FDA has granted **GRAS** status for certain phage applications [@FDAGRAS]
-- Phages are part of the human gut **virome** — ubiquitous baseline exposure [@Townsend2021]
-- ARLG nonetheless recommends interval monitoring of **renal/liver function and CBC** during therapy [@Suh2022]
+- Generally favorable safety across preclinical, case-report, and phase I/II data
+- FDA has granted **GRAS** status for certain phage applications
+- Phages are part of the human gut **virome** — ubiquitous baseline exposure
+- ARLG nonetheless recommends interval monitoring of **renal/liver function and CBC** during therapy
 
 ::: aside
-[@Liu2021; @FDAGRAS; @Townsend2021; @Suh2022]
-:::
+Generally Recognized As Safe (GRAS)
 
-::: notes
-The ecological argument for safety is strong — we ingest billions of phages daily — but it should not substitute for monitoring, especially given endotoxin and cytokine concerns with rapid lysis.
+The ecological argument for safety is strong — we ingest billions of phages daily — but it should not substitute for monitoring, especially given endotoxin and cytokine concerns with rapid lysis [@Merabishvili2018; \@Liu2021; @FDAGRAS; @Townsend2021; @Suh2022].
 :::
 
 ## Mechanisms of adverse events
 
 <br>
 
-- **Endotoxin/bacterial debris** release from rapid lysis → proinflammatory cytokine response [@Liu2021]
-- Contaminants: bacterial DNA, enterotoxins, exotoxins, lipoteichoic acid → hypersensitivity/cytokine release [@Liu2021]
-- Manufacturing residues: cesium chloride, polyethylene glycol [@Liu2021]
-- Net effect on the microbiome is narrow vs. antibiotics but **understudied** [@Liu2021]
-
-::: aside
-[@Liu2021]
-:::
+- **Endotoxin/bacterial debris** release from rapid lysis → proinflammatory cytokine response
+- Contaminants: bacterial DNA, enterotoxins, exotoxins, lipoteichoic acid → hypersensitivity/cytokine release
+- Manufacturing residues: cesium chloride, polyethylene glycol
+- Net effect on the microbiome is narrow vs. antibiotics but **understudied**
 
 ::: notes
-Lysis-associated cytokine release is the mechanistic worry analogous to a Jarisch-Herxheimer reaction — relevant in high-burden bacteremia where you lyse a large bacterial load quickly.
+Lysis-associated cytokine release is the mechanistic worry analogous to a Jarisch-Herxheimer reaction — relevant in high-burden bacteremia where you lyse a large bacterial load quickly [@Liu2021].
 :::
 
 ## Adverse events in practice
 
 <br>
 
-- Preclinical: generally well tolerated; occasional cytokine (IL-1β/IL-6) or IgG/IgM rises without clinical change [@Liu2021]
-- Case reports: mostly none or transient — transient hypotension, fevers/chills, wheeze, flushing, nausea [@Aslam2019]
-- Self-limited **IL-6/IL-8 cytokine storm** resolving in \~1 day reported [@Aslam2019]
-- Transient **transaminitis** with IV/intra-articular dosing; reversible, outcomes still favorable [@DoubWilson2021]
-
-::: aside
-[@Aslam2019; @DoubWilson2021; @Liu2021]
-:::
+- Preclinical: generally well tolerated; occasional cytokine (IL-1β/IL-6) or IgG/IgM rises without clinical change
+- Case reports: mostly none or transient — transient hypotension, fevers/chills, wheeze, flushing, nausea
+- Self-limited **IL-6/IL-8 cytokine storm** resolving in \~1 day reported
+- Transient **transaminitis** with IV/intra-articular dosing; reversible, outcomes still favorable
 
 ::: notes
-The transaminitis signal (Doub & Wilson) is worth flagging for fellows managing real cases — monitor LFTs, especially with pre-existing liver disease, but it has generally been reversible and not outcome-limiting.
+The transaminitis signal (Doub & Wilson) is worth flagging for fellows managing real cases — monitor LFTs, especially with pre-existing liver disease, but it has generally been reversible and not outcome-limiting [@Aslam2019; @DoubWilson2021; @Liu2021].
 :::
 
-# MDR Infections & Phage Steering {background-color="#2d0a0a"}
+# MDR Infections & Phage Steering {background-color="#b20e10"}
 
 ## Phages against drug-resistant bacteria
 
 <br>
 
-- Resistance to antibiotics does **not** confer resistance to phages — different targets (surface receptors) [@Kortright2019]
-- Most case reports use phages **with** antibiotics, not as monotherapy [@Schooley2017; @Aslam2019]
+- Resistance to antibiotics does **not** confer resistance to phages — different targets (surface receptors)
+- Most case reports use phages **with** antibiotics, not as monotherapy
 - Narrower microbiome impact than broad-spectrum antibiotics — less collateral resistance selection
-- Efficacy in MDR infection will only be settled by **prospective trials** [@Suh2022]
-
-::: aside
-[@Kortright2019; @Schooley2017; @Aslam2019]
-:::
+- Efficacy in MDR infection will only be settled by **prospective trials**
 
 ::: notes
-The decoupling of antibiotic and phage resistance is the core rationale for MDR use. But remember the honest caveat: combination use makes attribution of benefit to the phage difficult in uncontrolled cases.
+The decoupling of antibiotic and phage resistance is the core rationale for MDR use. But remember the honest caveat: combination use makes attribution of benefit to the phage difficult in uncontrolled cases [@Kortright2019; @Schooley2017; @Aslam2019].
 :::
 
 ## Phage steering: weaponizing the trade-off
@@ -679,7 +622,7 @@ The decoupling of antibiotic and phage resistance is the core rationale for MDR 
 Steering reframes the therapeutic goal: you may not need the phage to clear the infection outright — you need it to bend the population back into the reach of a cheap antibiotic. This is one of the most intellectually exciting ideas in the field.
 :::
 
-# Biofilm Infections {background-color="#2d0a0a"}
+# Biofilm Infections {background-color="#b20e10"}
 
 ## Why phages suit biofilms
 
@@ -715,7 +658,7 @@ Depolymerases are a distinctive phage advantage over antibiotics for device/biof
 The Morris study is the clearest demonstration that route is everything for biofilm/device infection — systemic dosing failed to reach the implant despite synergy in tissue. This justifies intra-operative and intra-articular delivery for PJI.
 :::
 
-# Clinical Trials: The Reality Check {background-color="#2d0a0a"}
+# Clinical Trials: The Reality Check {background-color="#b20e10"}
 
 ## Case reports vs. controlled trials
 
@@ -822,7 +765,7 @@ Leitner is methodologically the strongest "negative" trial. The field's current 
 One positive among the rigorous efficacy trials — and that one confirmed susceptibility first. The take-home is a design lesson as much as a biology lesson.
 :::
 
-# Endolysins {background-color="#2d0a0a"}
+# Endolysins {background-color="#b20e10"}
 
 ## Enzybiotics: lysis from the outside
 
@@ -892,7 +835,7 @@ The conserved-target argument for a high resistance barrier is the main selling 
 Exebacase is the most advanced endolysin program and its phase III futility (DISRUPT) is the field's reality check, mirroring the phage trial story: promising biology, hard-to-prove clinical benefit. Gram-positive endolysins for bone/joint infection and bacteremia remain the most likely near-term wins.
 :::
 
-# Antimicrobial Peptides {background-color="#2d0a0a"}
+# Antimicrobial Peptides {background-color="#b20e10"}
 
 ## AMPs: ancient innate effectors
 
@@ -933,7 +876,7 @@ The AMP story is the oldest and most disappointing of the three phage-derived pl
 <br>
 
 | Feature            | Phages        | Endolysins               | AMPs          |
-|-----------------|-----------------|---------------------|-----------------|
+|------------------|------------------|-------------------|------------------|
 | Self-replicating   | Yes           | No                       | No            |
 | Spectrum           | Strain-narrow | Narrow–moderate          | Often broad   |
 | Gram-negative use  | Yes           | Hard (needs engineering) | Some natively |
@@ -946,7 +889,7 @@ The AMP story is the oldest and most disappointing of the three phage-derived pl
 Use this to consolidate before pivoting to monoclonal antibodies — a non-phage biologic that shares the "narrow, targeted, manufactured" theme but adds host-immune mechanisms.
 :::
 
-# Monoclonal Antibodies as Antimicrobials {background-color="#2d0a0a"}
+# Monoclonal Antibodies as Antimicrobials {background-color="#b20e10"}
 
 ## From serum therapy to monoclonals
 
@@ -1118,7 +1061,7 @@ This is the honest counterweight: against whole bacteria, mAbs have repeatedly f
 Tie this directly back to phages: the very property phages have (self-amplification at the site, with depolymerase-mediated biofilm access) is what fixed-dose mAbs lack. Conversely mAbs have the mature manufacturing/regulatory path phages lack.
 :::
 
-# Synthesis & Future {background-color="#2d0a0a"}
+# Synthesis & Future {background-color="#b20e10"}
 
 ## Phages vs. mAbs: two targeted biologics
 
@@ -1173,7 +1116,7 @@ The future is combinatorial and personalized. Regulatory innovation (Belgium mag
 Close by returning to the opening table: four platforms, one logic. The clinical art is matching the platform to the niche its pharmacology actually fits.
 :::
 
-## Questions & discussion {background-color="#2d0a0a"}
+## Questions & discussion {background-color="#b20e10"}
 
 <br>
 
