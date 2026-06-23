@@ -80,13 +80,11 @@ The development of phages, lysins, AMPs and mAbs are responses to a market and s
 <br>
 
 ::::: columns
-::: {.column width="50%"}
-![](phage-images/dherevillepng2.png){fig-align="center" width="350"}
-
-<center>Félix d'Hérelle</center>
+::: {.column width="35%"}
+![Félix d'Hérelle](phage-images/dherevillepng2.png){fig-align="center" width="250"}
 :::
 
-::: {.column width="50%"}
+::: {.column width="65%"}
 - 1896 — Hankin describes antibacterial "substance" in the Ganges/Jumna passing through filters and killing *Vibrio cholerae*; later analyses doubt phages were the agent
 - 1915 — Twort reports "ultramicroscopic" lytic agent
 - 1917 — **d'Hérelle** gives unambiguous evidence of a replicating, bacteria-dependent organism; coins *bacteriophage* ("to devour bacteria")
@@ -94,25 +92,31 @@ The development of phages, lysins, AMPs and mAbs are responses to a market and s
 :::
 :::::
 
+<br> <br> <br>
+
 ::: aside
 d'Hérelle is the central figure: he both discovered and immediately therapeutically deployed phages. The anti-Shiga "microbe" was isolated from filtered stool of recovering shigellosis patients.[@Hankin1896; @Twort1915; @dHerelle1917; @Abedon2011]
 :::
 
 ## Eclipse and survival in the East
 
-<br>
+::::: columns
+::: {.column width="50%"}
+![Elivia Institute, Tbilsi, Georgia](phage-images/Eliava.png){fig-align="center" width="400"}
+:::
 
+::: {.column width="50%"}
 - First published therapeutic use \~4 years after d'Hérelle's discovery; he personally treated many patients
 - Penicillin and the antibiotic era eclipsed phage therapy in the West
 - Narrow host range, lack of pharma interest, and geopolitics shifted research to chemotherapeutics
 - Phage therapy persisted in **Eastern Europe and the former Soviet Union** (Eliava Institute, Tbilisi) and is still used there
-
-::: aside
-[@dHerelle1931; @Summers2012; @Chanishvili2012]
 :::
+:::::
+
+<br> <br>
 
 ::: aside
-The West assumed new drug classes could be discovered to outrun resistance. That assumption failed, which is why the field looks East for a century of empirical experience — albeit poorly standardized by modern trial standards.
+The West assumed new drug classes could be discovered to outrun resistance. That assumption failed, which is why the field looks East for a century of empirical experience — albeit poorly standardized by modern trial standards [@dHerelle1931; @Summers2012; @Chanishvili2012].
 :::
 
 ## The modern resurgence
@@ -485,7 +489,7 @@ These five parameters are the ARLG's attempt to define a phage "PD profile." Sta
 - **Cocktails do not solve this** — antibodies form against all component phages, with cross-reactivity
 - Not universal: some prolonged courses do **not** generate neutralizing titers
 
-::: notes
+::: aside
 The Dedrick 2021 Nature Medicine case is the cautionary tale: a pulmonary M. abscessus infection where rising neutralizing antibody limited efficacy. This is arguably the most underappreciated PD problem in the field [@Lusiak2014; @Dedrick2021; @Cano2021].
 :::
 
@@ -500,7 +504,7 @@ The Dedrick 2021 Nature Medicine case is the cautionary tale: a pulmonary M. abs
 
 <br>
 
-::: notes
+::: aside
 Practical implication: for a device or joint infection, direct intra-articular delivery is doubly attractive — it bypasses MPS clearance and minimizes the neutralizing antibody response [@Lusiak2014; @Smatti2019].
 :::
 
@@ -573,7 +577,7 @@ The ecological argument for safety is strong — we ingest billions of phages da
 - Manufacturing residues: cesium chloride, polyethylene glycol
 - Net effect on the microbiome is narrow vs. antibiotics but **understudied**
 
-::: notes
+::: aside
 Lysis-associated cytokine release is the mechanistic worry analogous to a Jarisch-Herxheimer reaction — relevant in high-burden bacteremia where you lyse a large bacterial load quickly [@Liu2021].
 :::
 
@@ -586,7 +590,7 @@ Lysis-associated cytokine release is the mechanistic worry analogous to a Jarisc
 - Self-limited **IL-6/IL-8 cytokine storm** resolving in \~1 day reported
 - Transient **transaminitis** with IV/intra-articular dosing; reversible, outcomes still favorable
 
-::: notes
+::: aside
 The transaminitis signal (Doub & Wilson) is worth flagging for fellows managing real cases — monitor LFTs, especially with pre-existing liver disease, but it has generally been reversible and not outcome-limiting [@Aslam2019; @DoubWilson2021; @Liu2021].
 :::
 
@@ -601,7 +605,7 @@ The transaminitis signal (Doub & Wilson) is worth flagging for fellows managing 
 - Narrower microbiome impact than broad-spectrum antibiotics — less collateral resistance selection
 - Efficacy in MDR infection will only be settled by **prospective trials**
 
-::: notes
+::: aside
 The decoupling of antibiotic and phage resistance is the core rationale for MDR use. But remember the honest caveat: combination use makes attribution of benefit to the phage difficult in uncontrolled cases [@Kortright2019; @Schooley2017; @Aslam2019].
 :::
 
@@ -618,7 +622,7 @@ The decoupling of antibiotic and phage resistance is the core rationale for MDR 
 [@Gurney2020; @Chan2016; @Majkowska2021; @GordilloAltamirano2021]
 :::
 
-::: notes
+::: aside
 Steering reframes the therapeutic goal: you may not need the phage to clear the infection outright — you need it to bend the population back into the reach of a cheap antibiotic. This is one of the most intellectually exciting ideas in the field.
 :::
 
@@ -645,17 +649,13 @@ Depolymerases are a distinctive phage advantage over antibiotics for device/biof
 
 <br>
 
-- Direct administration reduces biofilm; **systemic** administration often does not reach device biofilm [@Morris2019]
-- Murine PJI: IP phage + vancomycin synergized against planktonic bacteria but **not** the implant biofilm [@Morris2019]
-- Phages are non-motile → maximize **chance encounters** by delivering directly to the biofilm [@Doub2020biofilm]
-- Clinical case series support phages as a powerful **adjuvant** in recalcitrant biofilm infection [@Ferry2018]
+- Direct administration reduces biofilm; **systemic** administration often does not reach device biofilm
+- Murine PJI: IP phage + vancomycin synergized against planktonic bacteria but **not** the implant biofilm
+- Phages are non-motile → maximize **chance encounters** by delivering directly to the biofilm
+- Clinical case series support phages as a powerful **adjuvant** in recalcitrant biofilm infection
 
 ::: aside
-[@Morris2019; @Doub2020biofilm; @Ferry2018]
-:::
-
-::: notes
-The Morris study is the clearest demonstration that route is everything for biofilm/device infection — systemic dosing failed to reach the implant despite synergy in tissue. This justifies intra-operative and intra-articular delivery for PJI.
+The Morris study is the clearest demonstration that route is everything for biofilm/device infection — systemic dosing failed to reach the implant despite synergy in tissue. This justifies intra-operative and intra-articular delivery for PJI [@Morris2019; @Doub2020biofilm; @Ferry2018].
 :::
 
 # Clinical Trials: The Reality Check {background-color="#b20e10"}
@@ -664,83 +664,69 @@ The Morris study is the clearest demonstration that route is everything for biof
 
 <br>
 
-- Numerous **case reports** show promise across syndromes and pathogens [@Schooley2017; @Dedrick2022]
-- *M. abscessus*: favorable response in **11/20** compassionate-use patients [@Dedrick2022]
-- Since 2000, **13 English-language trials**; 6 assessed efficacy [@Stacey2022]
-- Controlled trials have **not** reproduced the dramatic case-report outcomes [@Stacey2022]
-
-::: aside
-[@Schooley2017; @Dedrick2022; @Stacey2022]
-:::
+- Numerous **case reports** show promise across syndromes and pathogens
+- *M. abscessus*: favorable response in **11/20** compassionate-use patients
+- Since 2000, **13 English-language trials**; 6 assessed efficacy
+- Controlled trials have **not** reproduced the dramatic case-report outcomes
 
 ::: notes
-This is the intellectual crux for fellows: publication bias inflates the apparent success of case reports. The trials are where enthusiasm meets reality, and so far reality has been sobering.
+Publication bias inflates the apparent success of case reports. The trials are where enthusiasm meets reality, and so far reality has been sobering [@Schooley2017; @Dedrick2022; @Stacey2022].
 :::
 
 ## Early efficacy signals
 
 <br>
 
-- **Wright 2009** (chronic *P. aeruginosa* otitis): single 6-phage cocktail, PST-confirmed → improved clinical scores and lower *P. aeruginosa* counts vs. placebo [@Wright2009]
+- **Wright 2009** (chronic *P. aeruginosa* otitis): single 6-phage cocktail, PST-confirmed → improved clinical scores and lower *P. aeruginosa* counts vs. placebo
 - The first modern **randomized, double-blind, placebo-controlled** phage trial
-- Small (n≈24) and single-center, but a genuine positive efficacy signal [@Wright2009]
-
-::: aside
-[@Wright2009]
-:::
+- Small (n≈24) and single-center, but a genuine positive efficacy signal
 
 ::: notes
-Wright remains the most cited "positive" RCT — note that it confirmed susceptibility (PST) before enrollment, a design feature later "negative" trials often lacked.
+Wright remains the most cited "positive" RCT — note that it confirmed susceptibility (PST) before enrollment, a design feature later "negative" trials often lacked [@Wright2009].
 :::
 
 ## The instructive failures
 
 <br>
 
-- **Rose 2014** (burn wounds): fixed (non-personalized) cocktail, no prospective PST; no bacterial-load difference; spray ran off the wound [@Rose2014]
-- **Sarker 2016** (pediatric *E. coli* diarrhea, Bangladesh): oral T4-like coliphages, no PST; **no clinical efficacy**, no intestinal amplification [@Sarker2016]
-- Recurring culprits: **fixed cocktails, no susceptibility testing, inadequate coverage, delivery failure** [@Stacey2022]
-
-::: aside
-[@Rose2014; @Sarker2016; @Stacey2022]
-:::
+- **Rose 2014** (burn wounds): fixed (non-personalized) cocktail, no prospective PST; no bacterial-load difference; spray ran off the wound
+- **Sarker 2016** (pediatric *E. coli* diarrhea, Bangladesh): oral T4-like coliphages, no PST; **no clinical efficacy**, no intestinal amplification
+- Recurring culprits: **fixed cocktails, no susceptibility testing, inadequate coverage, delivery failure**
 
 ::: notes
-The pattern is diagnostic: the negative trials violated the very principles (personalization, PST, adequate local delivery) that the case reports followed. The failures are arguably about trial design, not phage biology.
+The pattern is diagnostic: the negative trials violated the very principles (personalization, PST, adequate local delivery) that the case reports followed. The failures are arguably about trial design, not phage biology [@Rose2014; @Sarker2016; @Stacey2022].
 :::
 
 ## PhagoBurn and the delivery problem
 
 <br>
 
-- **Jault 2019 (PhagoBurn):** RCT of a *P. aeruginosa* phage cocktail vs. standard care in burn wounds [@Jault2019]
+- **Jault 2019 (PhagoBurn):** RCT of a *P. aeruginosa* phage cocktail vs. standard care in burn wounds
+
 - Phages **slower** to reduce bacterial burden than standard-of-care antiseptic
-- Manufacturing reduced titer over storage → **under-dosing**; some isolates resistant at low residual titer [@Jault2019]
+
+- Manufacturing reduced titer over storage → **under-dosing**; some isolates resistant at low residual titer
+
 - A landmark in showing how **CMC/manufacturing** can sink a phage trial
 
-::: aside
-[@Jault2019]
-:::
-
 ::: notes
-PhagoBurn is the cautionary CMC tale: the delivered titer dropped far below intended because of stability problems, so the trial tested an underpowered dose. Manufacturing rigor is a clinical-efficacy issue, not just a regulatory one.
+PhagoBurn is the cautionary CMC tale: the delivered titer dropped far below intended because of stability problems, so the trial tested an underpowered dose. Manufacturing rigor is a clinical-efficacy issue, not just a regulatory one [@Jault2019].
 :::
 
 ## Intravesical phages and the honest null
 
 <br>
 
-- **Leitner 2021:** intravesical phages vs. antibiotics vs. placebo for UTI before TURP [@Leitner2021]
-- Phages were **not superior** to placebo and **not non-inferior** to antibiotics [@Leitner2021]
-- Well-designed, multi-arm, double-blind — a rigorous neutral result
-- Reinforces that adjunctive, personalized, well-delivered phages remain the most defensible use today [@Suh2022]
+- **Leitner 2021:** intravesical phages vs. antibiotics vs. placebo for UTI before TURP
 
-::: aside
-[@Leitner2021; @Suh2022]
-:::
+- Phages were **not superior** to placebo and **not non-inferior** to antibiotics
+
+- Well-designed, multi-arm, double-blind — a rigorous neutral result
+
+- Reinforces that adjunctive, personalized, well-delivered phages remain the most defensible use today
 
 ::: notes
-Leitner is methodologically the strongest "negative" trial. The field's current consensus position: phages are best viewed as a personalized adjuvant for recalcitrant/MDR/biofilm infection, pending better trials (e.g., ongoing CYPHY, and NIH-funded adaptive designs).
+Leitner is methodologically the strongest "negative" trial. The field's current consensus position: phages are best viewed as a personalized adjuvant for recalcitrant/MDR/biofilm infection, pending better trials (e.g., ongoing CYPHY, and NIH-funded adaptive designs) [@Leitner2021; @Suh2022].
 :::
 
 ## Selected phage clinical trials
@@ -758,11 +744,7 @@ Leitner is methodologically the strongest "negative" trial. The field's current 
 : Efficacy-focused phage trials [@Wright2009; @Rose2014; @Sarker2016; @Jault2019; @Leitner2021]
 
 ::: aside
-[@Stacey2022; @Wright2009; @Jault2019; @Leitner2021]
-:::
-
-::: notes
-One positive among the rigorous efficacy trials — and that one confirmed susceptibility first. The take-home is a design lesson as much as a biology lesson.
+One positive among the rigorous efficacy trials — and that one confirmed susceptibility first. The take-home is a design lesson as much as a biology lesson [@Stacey2022; @Wright2009; @Jault2019; @Leitner2021].
 :::
 
 # Endolysins {background-color="#b20e10"}
@@ -771,68 +753,56 @@ One positive among the rigorous efficacy trials — and that one confirmed susce
 
 <br>
 
-- Phage-derived enzymes that **hydrolyze peptidoglycan** → osmotic lysis [@Rahman2021]
-- Three classes: **glycosidases, amidases, endopeptidases** [@Rahman2021]
-- Gram-positive endolysins: N-terminal catalytic domain + C-terminal cell-wall-binding domain [@Rahman2021]
-- Gram-negative endolysins: globular, no discrete binding domain [@Rahman2021]
+- Phage-derived enzymes that **hydrolyze peptidoglycan** → osmotic lysis
+- Three classes: **glycosidases, amidases, endopeptidases**
+- Gram-positive endolysins: N-terminal catalytic domain + C-terminal cell-wall-binding domain
+- Gram-negative endolysins: globular, no discrete binding domain
+
+<br>
 
 ::: aside
-[@Rahman2021]
-:::
-
-::: notes
-"Enzybiotics" is the umbrella term. Unlike phages, these are defined chemical entities with conventional PK — a regulatory advantage. The trade-off: no self-replication and no in-situ amplification.
+"Enzybiotics" is the umbrella term. Unlike phages, these are defined chemical entities with conventional PK — a regulatory advantage. The trade-off: no self-replication and no in-situ amplification [@Rahman2021].
 :::
 
 ## The Gram-negative barrier
 
 <br>
 
-- Exogenous endolysins reach peptidoglycan readily in **Gram-positives** (thick, exposed PG) [@Loessner2005]
-- **Gram-negative** outer membrane blocks access to PG [@Rahman2021]
-- Workarounds: EDTA/weak acids to permeabilize, or **engineered "Artilysins"** fusing endolysin to a membrane-translocating peptide [@Zampara2020]
-- Receptor-binding-protein fusions can enable Gram-negative killing [@Zampara2020]
-
-::: aside
-[@Loessner2005; @Rahman2021; @Zampara2020]
-:::
+- Exogenous endolysins reach peptidoglycan readily in **Gram-positives** (thick, exposed PG)
+- **Gram-negative** outer membrane blocks access to PG
+- Workarounds: EDTA/weak acids to permeabilize, or **engineered "Artilysins"** fusing endolysin to a membrane-translocating peptide
+- Receptor-binding-protein fusions can enable Gram-negative killing
 
 ::: notes
-The OM barrier is why endolysins are, for now, mostly a Gram-positive story. Artilysins (Briers/Lavigne) are the leading engineering strategy to break into Gram-negatives.
+The OM barrier is why endolysins are, for now, mostly a Gram-positive story. Artilysins (Briers/Lavigne) are the leading engineering strategy to break into Gram-negatives [@Loessner2005; @Rahman2021; @Zampara2020].
 :::
 
 ## Resistance, PK, and immunogenicity
 
 <br>
 
-- **Resistance less likely** than to phages — peptidoglycan bonds are highly conserved and hard to alter [@Rahman2021]
-- More **conventional PK** than phages (a defined protein, not a replicating particle) [@Rahman2021]
-- Can still elicit anti-protein antibodies, but routine exposure tempers immunogenicity [@Mirski2019]
-- Broader host range than phages, but narrower than most antibiotics [@Rahman2021]
-
-::: aside
-[@Rahman2021; @Mirski2019]
-:::
+- **Resistance less likely** than to phages — peptidoglycan bonds are highly conserved and hard to alter
+- More **conventional PK** than phages (a defined protein, not a replicating particle)
+- Can still elicit anti-protein antibodies, but routine exposure tempers immunogenicity
+- Broader host range than phages, but narrower than most antibiotics
 
 ::: notes
-The conserved-target argument for a high resistance barrier is the main selling point. Whether anti-drug antibodies limit repeat dosing in humans is still being worked out.
+The conserved-target argument for a high resistance barrier is the main selling point. Whether anti-drug antibodies limit repeat dosing in humans is still being worked out [@Rahman2021; @Mirski2019].
 :::
 
 ## Endolysins in the clinic
 
 <br>
 
-- **SAL200** (staphylococcal, IV up to 10 mg/kg): phase I — only mild fatigue/myalgia [@Jun2017]
-- **Staphefekt** (topical): improved symptoms in atopic dermatitis (placebo-controlled) [@Moreau2018]
-- **Exebacase (CF-301):** synergy with anti-staphylococcal antibiotics in vitro [@Watson2020]
-- Exebacase phase III for *S. aureus* bacteremia/endocarditis **stopped for futility** at interim [@Fowler2020]
+- **SAL200** (staphylococcal, IV up to 10 mg/kg): phase I — only mild fatigue/myalgia
+- **Staphefekt** (topical): improved symptoms in atopic dermatitis (placebo-controlled)
+- **Exebacase (CF-301):** synergy with anti-staphylococcal antibiotics in vitro
+- Exebacase phase III for *S. aureus* bacteremia/endocarditis **stopped for futility** at interim
 
-::: aside
-[@Jun2017; @Moreau2018; @Watson2020; @Fowler2020]
-:::
+<br>
 
 ::: notes
-Exebacase is the most advanced endolysin program and its phase III futility (DISRUPT) is the field's reality check, mirroring the phage trial story: promising biology, hard-to-prove clinical benefit. Gram-positive endolysins for bone/joint infection and bacteremia remain the most likely near-term wins.
+Exebacase is the most advanced endolysin program and its phase III futility (DISRUPT) is the field's reality check, mirroring the phage trial story: promising biology, hard-to-prove clinical benefit. Gram-positive endolysins for bone/joint infection and bacteremia remain the most likely near-term wins [@Jun2017; @Moreau2018; @Watson2020; @Fowler2020].
 :::
 
 # Antimicrobial Peptides {background-color="#b20e10"}
@@ -841,17 +811,13 @@ Exebacase is the most advanced endolysin program and its phase III futility (DIS
 
 <br>
 
-- Small (\<100 aa), usually **cationic**, amphipathic (hydrophobic + hydrophilic domains) [@Brogden2005]
-- Primary action: **cytoplasmic membrane disruption**; also inhibit nucleic-acid/protein/cell-wall synthesis [@Brogden2005]
-- Broad spectrum and **immunomodulatory** properties [@Hancock2006]
-- Phage-encoded AMPs: lytic factors (non-enzymatic) and tail-complex proteins [@Mendel2006]
-
-::: aside
-[@Brogden2005; @Hancock2006; @Mendel2006]
-:::
+- Small (\<100 aa), usually **cationic**, amphipathic (hydrophobic + hydrophilic domains)
+- Primary action: **cytoplasmic membrane disruption**; also inhibit nucleic-acid/protein/cell-wall synthesis
+- Broad spectrum and **immunomodulatory** properties
+- Phage-encoded AMPs: lytic factors (non-enzymatic) and tail-complex proteins
 
 ::: notes
-AMPs differ from endolysins in being non-enzymatic and membrane-targeting. Protein E of φX174 (inhibits MraY translocase) is the classic phage-encoded "protein antibiotic" example.
+AMPs differ from endolysins in being non-enzymatic and membrane-targeting. Protein E of φX174 (inhibits MraY translocase) is the classic phage-encoded "protein antibiotic" example[@Brogden2005; @Hancock2006; @Mendel2006].
 :::
 
 ## Promise vs. the historical wall
@@ -859,16 +825,15 @@ AMPs differ from endolysins in being non-enzymatic and membrane-targeting. Prote
 <br>
 
 - Attractive for **biofilm** and MDR infection; some can cross the Gram-negative OM [@Mirski2019]
+
 - Historically limited by **toxicity, poor PK, and weak in vivo activity** [@Deslouches2020]
+
 - Engineered peptides (eCAPs) that mimic endogenous AMPs are an emerging fix [@Deslouches2020]
+
 - **PLG0206:** engineered AMP, phase I IV single-dose — linear PK, well tolerated; phase II in acute PJI [@Huang2022PLG]
 
-::: aside
-[@Deslouches2020; @Huang2022PLG]
-:::
-
 ::: notes
-The AMP story is the oldest and most disappointing of the three phage-derived platforms clinically, but engineering (eCAPs, PLG0206/WLBU2) is reviving it, notably for local PJI use where systemic toxicity is less limiting.
+The AMP story is the oldest and most disappointing of the three phage-derived platforms clinically, but engineering (eCAPs, PLG0206/WLBU2) is reviving it, notably for local PJI use where systemic toxicity is less limiting [@Deslouches2020; @Huang2022PLG].
 :::
 
 ## Three platforms compared
@@ -885,7 +850,7 @@ The AMP story is the oldest and most disappointing of the three phage-derived pl
 
 : Phage-derived antibacterial platforms
 
-::: notes
+::: aside
 Use this to consolidate before pivoting to monoclonal antibodies — a non-phage biologic that shares the "narrow, targeted, manufactured" theme but adds host-immune mechanisms.
 :::
 
@@ -895,17 +860,16 @@ Use this to consolidate before pivoting to monoclonal antibodies — a non-phage
 
 <br>
 
-- Antibody-based anti-infectives **predate antibiotics**: serum therapy for diphtheria/pneumococcus (1890s–1930s) [@Zurawski2020]
-- Displaced by antibiotics, now revived for the same reason as phages — **AMR** and unmet niches [@Motley2018]
+- Antibody-based anti-infectives **predate antibiotics**: serum therapy for diphtheria/pneumococcus (1890s–1930s)
+
+- Displaced by antibiotics, now revived for the same reason as phages — **AMR** and unmet niches
+
 - A **monoclonal antibody (mAb)** is a defined, host-type IgG targeting a single epitope
+
 - Like phages: a **narrow-spectrum, manufactured biologic** — but it recruits host immunity rather than lysing directly
 
-::: aside
-[@Zurawski2020; @Motley2018]
-:::
-
 ::: notes
-The historical symmetry is the hook: both phage therapy and antibody therapy were pre-antibiotic ideas eclipsed by small molecules and revived by resistance. mAbs are the more clinically mature of the two biologic platforms.
+The historical symmetry is the hook: both phage therapy and antibody therapy were pre-antibiotic ideas eclipsed by small molecules and revived by resistance. mAbs are the more clinically mature of the two biologic platforms [@Zurawski2020; @Motley2018].
 :::
 
 ## Mechanisms of anti-infective mAbs
@@ -918,11 +882,7 @@ The historical symmetry is the hook: both phage therapy and antibody therapy wer
 - **Complement activation (CDC)** — classical pathway via Fc
 
 ::: aside
-[@Zurawski2020]
-:::
-
-::: notes
-Crucial conceptual point for fellows: most successful anti-infective mAbs are *neutralizers* (toxin or virus), not direct bacterial killers. Effector-function-dependent bacterial killing has been much harder to translate.
+Most successful anti-infective mAbs are *neutralizers* (toxin or virus), not direct bacterial killers. Effector-function-dependent bacterial killing has been much harder to translate [@Zurawski2020].
 :::
 
 ## Immunologic rationale and engineering
@@ -931,49 +891,43 @@ Crucial conceptual point for fellows: most successful anti-infective mAbs are *n
 
 - Format evolution: murine → chimeric → **humanized → fully human** to cut immunogenicity
 - **Fc engineering** tunes effector function (ADCC/CDC) up or down
-- **Half-life extension** (e.g., **YTE** mutations) enables single-dose, season-long prophylaxis (nirsevimab) [@Hammitt2022]
+- **Half-life extension** (e.g., **YTE** mutations) enables single-dose, season-long prophylaxis (nirsevimab)
 - Specificity is the double-edged sword: exquisite targeting, but **no breadth** and vulnerability to antigenic change
 
-::: aside
-[@Hammitt2022; @Zurawski2020]
-:::
+<br>
 
-::: notes
-YTE (M252Y/S254T/T256E) increases FcRn binding and extends half-life to \~70 days — the technical reason a single nirsevimab dose covers an RSV season. This pharmacology contrast with phages (self-amplifying, short-lived) is worth emphasizing.
+::: aside
+YTE (M252Y/S254T/T256E) increases FcRn binding and extends half-life to \~70 days — the technical reason a single nirsevimab dose covers an RSV season. This pharmacology contrast with phages (self-amplifying, short-lived) is worth emphasizing [@Hammitt2022; @Zurawski2020].
 :::
 
 ## Bezlotoxumab — anti-toxin, not antibacterial
 
 <br>
 
-- Human mAb against ***C. difficile*** **toxin B**; does not kill the organism [@Wilcox2017]
-- **MODIFY I/II** (adjunct to standard antibiotics): recurrent CDI reduced **\~17% vs. \~28%** with placebo [@Wilcox2017]
+- Human mAb against ***C. difficile*** **toxin B**; does not kill the organism
+- **MODIFY I/II** (adjunct to standard antibiotics): recurrent CDI reduced **\~17% vs. \~28%** with placebo
 - FDA-approved 2016 for prevention of CDI recurrence in high-risk adults
-- Caveat: **heart-failure exacerbation** signal in patients with CHF [@Wilcox2017]
-
-::: aside
-[@Wilcox2017]
-:::
+- Caveat: **heart-failure exacerbation** signal in patients with CHF
+- 
 
 ::: notes
-Bezlotoxumab is the cleanest example of the toxin-neutralization paradigm: it prevents recurrence by mopping up toxin B while antibiotics handle the vegetative organism. The CHF safety signal is a board-relevant caveat.
+Bezlotoxumab is the cleanest example of the toxin-neutralization paradigm: it prevents recurrence by mopping up toxin B while antibiotics handle the vegetative organism. The CHF safety signal is a board-relevant caveat [@Wilcox2017].
 :::
 
 ## Ibalizumab — a mAb as antiretroviral
 
 <br>
 
-- Humanized mAb binding **CD4 domain 2**; blocks HIV-1 entry post-attachment (a **post-attachment inhibitor**) [@Emu2018]
-- First-in-class, FDA-approved 2018 for **multidrug-resistant HIV-1**, IV every 2 weeks [@Emu2018]
-- **TMB-301:** ≥1 log₁₀ viral-load drop in **83%** at day 7; \~43% achieved \<50 copies/mL by week 25 [@Emu2018]
+- Humanized mAb binding **CD4 domain 2**; blocks HIV-1 entry post-attachment (a **post-attachment inhibitor**)
+
+- First-in-class, FDA-approved 2018 for **multidrug-resistant HIV-1**, IV every 2 weeks
+
+- **TMB-301:** ≥1 log₁₀ viral-load drop in **83%** at day 7; \~43% achieved \<50 copies/mL by week 25
+
 - Does not share resistance pathways with small-molecule antiretrovirals
 
-::: aside
-[@Emu2018]
-:::
-
 ::: notes
-Ibalizumab shows mAbs can serve as direct antivirals in a salvage niche, with a non-overlapping resistance mechanism — conceptually parallel to using phages where antibiotic resistance doesn't transfer.
+Ibalizumab shows mAbs can serve as direct antivirals in a salvage niche, with a non-overlapping resistance mechanism — conceptually parallel to using phages where antibiotic resistance doesn't transfer [@Emu2018].
 :::
 
 ## Anti-anthrax mAbs — neutralizing protective antigen
@@ -985,12 +939,8 @@ Ibalizumab shows mAbs can serve as direct antivirals in a salvage niche, with a 
 - **Obiltoxaximab** — FDA-approved 2016, same indication [@Greig2016]
 - Approved via the **FDA Animal Rule** (efficacy from animal models; human safety only)
 
-::: aside
-[@Migone2009; @Greig2016]
-:::
-
 ::: notes
-The Animal Rule is the key teaching point — you cannot ethically/feasibly run efficacy RCTs for anthrax, so approval rests on animal efficacy plus human PK/safety. These are stockpiled medical-countermeasure mAbs.
+The Animal Rule is the key teaching point — you cannot ethically/feasibly run efficacy RCTs for anthrax, so approval rests on animal efficacy plus human PK/safety. These are stockpiled medical-countermeasure mAbs [@Migone2009; @Greig2016].
 :::
 
 ## RSV — palivizumab to nirsevimab
@@ -1002,46 +952,39 @@ The Animal Rule is the key teaching point — you cannot ethically/feasibly run 
 - **MELODY:** \~**75%** reduction in medically attended RSV LRTI [@Hammitt2022]
 - **HARMONIE:** \~**83%** reduction in RSV hospitalization in a pragmatic European trial [@Drysdale2023]
 
-::: aside
-[@IMpactRSV1998; @Hammitt2022; @Drysdale2023]
-:::
-
 ::: notes
-RSV prophylaxis is the great mAb success story: the leap from monthly palivizumab (high-risk only) to single-dose nirsevimab (all infants) is driven by Fc/YTE half-life engineering. This is the platform working as intended.
+RSV prophylaxis is the great mAb success story: the leap from monthly palivizumab (high-risk only) to single-dose nirsevimab (all infants) is driven by Fc/YTE half-life engineering. This is the platform working as intended \[@IMpactRSV1998; @Hammitt2022; @Drysdale202.
 :::
 
 ## Anti-SARS-CoV-2 mAbs — the escape lesson
 
 <br>
 
-- **Sotrovimab (COMET-ICE):** \~**79%** reduction in hospitalization/death in early high-risk COVID-19 [@Gupta2021]
+- **Sotrovimab (COMET-ICE):** \~**79%** reduction in hospitalization/death in early high-risk COVID-19
 - Casirivimab/imdevimab, bamlanivimab, tixagevimab/cilgavimab also deployed
 - **Authorizations withdrawn** as Omicron sublineages escaped neutralization
 - The defining cautionary tale: **monoclonal specificity collapses against a rapidly evolving target**
 
-::: aside
-[@Gupta2021]
-:::
-
 ::: notes
-The COVID mAbs are the clearest illustration of the central weakness — a single-epitope agent is one mutation away from obsolescence. Directly analogous to phage resistance via receptor change; the answer in both fields is combinations/cocktails and breadth.
+The COVID mAbs are the clearest illustration of the central weakness — a single-epitope agent is one mutation away from obsolescence. Directly analogous to phage resistance via receptor change; the answer in both fields is combinations/cocktails and breadth [@Gupta2021].
 :::
 
 ## The antibacterial mAb graveyard
 
 <br>
 
-- **Suvratoxumab** (anti-*S. aureus* α-toxin), **SAATELLITE**: lower VAP incidence numerically but **did not meet** its primary endpoint [@Francois2021]
-- **Gremubamab / MEDI3902** (bispecific anti-*P. aeruginosa* PcrV + Psl), **EVADE**: **did not reduce** *P. aeruginosa* pneumonia [@Chastre2022]
+- **Suvratoxumab** (anti-*S. aureus* α-toxin), **SAATELLITE**: lower VAP incidence numerically but **did not meet** its primary endpoint
+
+- **Gremubamab / MEDI3902** (bispecific anti-*P. aeruginosa* PcrV + Psl), **EVADE**: **did not reduce** *P. aeruginosa* pneumonia
+
 - Despite strong preclinical data, **no antibacterial mAb is FDA-approved** for treating bacterial infection
+
 - Successes remain **toxin neutralization** (bezlotoxumab) and **prophylaxis**
 
-::: aside
-[@Francois2021; @Chastre2022]
-:::
+  <br> <br>
 
 ::: notes
-This is the honest counterweight: against whole bacteria, mAbs have repeatedly failed in phase II/III. The wins are toxin-neutralizing (bezlotoxumab) and antiviral/prophylactic — not bactericidal.
+This is the honest counterweight: against whole bacteria, mAbs have repeatedly failed in phase II/III. The wins are toxin-neutralizing (bezlotoxumab) and antiviral/prophylactic — not bactericidal [@Gupta2021].
 :::
 
 ## Why antibacterial mAbs keep failing
@@ -1053,12 +996,10 @@ This is the honest counterweight: against whole bacteria, mAbs have repeatedly f
 - **Timing & access:** mAbs work best as **prophylaxis**, less as rescue in established sepsis/biofilm
 - **No self-amplification:** unlike phages, a fixed dose cannot "follow" the bacterial burden
 
-::: aside
-[@Zurawski2020; @Chastre2022]
-:::
+<br> <br>
 
-::: notes
-Tie this directly back to phages: the very property phages have (self-amplification at the site, with depolymerase-mediated biofilm access) is what fixed-dose mAbs lack. Conversely mAbs have the mature manufacturing/regulatory path phages lack.
+::: aside
+Tie this directly back to phages: the very property phages have (self-amplification at the site, with depolymerase-mediated biofilm access) is what fixed-dose mAbs lack. Conversely mAbs have the mature manufacturing/regulatory path phages lack [@Zurawski2020; @Chastre2022].
 :::
 
 # Synthesis & Future {background-color="#b20e10"}
@@ -1076,10 +1017,12 @@ Tie this directly back to phages: the very property phages have (self-amplificat
 | Resistance/escape | Receptor change | Antigenic variation |
 | Manufacturing/regulatory | Immature, personalized | **Mature, standardized** |
 
-: Targeted biologic antimicrobials [@Suh2022; @Zurawski2020]
+: Targeted biologic antimicrobials
 
-::: notes
-The unifying thesis: both are narrow, biologic, manufactured anti-infectives revived by AMR. Their weaknesses are mirror images — phages are biologically powerful but operationally immature; mAbs are operationally mature but biologically limited against whole bacteria.
+<br>
+
+::: aside
+The unifying thesis: both are narrow, biologic, manufactured anti-infectives revived by AMR. Their weaknesses are mirror images — phages are biologically powerful but operationally immature; mAbs are operationally mature but biologically limited against whole bacteria [@Suh2022; @Zurawski2020].
 :::
 
 ## Where the field is heading
@@ -1091,12 +1034,10 @@ The unifying thesis: both are narrow, biologic, manufactured anti-infectives rev
 - **Standardized PK/PD and susceptibility methods**; adaptive, personalized trial designs [@Suh2022]
 - **Biologic combinations:** phages + endolysins + antibiotics; mAb cocktails to counter escape [@Pirnay2020]
 
-::: aside
-[@Yehl2019; @Gurney2020; @Suh2022; @Pirnay2020]
-:::
+<br> <br>
 
 ::: notes
-The future is combinatorial and personalized. Regulatory innovation (Belgium magistral model; FDA adaptive frameworks) may matter as much as biology for whether phages reach routine practice.
+The future is combinatorial and personalized. Regulatory innovation (Belgium magistral model; FDA adaptive frameworks) may matter as much as biology for whether phages reach routine practice [@Yehl2019; @Gurney2020; @Suh2022; @Pirnay2020].
 :::
 
 ## Take-home messages
@@ -1108,22 +1049,8 @@ The future is combinatorial and personalized. Regulatory innovation (Belgium mag
 - **Case reports outrun controlled evidence**; design failures (no PST, fixed cocktails, under-dosing) explain most negative trials
 - Endolysins, AMPs, and **mAbs** complete a spectrum of targeted biologics — mAbs win at **prophylaxis/toxin neutralization**, phages at **established MDR/biofilm infection**
 
-::: aside
-[@Suh2022; @Stacey2022; @Wilcox2017]
-:::
-
 ::: notes
-Close by returning to the opening table: four platforms, one logic. The clinical art is matching the platform to the niche its pharmacology actually fits.
+Close by returning to the opening table: four platforms, one logic. The clinical art is matching the platform to the niche its pharmacology actually fits [@Suh2022; @Stacey2022; @Wilcox2017].
 :::
 
-## Questions & discussion {background-color="#b20e10"}
-
-<br>
-
-Thank you.
-
-*Russell E. Lewis, Pharm.D. — University of Padova*
-
-::: notes
-Discussion prompts: (1) Would you offer compassionate-use phage therapy for a relapsing MRSA PJI, and how would you design the regimen? (2) Why have antibacterial mAbs failed where antiviral/antitoxin mAbs succeeded? (3) What trial design would actually prove phage efficacy?
-:::
+## References 
