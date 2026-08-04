@@ -190,8 +190,8 @@ Temperate phages can mediate lysogenic conversion (e.g., Shiga toxin, cholera to
 
   <br> <br>
 
-::: notes
-The Barr "bacteriophage adherence to mucus" (BAM) model reframes phages as a mucosal innate-immune layer and has implications for inhaled/oral delivery[@Nobrega2018; @Hu2013; @Barr2013].
+::: aside
+The Barr "bacteriophage adherence to mucus" (BAM) model reframes phages as a mucosal innate-immune layer and has implications for inhaled/oral delivery[@Nobrega2018; @Hu2013; @Barr2013]. Phages — particularly those displaying an Ig-like (immunoglobulin-like) domain on their capsid proteins, such as Hoc in phage T4 — adhere to mucin sugar chains within the mucus layer. Adherence creates a localized zone of increased phage density at the mucosal surface, which raises the odds that an invading bacterium will encounter and be infected/killed by a phage before it can breach the mucus and reach the underlying epithelium.
 :::
 
 # Spectrum & Susceptibility Testing {background-color="#b20e10"}
@@ -227,7 +227,7 @@ Contrast with antibiotic susceptibility: with phages there is no species-level b
 :::::
 
 ::: aside
-EoP is the closest thing to a "susceptibility breakpoint" but it is not standardized across labs, and plaque morphology, multiplicity of infection, and propagation host all influence it. Treat thresholds skeptically [@Suh2022].
+Propogation host- specific bacterial strain used to grow (amplify) a bacteriophage stock; usuallly teh strain the phage was originally isolated on or a starndard reference strain. EoP is the closest thing to a "susceptibility breakpoint" but it is not standardized across labs, and plaque morphology, multiplicity of infection, and propagation host all influence it. Treat thresholds skeptically [@Suh2022].
 :::
 
 ## Spot tests and phagograms
@@ -1054,4 +1054,4 @@ The future is combinatorial and personalized. Regulatory innovation (Belgium mag
 Close by returning to the opening table: four platforms, one logic. The clinical art is matching the platform to the niche its pharmacology actually fits [@Suh2022; @Stacey2022; @Wilcox2017].
 :::
 
-## References 
+## References
