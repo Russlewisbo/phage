@@ -744,8 +744,6 @@ Leitner is methodologically the strongest "negative" trial. The field's current 
 
 ## Selected phage clinical trials
 
-<br>
-
 | Study (year) | Indication | Design | Efficacy signal |
 |------------------|------------------|------------------|------------------|
 | Wright (2009) | Chronic *P. aeruginosa* otitis | RCT, DB, PC | **Positive** |
@@ -754,15 +752,13 @@ Leitner is methodologically the strongest "negative" trial. The field's current 
 | Jault / PhagoBurn (2019) | Burn wound *P. aeruginosa* | RCT | Inferior (under-dosed) |
 | Leitner (2021) | UTI pre-TURP | RCT, DB, 3-arm | Null |
 
-: Efficacy-focused phage trials [@Wright2009; @Rose2014; @Sarker2016; @Jault2019; @Leitner2021]
-
 ::: aside
-One positive among the rigorous efficacy trials — and that one confirmed susceptibility first. The take-home is a design lesson as much as a biology lesson [@Stacey2022; @Wright2009; @Jault2019; @Leitner2021].
+One positive among the rigorous efficacy trials — and that one confirmed susceptibility first. The take-home is a design lesson as much as a biology lesson Efficacy-focused phage trials [@Wright2009; @Rose2014; @Sarker2016; @Jault2019; @Leitner2021; @Stacey2022; @Wright2009].
 :::
 
 ## Summary- Where is there benefit for bacteriophage therapy?
 
-![](phage-images/phage-clinical.png){fig-align="center"}
+![](phage-images/phage-clinical.png){fig-align="center" width="400"}
 
 ::: aside
 [@Stellfox2024]
