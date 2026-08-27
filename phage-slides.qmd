@@ -13,7 +13,7 @@ format:
       data-background-color: "#b20e10"
     width: 1280
     height: 720
-    lightbox: true
+lightbox: true
 bibliography: phage-references.bib
 csl: diagnostic-microbiology-and-infectious-disease.csl
 ---
