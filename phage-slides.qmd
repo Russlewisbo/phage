@@ -153,7 +153,7 @@ The 2017 Schooley/Patterson case at UCSD is the inflection point for US academic
 :::
 
 ::: aside
-International Coimmittee on Taxonamy of Viruses (ICTV) abolished the Siphoviridae/Myoviridae/Podoviridae families (Caudovirales reclassification). This presentation uses these names descriptively for sheath morphology, which is still pedagogically useful.
+International Committee on Taxonamy of Viruses (ICTV) abolished the Siphoviridae/Myoviridae/Podoviridae families (Caudovirales reclassification). This presentation uses these names descriptively for sheath morphology, which is still pedagogically useful.
 :::
 
 ## Anatomy of a tailed phage
@@ -283,7 +283,7 @@ This sets up the later "therapeutic phage interactions" section. The key practic
 Reframe resistance as a feature, not only a bug: because phage receptors are often virulence factors, resistance frequently comes at a cost. This is the conceptual bridge to phage steering later [@Suttle2007; @Brussaard2008; @Labrie2010; @Filippov2011].
 :::
 
-## Mechanism #1- Receptor modification — and its trade-off
+## Mechanism #1- Receptor modification <br> — and its trade-off
 
 <br>
 
@@ -309,7 +309,7 @@ The Chan 2016 OMKO1 / Pseudomonas example: resistance via the OprM efflux porin 
 - Other layers: restriction-modification, CBASS/cyclic-nucleotide signaling, superinfection exclusion
 - Pre-clinical **screening** of each clinical isolate sidesteps most defenses at the patient level
 
-::: notes
+::: aside
 The practical reassurance is that you screen the actual isolate, so you only deploy phages that already work against it. The anti-phage "pan-immune system" is an explosively active research area [@Labrie2010; @vanHoute2016; @Makarova2020].
 :::
 
@@ -322,11 +322,11 @@ The practical reassurance is that you screen the actual isolate, so you only dep
 - Cocktails must be designed for **no inter-phage antagonism** (receptor competition, CRISPR upregulation)
 - "**Phage training**" — experimental coevolution to pre-adapt phages — delays resistance
 
-::: notes
+::: aside
 Cocktails raise the resistance barrier but complicate manufacturing, regulatory filing, and interaction testing. Precision-designed cocktails beat "throw everything in" cocktails [@Merabishvili2018; @Lusiak2014; @Borin2022].
 :::
 
-# Phage Manufacturing, Logistics & Regulation {background-color="#b20e10"}
+# Phage Manufacturing, Logistics  <br> & Regulation {background-color="#b20e10"}
 
 ## From sewage to sterile vial
 
