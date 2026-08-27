@@ -973,7 +973,7 @@ You cannot ethically/feasibly run efficacy RCTs for anthrax, so approval rests o
 - **HARMONIE:** \~**83%** reduction in RSV hospitalization in a pragmatic European trial [@Drysdale2023]
 
 ::: aside
-RSV prophylaxis is the great mAb success story: the leap from monthly palivizumab (high-risk only) to single-dose nirsevimab (all infants) is driven by Fc/YTE half-life engineering. This is the platform working as intended \[@IMpactRSV1998; @Hammitt2022; @Drysdale202.
+RSV prophylaxis is the great mAb success story: the leap from monthly palivizumab (high-risk only) to single-dose nirsevimab (all infants) is driven by Fc/YTE half-life engineering. This is the platform working as intended [@IMpactRSV1998; @Hammitt2022; @Drysdale2023].
 :::
 
 ## Anti-SARS-CoV-2 mAbs — the escape lesson
